@@ -5,3 +5,7 @@ Root folders are the parent folders that contain all of your TV Shows. Some exam
 You need to use **Add New Series** section when you are about to add a brand new series. That means a show that you currently don't have in your root folder. This will create a new folder based on the name of the show and mark all episodes with exception of special episodes as monitored episodes.
 
 To add a new series you can start typing the name of the series in the first text field. After a few seconds you should start getting auto complete results based on what you typed. When you find the series you want to add select a root folder from the drop down below (This will be the root folder the show will placed in) and select a quality profile for the new series. Click add and you are done.
+
+## Add Series Already on Disk
+This section will help you import your existing series to NzbDrone library to start downloading or upgrading episodes.
+NzbDrone will automatically crawl all of your root folders and tries to detect the show each sub-folder belongs to based on it's folder name. All you need to do is confirm the correct series was detected and click add. NzbDrone will automatically add the series to the database but will ***automatically ignore any seasons that you have no episodes of with the exception of the first season.*** for example if a series contains 15 seasons and you only have episodes from season 13 and 14 NzbDrone will only monitor seasons 13, 14 and 15. 
