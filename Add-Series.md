@@ -1,0 +1,2 @@
+## Root Folders
+Root folders are the parent folders that contain all of your TV Shows. Some examples are `D:\TV Shows` `D:\Media\TV`. You need to have at least one root folder before you can add any Series to your database.
