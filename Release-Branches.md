@@ -1,12 +1,9 @@
-##Branches ##
-
-
 - **Master (Default):** Current stabled branch. It has been used by users on develop branch and it's not know to have any major issues.
 
 
 - **Develop:** The bleeding edge. Released as soon as code is committed and passed all automated tests, this build has not been used by us or users. Because there's no guarantee that it will even run in some cases. 
 
-	***Use this branch only if you know what you are doing and are willing to get your hands dirty to recover a failed update.*
+	*Use this branch only if you know what you are doing and are willing to get your hands dirty to recover a failed update.*
 
  
 
