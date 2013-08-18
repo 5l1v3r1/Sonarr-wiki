@@ -19,7 +19,7 @@ Use your XML editor of choice to edit `C:\ProgramData\NzbDrone\config.xml` and s
 
 ```xml
 <Config>
-	<Branch>master</Branch>
+   <Branch>master</Branch>
 </Config>
 ```
 
