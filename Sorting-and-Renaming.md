@@ -10,8 +10,7 @@
 - Create a category for TV shows
 - Configure NzbDrone to use the TV category
 
-## Setup
-In NzbDrone configure:
+## NzbDrone
 - The TV category for your download client (if applicable)
 - The Drone Factory folder to be the same as your download client's *Completed Download Folder*/*Completed TV Download Folder*
 
