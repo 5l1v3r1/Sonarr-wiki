@@ -5,7 +5,7 @@
        
     sudo add-apt-repository 'deb http://update.nzbdrone.com/repos/apt/debian develop main'
 
-**Install NzbDrone**
+**Install/Update NzbDrone**
 	
 	sudo apt-get update
 	sudo apt-get install nzbdrone 
