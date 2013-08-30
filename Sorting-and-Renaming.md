@@ -1,7 +1,9 @@
 ## Terminology
-- Completed Download Folder - This is the folder where your download client places completed downloads (best if it only contains TV shows)
-- Completed TV Download Folder - Completed folder that only contains TV shows
-- Drone Factory - This needs to be the same as the Completed Download Folder (you should never use a folder that contains sorted and renamed episodes)
+**Completed Download Folder:**  This is the folder where your download client places completed downloads (best if it only contains TV shows)
+
+**Completed TV Download Folder:** Completed folder that only contains TV shows
+
+**Drone Factory:** This needs to be the same as the Completed Download Folder (you should never use a folder that contains sorted and renamed episodes)
 
 ## SABnzbd
 - Disable TV sorting (Config -> Sorting -> Series Sorting)
