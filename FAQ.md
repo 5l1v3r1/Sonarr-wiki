@@ -1,2 +1,2 @@
 #### Does NzbDrone require a SABnzbd post-processing script to import downloaded episodes?  ####
-No. as long as you set the Drone Factory path `Settings > Download Client > Drone Factory` to the folder where sab downloads your TV Shows everything will be imported automatically.
+No. as long as you set the Drone Factory path `Settings > Download Client > Drone Factory` to the folder where sab downloads your TV Shows everything will be imported automatically. [[Sorting and Renaming]]
