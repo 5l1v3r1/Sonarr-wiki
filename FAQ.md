@@ -39,6 +39,15 @@ NzbDrone use trakt.tv for series/episode information and for images (fanart, ban
 NzbDrone consists of two main branches of code, master and develop, master is released periodically, when the develop branch is stable and develop is for pre-release testing and people willing to live on the edge, if you want to help out testing or want more information on the two branches, please see: [[Release-Branches]]
 When a feature is marked as Done (complete) it means its been fixed in develop, it won't be until the next release to the master branch after the feature is marked as Done that it will appear for most users.
 
+#### Episode Progress - How is it calculated?  ####
+There are two parts to the episode count, one being the number of episodes (Episode Count) and the other being the number of episodes with files (Episode File Count), each one uses slightly different logic to give you the overall progress for a series or season.
+
+- Episode Count
+	- Episode has already aired AND is monitored OR
+	- Episode has a file
+- Episode File Count
+	- Episode has a file
+
+If a series has 10 episodes that have all aired and you don't have any files for them you would have 0/10 episodes, if you unmonitored all the episodes in that series you would have 0/0 and if you got all the episodes for that series, regardless of if the episodes are monitored or not, you would have 10/10 episodes. 
 
 <sup>1</sup> We do have plans to make this check further back when NzbDrone detects it hasn't been run in a while.
-
