@@ -37,6 +37,7 @@ NzbDrone use trakt.tv for series/episode information and for images (fanart, ban
 
 #### I see that feature/bug X was fixed, why can't I see it  ####
 NzbDrone consists of two main branches of code, master and develop, master is released periodically, when the develop branch is stable and develop is for pre-release testing and people willing to live on the edge, if you want to help out testing or want more information on the two branches, please see: [[Release-Branches]]
+When a feature is marked as Done (complete) it means its been fixed in develop, it won't be until the next release to the master branch after the feature is marked as Done that it will appear for most users.
 
 
 <sup>1</sup> We do have plans to make this check further back when NzbDrone detects it hasn't been run in a while.
