@@ -2,7 +2,7 @@
 No. as long as you set the Drone Factory path `Settings > Download Client > Drone Factory` to the folder where sab downloads your TV Shows everything will be imported automatically. [[Sorting and Renaming]]
 
 #### How does NzbDrone find new episodes?  ####
-NzbDrone doesn't actively search for any episodes on its own, it uses the indexers recent RSS feed to find episodes, which contains all the new releases (for both new and old episodes). Typically the indexer returns the last 100 releases<sup>1</sup>, which isn't much, so be wary if you shut your system down for an extended period of time.
+NzbDrone doesn't actively search for any episodes on its own, it uses RSS feed to find recently posted episodes (sometimes older episodes are posted). Typically the indexer returns the last 100 releases, which isn't much, so be wary if you shut your system down for an extended period of time you might miss some newly release episodes.
 
 #### Why can't NzbDrone see my files on a remote server?  ####
 This can be for various reasons, but the most common is, NzbDrone is running as a service, which causes one of two things:
@@ -49,5 +49,3 @@ There are two parts to the episode count, one being the number of episodes (Epis
 	- Episode has a file
 
 If a series has 10 episodes that have all aired and you don't have any files for them you would have 0/10 episodes, if you unmonitored all the episodes in that series you would have 0/0 and if you got all the episodes for that series, regardless of if the episodes are monitored or not, you would have 10/10 episodes. 
-
-<sup>1</sup> We do have plans to make this check further back when NzbDrone detects it hasn't been run in a while.
