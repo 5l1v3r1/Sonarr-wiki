@@ -13,7 +13,7 @@ description "Upstart Script to run NzbDrone as a service on Ubuntu/Debian based 
 #Set username for the process. Should probably be what you use for logging in
 setuid yourusername
 
-#Setelow is the install directory. If you installed using a deb package or the NzbDrone Repository you do not need to change this
+#This is the install directory. If you installed using a deb package or the NzbDrone Repository you do not need to change this
 env DIR=/opt/NzbDrone
 
 setgid nogroup
