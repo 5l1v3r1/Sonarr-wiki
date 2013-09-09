@@ -22,7 +22,7 @@ This can be for various reasons, but the most common is, NzbDrone is running as 
 #### How does NzbDrone handle scene numbering issues (American Dad!, etc)? ####
 NzbDrone relies on TheXEM (http://thexem.de/), a community driven site that lets users create mappings of shows that the scene (the people that post the files) and TheTVDB (which typically follows the network's numbering). There are a number of shows on there already, but its easy to add another and typically the changes are accepted within a couple days (if they're correct).
 
-#### Why can't NzbDrone import episode files for series X? ####
+#### Why can't NzbDrone import episode files for series X? / Why can't NzbDrone find releases for series X? ####
 NzbDrone relies on being able to parse the series title of the post into something it knows about, during that process it removes special characters and spaces and converts the name to lower case, for example: *CSI: Crime Scene Investigation* would be *csicrimesceneinvestigation* often the scene posts episodes as just *CSI* so NzbDrone can't match the names without some help. NzbDrone maintains a list of problematic series which lets us solve the issue for everyone at once. To request a new mapping:
 
 1. Make sure it hasn't already been requested: https://docs.google.com/spreadsheet/ccc?key=0Atcf2VZ47O8tdGdQN1ZTbjFRanhFSTBlU0xhbzhuMGc#gid=0
