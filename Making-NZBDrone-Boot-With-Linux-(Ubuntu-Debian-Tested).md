@@ -1,11 +1,11 @@
 ### Upstart (Ubuntu/Debian based distros)
-Using Mono allows for more advanced features, such as start/stop and automatic restart if it would crash.
+Using Upstart allows for more advanced features, such as start/stop and automatic restart if it would crash.
 
 **Create the NzbDrone Upstart config file**
        
     sudo nano /etc/init/nzbdrone.conf
 
-**Paste in the following oode, changing the username (right click if using terminal)**
+**Paste in the following code, changing the username (right click if using terminal)**
 ```bash
 author "Simon Tallmyr - Nosscire"
 description "Upstart Script to run NzbDrone as a service on Ubuntu/Debian based systems, as well as others"
@@ -27,6 +27,9 @@ script
    mono $DIR/NzbDrone.exe
 end script
 ```
+
+Press `ctrl+x` then `y` to save.
+
 **Start NzbDrone**
 
 	sudo start nzbdrone
