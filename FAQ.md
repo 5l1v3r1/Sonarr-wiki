@@ -48,4 +48,7 @@ There are two parts to the episode count, one being the number of episodes (Epis
 - Episode File Count
 	- Episode has a file
 
-If a series has 10 episodes that have all aired and you don't have any files for them you would have 0/10 episodes, if you unmonitored all the episodes in that series you would have 0/0 and if you got all the episodes for that series, regardless of if the episodes are monitored or not, you would have 10/10 episodes. 
+If a series has 10 episodes that have all aired and you don't have any files for them you would have 0/10 episodes, if you unmonitored all the episodes in that series you would have 0/0 and if you got all the episodes for that series, regardless of if the episodes are monitored or not, you would have 10/10 episodes.
+
+#### I got a pop-up that said config.xml was corrupt, what now?  ####
+NzbDrone was unable to read your config file on start-up as it became corrupted somehow. Because this config file stores the port NzbDrone runs under as well as whether or not you require a username and password to access NzbDrone via the browser, we do not want to automatically delete and recreate the file. In order to get NzbDrone back online, you will need to delete Config.xml from C:\ProgramData\NzbDrone\ (Windows), once deleted start NzbDrone and it will start on the default port (8989), you should now re-configure any settings you configured on the General Settings page.
