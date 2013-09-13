@@ -38,7 +38,7 @@ Press `ctrl+x` then `y` to save.
 ###RC.Local
 **Please Note: This is not the most elegant solution but it works**
 ***
-
+**This Method Provided by:** protocol77
 
 This Guide is to help those who would like to use linux to run NZBDrone at time of writing this there is not "Install As Service" option like with the Windows Build so this needs to be done until a better alternative is found i have personally tested it so you should have no issues if you do please post in the NZBDrone Forums (http://forums.nzbdrone.com/) and someone will try and help you.
 
