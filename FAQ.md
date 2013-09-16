@@ -1,39 +1,43 @@
-#### Does NzbDrone require a SABnzbd post-processing script to import downloaded episodes?  ####
+### Does NzbDrone require a SABnzbd post-processing script to import downloaded episodes?  ###
 No. as long as you set the Drone Factory path `Settings > Download Client > Drone Factory` to the folder where sab downloads your TV Shows everything will be imported automatically. [[Sorting and Renaming]]
 
-#### How does NzbDrone find new episodes?  ####
-NzbDrone doesn't actively search for any episodes on its own, it uses RSS feed to find recently posted episodes (sometimes older episodes are posted). Typically the indexer returns the last 100 releases, which isn't much, so be wary if you shut your system down for an extended period of time you might miss some newly release episodes.
+### How does NzbDrone find new episodes?  ###
+NzbDrone doesn't actively search for any episodes on its own, it uses RSS feed to find recently posted episodes. Typically the indexer returns the last 100 releases, which isn't much, so be wary if you shut your system down for an extended period of time you might miss some newly release episodes. also, sometimes older episodes are re-posted and might get downloaded if you haven't ignored them.
 
-#### Why can't NzbDrone see my files on a remote server?  ####
+### Why can't NzbDrone see my files on a remote server?  ###
 This can be for various reasons, but the most common is, NzbDrone is running as a service, which causes one of two things:
 
-	1. The remote server requires authentication and NzbDrone runs under the SYSTEM account by default so it doesn't know what the credentials are for that share.
+1.  NzbDrone runs under the SYSTEM account by default which doesn't have access to protected remote file shares.
 	
-		Solutions:
-		- Run NzbDrone's service as another user that has connected to that share 
-		- Run NzbDrone.exe via the Startup Folder
-	2. You're using a mapped network drive (not a UNC path)
+	**Solutions:**
+	- Run NzbDrone's service as another user that has access to that share [http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/sys_srv_logon_user.mspx?mfr=true](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/sys_srv_logon_user.mspx?mfr=true "How to change a service's user account")
+	- Run NzbDrone.exe using the Startup Folder
 	
-		Solutions:
-		- Change your paths to UNC paths (\\server\share)
-		- Run NzbDrone.exe via the Startup Folder 
 
 
-#### How does NzbDrone handle scene numbering issues (American Dad!, etc)? ####
-NzbDrone relies on TheXEM (http://thexem.de/), a community driven site that lets users create mappings of shows that the scene (the people that post the files) and TheTVDB (which typically follows the network's numbering). There are a number of shows on there already, but its easy to add another and typically the changes are accepted within a couple days (if they're correct).
+2. You're using a mapped network drive (not a UNC path)
+	
+	**Solutions:**
+	- Change your paths to UNC paths (\\server\share)
+	- Run NzbDrone.exe via the Startup Folder 
 
-#### Why can't NzbDrone import episode files for series X? / Why can't NzbDrone find releases for series X? ####
-NzbDrone relies on being able to parse the series title of the post into something it knows about, during that process it removes special characters and spaces and converts the name to lower case, for example: *CSI: Crime Scene Investigation* would be *csicrimesceneinvestigation* often the scene posts episodes as just *CSI* so NzbDrone can't match the names without some help. NzbDrone maintains a list of problematic series which lets us solve the issue for everyone at once. To request a new mapping:
 
-1. Make sure it hasn't already been requested: https://docs.google.com/spreadsheet/ccc?key=0Atcf2VZ47O8tdGdQN1ZTbjFRanhFSTBlU0xhbzhuMGc#gid=0
-2. Make a new request here: https://docs.google.com/forms/d/15S6FKZf5dDXOThH4Gkp3QCNtS9Q-AmxIiOpEBJJxi-o/viewform
-3. Typically these are added the next day, if I'm available earlier and asked nicely in IRC I can expedite them
+### How does NzbDrone handle scene numbering issues (American Dad!, etc)? ###
+NzbDrone relies on [TheXEM](TheXEM "http://thexem.de/"), a community driven site that lets users create mappings of shows that the scene (the people that post the files) and TheTVDB (which typically follows the network's numbering). There are a number of shows on there already, but its easy to add another and typically the changes are accepted within a couple days (if they're correct).
+
+### Why can't NzbDrone import episode files for series X? / Why can't NzbDrone find releases for series X? ###
+NzbDrone relies on being able to match titles, often the scene posts episodes using different titles, eg *CSI: Crime Scene Investigation* as just *CSI* so NzbDrone can't match the names without some help. NzbDrone maintains a list of problematic series which lets us solve this issue. To request a new mapping:
+
+1. Make sure it hasn't already been requested. [https://docs.google.com/spreadsheet/ccc?key=0Atcf2VZ47O8tdGdQN1ZTbjFRanhFSTBlU0xhbzhuMGc#gid=0](https://docs.google.com/spreadsheet/ccc?key=0Atcf2VZ47O8tdGdQN1ZTbjFRanhFSTBlU0xhbzhuMGc#gid=0 "Requested Mappings") 
+2. Make a new request here: [https://docs.google.com/forms/d/15S6FKZf5dDXOThH4Gkp3QCNtS9Q-AmxIiOpEBJJxi-o/viewform]( https://docs.google.com/forms/d/15S6FKZf5dDXOThH4Gkp3QCNtS9Q-AmxIiOpEBJJxi-o/viewform "Scene Mapping Request Form")
+
+*Typically these are added the next day, if I'm available earlier and asked nicely in IRC I can expedite the*m
 
 #### Why can't I add a new show to NzbDrone, its on TheTVDB? ####
-NzbDrone use trakt.tv for series/episode information and for images (fanart, banners, images) and there are two reasons why you may not be able to add it:
+NzbDrone use [trakt.tv](http://trakt.tv/ "trakt.tv") for series/episode information and images (fanart, banners, images). Here are some reasons why you might not be able to find your show:
 
-1. Trakt doesn't like special characters to be used when searching for series through the API (which NzbDrone uses), so try without special characters and vote on this feature to fix it on their side: http://support.trakt.tv/forums/188762-general/suggestions/4199849-searching-for-shows-with-special-characters
-2. The series hasn't been added to trakt yet, follow their guide to get it added: http://support.trakt.tv/knowledgebase/articles/151225-how-do-i-add-a-new-tv-show-to-trakt-
+1. Trakt doesn't like special characters to be used when searching for series through the API. Try your search without special characters. [http://support.trakt.tv/forums/188762-general/suggestions/4199849-searching-for-shows-with-special-characters](http://support.trakt.tv/forums/188762-general/suggestions/4199849-searching-for-shows-with-special-characters "Also vote on this issue so they can get it fixed").
+2. The series hasn't been added to trakt yet, follow their [http://support.trakt.tv/knowledgebase/articles/151225-how-do-i-add-a-new-tv-show-to-trakt](http://support.trakt.tv/knowledgebase/articles/151225-how-do-i-add-a-new-tv-show-to-trakt "guide") to get it added. 
 
 #### I see that feature/bug X was fixed, why can't I see it?  ####
 NzbDrone consists of two main branches of code, master and develop, master is released periodically, when the develop branch is stable and develop is for pre-release testing and people willing to live on the edge, if you want to help out testing or want more information on the two branches, please see: [[Release-Branches]]
@@ -51,4 +55,4 @@ There are two parts to the episode count, one being the number of episodes (Epis
 If a series has 10 episodes that have all aired and you don't have any files for them you would have 0/10 episodes, if you unmonitored all the episodes in that series you would have 0/0 and if you got all the episodes for that series, regardless of if the episodes are monitored or not, you would have 10/10 episodes.
 
 #### I got a pop-up that said config.xml was corrupt, what now?  ####
-NzbDrone was unable to read your config file on start-up as it became corrupted somehow. Because this config file stores the port NzbDrone runs under as well as whether or not you require a username and password to access NzbDrone via the browser, we do not want to automatically delete and recreate the file. In order to get NzbDrone back online, you will need to delete Config.xml from C:\ProgramData\NzbDrone\ (Windows), once deleted start NzbDrone and it will start on the default port (8989), you should now re-configure any settings you configured on the General Settings page.
+NzbDrone was unable to read your config file on start-up as it became corrupted somehow. In order to get NzbDrone back online, you will need to delete `C:\ProgramData\NzbDrone\Config.xml` (Windows), once deleted start NzbDrone and it will start on the default port (8989), you should now re-configure any settings you configured on the General Settings page.
