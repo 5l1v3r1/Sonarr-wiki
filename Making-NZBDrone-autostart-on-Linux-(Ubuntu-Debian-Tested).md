@@ -1,4 +1,4 @@
-### Upstart (Ubuntu/Debian based distros)
+### Method 1 (Recommended): Upstart (Ubuntu/Debian based distros)
 Using Upstart allows for more advanced features, such as start/stop and automatic restart if it would crash.
 
 **Create the NzbDrone Upstart config file**
@@ -35,7 +35,7 @@ Press `ctrl+x` then `y` to save.
 	sudo start nzbdrone
 
 
-###RC.Local
+### Method 2: RC.Local
 **Please Note: This is not the most elegant solution but it works**
 ***
 **This Method Provided by:** protocol77
