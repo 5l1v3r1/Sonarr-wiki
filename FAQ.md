@@ -33,17 +33,17 @@ NzbDrone relies on being able to match titles, often the scene posts episodes us
 
 *Typically these are added the next day, if I'm available earlier and asked nicely in IRC I can expedite the*m
 
-#### Why can't I add a new show to NzbDrone, its on TheTVDB? ####
+### Why can't I add a new show to NzbDrone, its on TheTVDB? ###
 NzbDrone use [trakt](http://trakt.tv/) for series/episode information and images (fanart, banners, images). Here are some reasons why you might not be able to find your show:
 
 1. Trakt doesn't like special characters to be used when searching for series through the API. Try your search without special characters. [Also vote on this issue so they can get it fixed](http://support.trakt.tv/forums/188762-general/suggestions/4199849-searching-for-shows-with-special-characters).
 2. The series hasn't been added to trakt yet, follow their [guide](http://support.trakt.tv/knowledgebase/articles/151225-how-do-i-add-a-new-tv-show-to-trakt) to get it added. 
 
-#### I see that feature/bug X was fixed, why can't I see it?  ####
+### I see that feature/bug X was fixed, why can't I see it?  ###
 NzbDrone consists of two main branches of code, master and develop, master is released periodically, when the develop branch is stable and develop is for pre-release testing and people willing to live on the edge, if you want to help out testing or want more information on the two branches, please see: [[Release-Branches]]
 When a feature is marked as Done (complete) it means its been fixed in develop, it won't be until the next release to the master branch after the feature is marked as Done that it will appear for most users.
 
-#### Episode Progress - How is it calculated?  ####
+### Episode Progress - How is it calculated?  ###
 There are two parts to the episode count, one being the number of episodes (Episode Count) and the other being the number of episodes with files (Episode File Count), each one uses slightly different logic to give you the overall progress for a series or season.
 
 - Episode Count
@@ -54,5 +54,5 @@ There are two parts to the episode count, one being the number of episodes (Epis
 
 If a series has 10 episodes that have all aired and you don't have any files for them you would have 0/10 episodes, if you unmonitored all the episodes in that series you would have 0/0 and if you got all the episodes for that series, regardless of if the episodes are monitored or not, you would have 10/10 episodes.
 
-#### I got a pop-up that said config.xml was corrupt, what now?  ####
+### I got a pop-up that said config.xml was corrupt, what now?  ###
 NzbDrone was unable to read your config file on start-up as it became corrupted somehow. In order to get NzbDrone back online, you will need to delete `C:\ProgramData\NzbDrone\Config.xml` (Windows), once deleted start NzbDrone and it will start on the default port (8989), you should now re-configure any settings you configured on the General Settings page.
