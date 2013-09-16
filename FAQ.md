@@ -34,7 +34,7 @@ NzbDrone relies on being able to match titles, often the scene posts episodes us
 *Typically these are added the next day, if I'm available earlier and asked nicely in IRC I can expedite the*m
 
 #### Why can't I add a new show to NzbDrone, its on TheTVDB? ####
-NzbDrone use [trakt.tv](http://trakt.tv/) for series/episode information and images (fanart, banners, images). Here are some reasons why you might not be able to find your show:
+NzbDrone use [trakt](http://trakt.tv/) for series/episode information and images (fanart, banners, images). Here are some reasons why you might not be able to find your show:
 
 1. Trakt doesn't like special characters to be used when searching for series through the API. Try your search without special characters. [http://support.trakt.tv/forums/188762-general/suggestions/4199849-searching-for-shows-with-special-characters](http://support.trakt.tv/forums/188762-general/suggestions/4199849-searching-for-shows-with-special-characters "Also vote on this issue so they can get it fixed").
 2. The series hasn't been added to trakt yet, follow their [http://support.trakt.tv/knowledgebase/articles/151225-how-do-i-add-a-new-tv-show-to-trakt](http://support.trakt.tv/knowledgebase/articles/151225-how-do-i-add-a-new-tv-show-to-trakt "guide") to get it added. 
