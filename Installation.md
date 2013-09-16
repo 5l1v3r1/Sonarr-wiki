@@ -44,4 +44,4 @@
 
 **Automatically Start NzbDrone**
 
-[https://github.com/NzbDrone/NzbDrone/wiki/Making-NZBDrone-autostart-on-Linux-(Ubuntu-Debian-Tested)#method-1-recommended-upstart-ubuntudebian-based-distros](https://github.com/NzbDrone/NzbDrone/wiki/Making-NZBDrone-autostart-on-Linux-(Ubuntu-Debian-Tested)#method-1-recommended-upstart-ubuntudebian-based-distros)
+[Setup NzbDrone using upstart](https://github.com/NzbDrone/NzbDrone/wiki/Making-NZBDrone-autostart-on-Linux-(Ubuntu-Debian-Tested)#method-1-recommended-upstart-ubuntudebian-based-distros)
