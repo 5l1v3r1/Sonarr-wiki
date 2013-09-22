@@ -1,5 +1,5 @@
 ## Prerequisites ##
-- SSL Cert with Private Key [(Create self-signed Certificate)](http://www.selfsignedcertificate.com/)
+- SSL Cert with Private Key [(Create self-signed Certificate)](http://www.selfsignedcertificate.com/) then [(Convert PEM to PKCS#12)](https://www.sslshopper.com/ssl-converter.html)
 - Cert loaded in Personal store of Local System
 
 ## Enabling SSL ##
