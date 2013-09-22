@@ -1,5 +1,3 @@
-# SSL #
-
 ## Prerequisites ##
 - SSL Cert with Private Key (Self-signed is okay)
 - Cert loaded in Personal store of Local System
@@ -7,7 +5,7 @@
 ## Enabling SSL ##
 You will need to edit NzbDrone's config file directly as these settings are not exposed in the UI
 
-1. Open `C:\ProgramData\NzbDrone\confi.xml`
+1. Open `C:\ProgramData\NzbDrone\config.xml`
 2. Add/Change the following settings
 	- SslPort - Default 9898
 	- EnableSsl - default false
