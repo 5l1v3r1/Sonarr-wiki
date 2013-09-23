@@ -23,6 +23,4 @@ Use your XML editor of choice to edit `C:\ProgramData\NzbDrone\config.xml` and s
 </Config>
 ```
 
-*You can ignore the `UpdateUrl` element (if present) as its not used anymore.*
-
 **Once you make this change you will need to restart NzbDrone for it to take effect.**
