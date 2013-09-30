@@ -5,22 +5,10 @@
 
 	*Use this branch only if you know what you are doing and are willing to get your hands dirty to recover a failed update.*
 
- 
-
-
-
-
 ## How to change your branch ##
 
-In order to change your update branch you will need to make a small configuration change:
+1. Go to General Settings and show advanced settings (use the toggle by the save button).
 
-Use your XML editor of choice to edit `C:\ProgramData\NzbDrone\config.xml` and set it to branch of your choosing
- 
+2. Under the Development section change the branch name to `develop`
 
-```xml
-<Config>
-   <Branch>master</Branch>
-</Config>
-```
-
-**Once you make this change you will need to restart NzbDrone for it to take effect.**
+3. Save
