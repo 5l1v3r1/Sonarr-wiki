@@ -30,6 +30,7 @@ Setup guides, FAQ, the more information we have on the wiki the better.
 - Add tests (unit/integration)
 - Commit with *nix line endings for consistency (We checkout Windows and commit *nix)
 - Try to stick to one feature per request to keep things clean and easy to understand
+- Use 4 spaces instead of tabs, this is the default for VS 2012 and WebStorm (to my knowledge)
 
 ### Pull Requesting ###
 - You're probably going to get some comments or questions from us, they will be to ensure consistency and maintainability
