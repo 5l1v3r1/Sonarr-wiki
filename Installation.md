@@ -9,7 +9,7 @@
 ### Ubuntu/Debian
 **Add NzbDrone's repository to your software source**
        
-    sudo echo "deb http://update.nzbdrone.com/repos/apt/debian develop main" >> /etc/apt/sources.list
+    echo "deb http://update.nzbdrone.com/repos/apt/debian develop main" | sudo tee -a /etc/apt/sources.list
 
 **Install/Update NzbDrone**
 	
