@@ -20,12 +20,10 @@ setgid nogroup
 start on runlevel [2345]
 stop on runlevel [016]
 
-expect fork
 respawn
 
-script
-   mono $DIR/NzbDrone.exe
-end script
+exec mono $DIR/NzbDrone.exe
+
 ```
 
 Press `ctrl+x` then `y` to save.
