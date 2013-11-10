@@ -56,3 +56,6 @@ If a series has 10 episodes that have all aired and you don't have any files for
 
 ### I got a pop-up that said config.xml was corrupt, what now?  ###
 NzbDrone was unable to read your config file on start-up as it became corrupted somehow. In order to get NzbDrone back online, you will need to delete `C:\ProgramData\NzbDrone\Config.xml` (Windows), once deleted start NzbDrone and it will start on the default port (8989), you should now re-configure any settings you configured on the General Settings page.
+
+### How do I access NzbDrone from another computer?  ###
+By default NzbDrone doesn't listen to requests from all systems (when not run as administrator), it will only listen on localhost, this is due to how the Web Server NzbDrone uses integrates with Windows (this also applies for current alternatives). If NzbDrone is run as an administrator it will correctly register itself with Windows as well as open the Firewall port so it can be accessed from other systems on your network. Running as admin only needs to happen once (if you change the port it will need to be re-run).
