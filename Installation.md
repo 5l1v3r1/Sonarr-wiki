@@ -24,7 +24,7 @@
 
 **Open Browser**
 
-	[http://localhost:8989](http://localhost:8989)
+	http://localhost:8989
 
 **Automatically Start NzbDrone**
 
