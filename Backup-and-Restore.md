@@ -1,4 +1,4 @@
-# Backing up NzbDrone #
+## Backing up NzbDrone ##
 
 1. Find the location of the AppData directory for NzbDrone
 	- Via the WebUI go to System: Info
@@ -9,7 +9,7 @@
 2. Stop NzbDrone - Not mandatory, but will prevent write locks
 3. Copy the contents to a safe location
 
-# Restoring from Backup #
+## Restoring from Backup ##
 
 1. Re-install NzbDrone
 2. Run NzbDrone once to get the AppData directory location
