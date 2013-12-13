@@ -16,7 +16,7 @@
 
 ## The Import Process ##
 NzbDrone does a number of checks to verify that the download is acceptable for importing, including:
-- Sample file check (greater than 70MB or longer than 3 minutes)
+- Sample file check (run time is longer than 90 seconds)
 - Upgrade for existing episode file (if any)
 - Not being unpack by the download client (_UNPACK_ in SABnzbd)
 - Enough free space exists at the destination
