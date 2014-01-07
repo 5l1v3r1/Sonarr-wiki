@@ -1,8 +1,9 @@
 ## Windows ##
 
 ### Prerequisites ###
-- SSL Cert with Private Key [(Create self-signed Certificate)](http://www.selfsignedcertificate.com/) then [(Convert PEM to PKCS#12)](https://www.sslshopper.com/ssl-converter.html)
-- Cert loaded in Personal store of Local System
+- SSL Cert with Private Key [Create self-signed Certificate](http://www.selfsignedcertificate.com/) then [Convert PEM to PKCS#12](https://www.sslshopper.com/ssl-converter.html)
+- Cert loaded in Personal store of Local System (http://www.databasemart.com/howto/SQLoverssl/How_To_Import_Personal_Certificate_With_MMC.aspx)
+- Thumbprint of the certificate (http://msdn.microsoft.com/en-us/library/ms734695.aspx)
 
 ### Enabling SSL ###
 You will need to edit NzbDrone's config file directly as these settings are not exposed in the UI
