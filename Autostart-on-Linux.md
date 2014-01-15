@@ -3,7 +3,7 @@ Using Upstart allows for more advanced features, such as start/stop and automati
 
 **Create the NzbDrone Upstart config file**
        
-    sudo nano /etc/init/nzbdrone.conf
+    sudoedit /etc/init/nzbdrone.conf
 
 **Paste in the following code, changing the username (right click if using terminal)**
 ```bash
@@ -26,7 +26,7 @@ exec mono $DIR/NzbDrone.exe
 
 ```
 
-Press `ctrl+x` then `y` to save.
+Press <kbd>Ctrl</kbd>+<kbd>X</kbd> then <kbd>y</kbd> to save.
 
 **Start NzbDrone**
 
