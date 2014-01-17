@@ -5,12 +5,12 @@
 
 [[FAQ]]
 
-[[Release Branches]]
-
 ### Additional Configuration ###
 [[SSL]]
 
 [[Reverse Proxy]]
+
+[[Release Branches]]
 
 ### More Information ###
 [[Backup and Restore]]
