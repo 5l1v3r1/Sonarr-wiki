@@ -9,7 +9,7 @@ Returns all series in your collection
 
 ##### Returns ######
 
-```
+````
 [
   {
     "title": "Archer (2009)",
@@ -145,7 +145,7 @@ Returns all series in your collection
     "id": 2
   }
 ]
-```
+````
 
 ## GET/{id} ##
 
@@ -158,7 +158,7 @@ Returns the series with the matching ID or 404 if no matching series is found
 
 ##### Returns ######
 
-```
+````
 {
   "title": "Archer (2009)",
   "seasonCount": 5,
@@ -226,7 +226,7 @@ Returns the series with the matching ID or 404 if no matching series is found
   "titleSlug": "archer-2009",
   "id": 1
 }
-```
+````
 
 ## POST ##
 
@@ -253,7 +253,7 @@ Optional:
 
 ##### Returns ######
 
-```
+````
 {
     "title": "Archer (2009)",
     "seasons": [
@@ -293,7 +293,7 @@ Optional:
     "titleSlug": "archer-2009",
     "id": 1
   }
-```
+````
 
 ## PUT ##
 
@@ -307,7 +307,7 @@ All parameters (you should perform a GET/{id} and submit the full body with the 
 
 ##### Returns ######
 
-```
+````
 {
   "title": "Archer (2009)",
   "seasonCount": 5,
@@ -375,4 +375,4 @@ All parameters (you should perform a GET/{id} and submit the full body with the 
   "titleSlug": "archer-2009",
   "id": 1
 }
-```
+````
