@@ -9,7 +9,7 @@
 - [[Release Branches]]
 
 ### More Information ###
-- [[Backup and Restore]]
+- [[Failed Download Handling]]
 - [[Indexer Integration]]
 - [[Backup and Restore]]
 - [[PushOver]]
