@@ -19,3 +19,11 @@ API Key uses the X-Api-Key header for authentication.
 
 - Not recommended
 - Username & Password
+
+## Dates & Times ##
+
+- All dates/timestamps are ISO-8601 formatted in UTC `2014-01-27T01:30:00Z`
+- Episodes (and episode based endpoints, missing & calendar) also include the airdate in the original timezone for display purposes
+- Date parameters should be ISO-8601 UTC dates to ensure proper handling by drone
+
+
