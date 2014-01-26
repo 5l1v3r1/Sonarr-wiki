@@ -1,2 +1,4 @@
 ### [[API]] ###
 - [[Series]]
+- [[Calendar]]
+- [[History]]
