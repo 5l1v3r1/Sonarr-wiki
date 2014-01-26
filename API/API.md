@@ -5,9 +5,9 @@ All API endpoints are based off of `/api` if you access drone via `http://localh
 
 ## Authentication ##
 
-All requests made from a system other than localhost require authentication, either an API Key or Basic Authentication is supported, although it is recommended to use the API Key.
+All requests made from a system other than localhost require authentication, either an API Key or Basic Authentication is supported, although it is recommended to use the API Key. Basic auth may be disabled on the API in a future version.
 
-Both methods utilize the Authorization Header
+API Key uses the X-Api-Key header for authentication.
 
 ### API Key ###
 
