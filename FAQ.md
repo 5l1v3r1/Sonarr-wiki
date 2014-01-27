@@ -59,3 +59,10 @@ NzbDrone was unable to read your config file on start-up as it became corrupted 
 
 ### How do I access NzbDrone from another computer?  ###
 By default NzbDrone doesn't listen to requests from all systems (when not run as administrator), it will only listen on localhost, this is due to how the Web Server NzbDrone uses integrates with Windows (this also applies for current alternatives). If NzbDrone is run as an administrator it will correctly register itself with Windows as well as open the Firewall port so it can be accessed from other systems on your network. Running as admin only needs to happen once (if you change the port it will need to be re-run).
+
+### Why doesn't NzbDrone automatically search for missing episodes ###
+There are two times when we would want to have missing episodes searched for, when a new series with existing aired episodes is added and when NzbDrone has been offline and unable to find episodes as it normally would. Endlessly searching for episodes that have aired that are missing is a waste of resources, both in terms of local processing power and on the indexers and in our experience catches users off guard, wasting bandwidth.
+
+In v1 of NzbDrone we had an opt in backlog search option, often people would turn it on and then get a bunch of old episodes and ask us why, we also had indexers ask why they saw an increase in API calls, which was due to the backlog searching.
+
+In v2 we sat back and thought about it and realized the benefit is not really there, we could try to throttle the searching, but that just draws it out and still does the same thing; hammer the indexer with useless requests. If the episode wasn't there the last time the search was performed, why would it be there now? It would be if it was reposted, but if it was reposted, the automatic process that gets new episodes would see it was posted and act on it.
