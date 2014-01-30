@@ -12,7 +12,7 @@
 
 ## NzbDrone
 - The TV category for your download client (if applicable)
-- The Drone Factory folder to be the same as your download client's *Completed Download Folder*/*Completed TV Download Folder*
+- The Drone Factory folder to be the same as your download client's *Completed Download Folder*/*Completed TV Download Folder* (if you're using a category with SABnzbd this needs to be the *Completed TV Download Folder* see SABnzbd's category config page for the path)
 
 ## The Import Process ##
 NzbDrone does a number of checks to verify that the download is acceptable for importing, including:
