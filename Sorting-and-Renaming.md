@@ -5,6 +5,8 @@
 
 **Drone Factory:** This needs to be the same as the Completed Download Folder (you should never use a folder that contains sorted and renamed episodes)
 
+**Sorted TV Download Folder:** Final folder that contains your sorted and renamed episodes (in their respective series folders)
+
 ## SABnzbd
 - Disable TV sorting (Config -> Sorting -> Series Sorting)
 - Create a category for TV shows
