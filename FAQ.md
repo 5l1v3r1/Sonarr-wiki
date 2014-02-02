@@ -66,3 +66,10 @@ There are two times when we would want to have missing episodes searched for, wh
 In v1 of NzbDrone we had an opt in backlog search option, often people would turn it on and then get a bunch of old episodes and ask us why, we also had indexers ask why they saw an increase in API calls, which was due to the backlog searching.
 
 In v2 we sat back and thought about it and realized the benefit is not really there, we could try to throttle the searching, but that just draws it out and still does the same thing; hammer the indexer with useless requests. If the episode wasn't there the last time the search was performed, why would it be there now? It would be if it was reposted, but if it was reposted, the automatic process that gets new episodes would see it was posted and act on it.
+
+### Invalid Newznab URL entered ###
+First make sure you're using the correct URL (with https if applicable), such as: `https://indexer.nzbdrone.com`, not `https://indexer.nzbdrone.com/api`. If you're still having issues please see [[Newznab]]
+
+
+### database disk image is malformed ###
+This means your sqlite database that stores most of the information for NzbDrone is corrupt, there is an excellent guide here to copy the contents from the corrupt database into a new one: http://techblog.dorogin.com/2011/05/sqliteexception-database-disk-image-is.html 

@@ -15,6 +15,9 @@
 - [[PushOver]]
 - [[Sorting and Renaming]]
 
+### Troubleshooting ###
+- [[Newznab]]
+
 ### Contributing ###
 - [[Contributing]]
 
