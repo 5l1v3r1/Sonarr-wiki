@@ -17,6 +17,8 @@
 
 ### Troubleshooting ###
 - [[Newznab]]
+- [[Recovering from a Failed Update]]
+- [[Log Files]]
 
 ### Contributing ###
 - [[Contributing]]
