@@ -4,3 +4,4 @@
 - [[Calendar]]
 - [[History]]
 - [[Missing]]
+- [[Command]]
