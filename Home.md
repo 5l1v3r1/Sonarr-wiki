@@ -7,6 +7,7 @@
 - [[SSL]]
 - [[Reverse Proxy]]
 - [[Release Branches]]
+- [[Quality Profiles]]
 
 ### More Information ###
 - [[Failed Download Handling]]
