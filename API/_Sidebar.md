@@ -6,5 +6,6 @@
 - [[Missing]]
 - [[Command]]
 
-## Commands ##
+### Commands ###
 - [Get](#wiki-get)
+- [Get\{id}](#wiki-getid)
