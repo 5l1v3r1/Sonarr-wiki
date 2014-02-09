@@ -1,3 +1,5 @@
+**Endpoint: "/series/lookup"**
+
 ## GET ##
 
 ##### Summary #####
