@@ -9,3 +9,4 @@
 - [[QualityProfiles]]
 - [[Rootfolder]]
 - [[Series]]
+- [[Series-Lookup]]
