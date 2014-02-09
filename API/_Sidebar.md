@@ -5,3 +5,6 @@
 - [[History]]
 - [[Missing]]
 - [[Command]]
+
+## Commands ##
+- [Get](#wiki-get)
