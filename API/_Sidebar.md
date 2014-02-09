@@ -8,4 +8,6 @@
 
 ### Commands ###
 - [Get](#wiki-get)
-- [Get\{id}](#wiki-getid)
+- [Get \\ {id}](#wiki-getid)
+- [Post](#wiki-post)
+- [Put](#wiki-put)
