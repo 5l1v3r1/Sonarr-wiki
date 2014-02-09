@@ -7,7 +7,7 @@ Returns all series in your collection
 
 *None*
 
-##### Returns ######
+##### Returns JsonArray ######
 
 ````JSON
 [
@@ -77,72 +77,6 @@ Returns all series in your collection
     "imdbId": "tt1486217",
     "titleSlug": "archer-2009",
     "id": 1
-  },
-  {
-    "title": "Breaking Bad",
-    "seasonCount": 5,
-    "episodeCount": 62,
-    "episodeFileCount": 62,
-    "status": "ended",
-    "overview": "Walter White, a struggling high school chemistry teacher, is diagnosed with advanced lung cancer. He turns to a life of crime, producing and selling methamphetamine accompanied by a former student, Jesse Pinkman, with the aim of securing his family's financial future before he dies.",
-    "network": "AMC",
-    "airTime": "6:00pm",
-    "images": [
-      {
-        "coverType": "banner",
-        "url": "/MediaCover/14/banner.jpg?lastWrite=635114444894870391"
-      },
-      {
-        "coverType": "poster",
-        "url": "/MediaCover/14/poster.jpg?lastWrite=635114444896118401"
-      },
-      {
-        "coverType": "fanart",
-        "url": "/MediaCover/14/fanart.jpg?lastWrite=635114444898302430"
-      }
-    ],
-    "seasons": [
-      {
-        "seasonNumber": 5,
-        "monitored": true
-      },
-      {
-        "seasonNumber": 4,
-        "monitored": true
-      },
-      {
-        "seasonNumber": 3,
-        "monitored": true
-      },
-      {
-        "seasonNumber": 2,
-        "monitored": true
-      },
-      {
-        "seasonNumber": 1,
-        "monitored": true
-      },
-      {
-        "seasonNumber": 0,
-        "monitored": false
-      }
-    ],
-    "year": 0,
-    "path": "T:\\Breaking Bad",
-    "qualityProfileId": 2,
-    "seasonFolder": true,
-    "monitored": true,
-    "useSceneNumbering": false,
-    "runtime": 60,
-    "tvdbId": 81189,
-    "tvRageId": 18164,
-    "firstAired": "2008-01-21T02:00:00Z",
-    "lastInfoSync": "2014-01-17T05:10:50.536056Z",
-    "seriesType": "standard",
-    "cleanTitle": "breakingbad",
-    "imdbId": "tt0903747",
-    "titleSlug": "breaking-bad",
-    "id": 2
   }
 ]
 ````
@@ -156,9 +90,9 @@ Returns the series with the matching ID or 404 if no matching series is found
 
 `id (int)`
 
-##### Returns ######
+##### Returns JsonObject ######
 
-````
+````JSON
 {
   "title": "Archer (2009)",
   "seasonCount": 5,
@@ -253,9 +187,9 @@ Optional:
 `seasonFolder (bool)`
 `monitored (bool)`
 
-##### Returns ######
+##### Returns JsonObject ######
 
-````
+````JSON
 {
     "title": "Archer (2009)",
     "seasons": [
@@ -307,9 +241,9 @@ Update an existing series
 Required:
 All parameters (you should perform a GET/{id} and submit the full body with the changes
 
-##### Returns ######
+##### Returns JsonObject ######
 
-````
+````JSON
 {
   "title": "Archer (2009)",
   "seasonCount": 5,
