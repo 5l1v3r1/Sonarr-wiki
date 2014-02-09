@@ -235,19 +235,20 @@ Adds a new series to your collection
 
 ##### Parameters ######
 
+##NOTE: if you do not add the required params, then the series wont function. some of these without the others can indeed make a "series". But it wont function properly in nzbdrone. ##
 Required:
 `tvdbId (int)`
 `title (string)`
 `qualityProfileId (int)`
+`titleSlug (string)`
+`seasons (array)` - See GET output for format
 
 `path (string)` - full path to the series on disk
 *or*
 `rootFolderPath (string)` - full path will be created by combining the rootFolderPath with the series title
 
 Optional:
-`seasons (array)` - See GET output for format
 `tvRageId (int)`
-`titleSlug (string)`
 `seasonFolder (bool)`
 `monitored (bool)`
 
