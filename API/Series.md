@@ -9,7 +9,7 @@ Returns all series in your collection
 
 ##### Returns ######
 
-````
+````JSON
 [
   {
     "title": "Archer (2009)",
