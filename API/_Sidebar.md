@@ -1,13 +1,8 @@
 ### [[API]] ###
-- [[Series]]
-- [[Episode]]
 - [[Calendar]]
+- [[Command]]
+- [[Episode]]
 - [[History]]
 - [[Missing]]
-- [[Command]]
-
-### Commands ###
-- [Get](#wiki-get)
-- [Get \\ {id}](#wiki-getid)
-- [Post](#wiki-post)
-- [Put](#wiki-put)
+- [[Queue]]
+- [[Series]]
