@@ -12,9 +12,9 @@ Optional:
 `start (date)`
 `end (date)`
 
-##### Returns ######
+##### Returns JsonArray ######
 
-````
+````JSON
 [
   {
     "seriesId": 3,
@@ -120,115 +120,6 @@ Optional:
     },
     "downloading": false,
     "id": 14402
-  },
-  {
-    "seriesId": 1,
-    "episodeFileId": 0,
-    "seasonNumber": 5,
-    "episodeNumber": 3,
-    "title": "Archer Vice: A Debt of Honor",
-    "airDate": "2014-01-27",
-    "airDateUtc": "2014-01-28T03:00:00Z",
-    "overview": "Pam makes a deal that puts everyone in danger. Archer dons his slightly darker black suit to save the day.",
-    "hasFile": false,
-    "monitored": true,
-    "sceneEpisodeNumber": 0,
-    "sceneSeasonNumber": 0,
-    "tvDbEpisodeId": 0,
-    "series": {
-      "tvdbId": 110381,
-      "tvRageId": 23354,
-      "imdbId": "tt1486217",
-      "title": "Archer (2009)",
-      "cleanTitle": "archer2009",
-      "status": "continuing",
-      "overview": "At ISIS, an international spy agency, global crises are merely opportunities for its highly trained employees to confuse, undermine, betray and royally screw each other. At the center of it all is suave master spy Sterling Archer, whose less-than-masculine code name is \"Duchess.\" Archer works with his domineering mother Malory, who is also his boss. Drama revolves around Archer's ex-girlfriend, Agent Lana Kane and her new boyfriend, ISIS comptroller Cyril Figgis, as well as Malory's lovesick secretary, Cheryl.",
-      "airTime": "7:00pm",
-      "monitored": true,
-      "qualityProfileId": 1,
-      "seasonFolder": true,
-      "lastInfoSync": "2014-01-26T19:24:53.0106115Z",
-      "runtime": 30,
-      "images": [
-        {
-          "coverType": "banner",
-          "url": "http://slurm.trakt.us/images/banners/57.12.jpg"
-        },
-        {
-          "coverType": "poster",
-          "url": "http://slurm.trakt.us/images/posters/57.12-300.jpg"
-        },
-        {
-          "coverType": "fanart",
-          "url": "http://slurm.trakt.us/images/fanart/57.12.jpg"
-        }
-      ],
-      "seriesType": "standard",
-      "network": "FX",
-      "useSceneNumbering": false,
-      "titleSlug": "archer-2009",
-      "path": "T:\\Archer (2009)",
-      "year": 0,
-      "firstAired": "2009-09-18T02:00:00Z",
-      "qualityProfile": {
-        "value": {
-          "name": "SD",
-          "allowed": [
-            {
-              "id": 1,
-              "name": "SDTV",
-              "weight": 1
-            },
-            {
-              "id": 8,
-              "name": "WEBDL-480p",
-              "weight": 2
-            },
-            {
-              "id": 2,
-              "name": "DVD",
-              "weight": 3
-            }
-          ],
-          "cutoff": {
-            "id": 1,
-            "name": "SDTV",
-            "weight": 1
-          },
-          "id": 1
-        },
-        "isLoaded": true
-      },
-      "seasons": [
-        {
-          "seasonNumber": 5,
-          "monitored": true
-        },
-        {
-          "seasonNumber": 4,
-          "monitored": true
-        },
-        {
-          "seasonNumber": 3,
-          "monitored": true
-        },
-        {
-          "seasonNumber": 2,
-          "monitored": true
-        },
-        {
-          "seasonNumber": 1,
-          "monitored": true
-        },
-        {
-          "seasonNumber": 0,
-          "monitored": false
-        }
-      ],
-      "id": 7
-    },
-    "downloading": false,
-    "id": 20986
   }
 ]
 ````
