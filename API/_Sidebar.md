@@ -7,6 +7,7 @@
 - [[Missing]]
 - [[Queue]]
 - [[QualityProfiles]]
+- [[Release]]
 - [[Rootfolder]]
 - [[Series]]
 - [[Series-Lookup]]
