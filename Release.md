@@ -1,7 +1,10 @@
-????
+###### GET #####
 
+### Params ###
 
+### Reponse ###
 ```JSON
+[
 {
     "quality": {
       "quality": {
