@@ -1,3 +1,5 @@
+**Endpoint: "/system/status"**
+
 ### GET ###
 
 ##### Response #####
