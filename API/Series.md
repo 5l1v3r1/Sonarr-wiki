@@ -235,7 +235,8 @@ Adds a new series to your collection
 
 ##### Parameters ######
 
-##NOTE: if you do not add the required params, then the series wont function. some of these without the others can indeed make a "series". But it wont function properly in nzbdrone. ##
+NOTE: if you do not add the required params, then the series wont function. some of these without the others can indeed make a "series". But it wont function properly in nzbdrone. 
+
 Required:
 `tvdbId (int)`
 `title (string)`
