@@ -1,8 +1,8 @@
-###### GET #####
+## GET ##
 
-### Params ###
+##### Params #####
 
-### Reponse ###
+##### Reponse #####
 ```JSON
 [
 {
