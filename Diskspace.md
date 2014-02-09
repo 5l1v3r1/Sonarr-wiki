@@ -9,12 +9,13 @@ Required:
 *None*
 
 ```JSON
+
 [
-{
-path: "C:\",
-label: "",
-freeSpace: 282500067328,
-totalSpace: 499738734592
-}
+  {
+    "path": "C:\\",
+    "label": "",
+    "freeSpace": 282500067328,
+    "totalSpace": 499738734592
+  }
 ]
 ```
