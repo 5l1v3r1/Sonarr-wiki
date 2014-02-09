@@ -1,8 +1,11 @@
 ### [[API]] ###
 - [[Calendar]]
 - [[Command]]
+- [[Diskspace]]
 - [[Episode]]
 - [[History]]
 - [[Missing]]
 - [[Queue]]
+- [[QualityProfiles]]
+- [[Rootfolder]]
 - [[Series]]
