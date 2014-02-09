@@ -9,7 +9,7 @@ Returns all series in your collection
 
 ##### Returns JsonArray ######
 
-````JSON
+```JSON
 [
   {
     "title": "Archer (2009)",
@@ -79,7 +79,7 @@ Returns all series in your collection
     "id": 1
   }
 ]
-````
+```
 
 ## GET/{id} ##
 
