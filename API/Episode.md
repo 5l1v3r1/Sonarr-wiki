@@ -7,9 +7,9 @@ Returns all episodes for the given series
 
 `seriesId (int)`
 
-##### Returns ######
+##### Returns JsonArray ######
 
-````
+````JSON
 [
   {
     "seriesId": 1,
@@ -28,24 +28,6 @@ Returns all episodes for the given series
     "absoluteEpisodeNumber": 1,
     "downloading": false,
     "id": 1
-  },
-  {
-    "seriesId": 1,
-    "episodeFileId": 0,
-    "seasonNumber": 1,
-    "episodeNumber": 2,
-    "title": "Training Day",
-    "airDate": "2010-01-14",
-    "airDateUtc": "2010-01-15T03:00:00Z",
-    "overview": "Lana's residual lust for Archer prompts Malory to promote Cyril to field agent. Archer then trains his new competition as only he can, whilst Malory frets over her own past and her son's future.",
-    "hasFile": false,
-    "monitored": true,
-    "sceneEpisodeNumber": 0,
-    "sceneSeasonNumber": 0,
-    "tvDbEpisodeId": 0,
-    "absoluteEpisodeNumber": 2,
-    "downloading": false,
-    "id": 2
   }
 ]
 ````
@@ -61,7 +43,7 @@ Returns the episode with the matching id
 
 ##### Returns ######
 
-````
+````JSON
 {
   "seriesId": 1,
   "episodeFileId": 0,
@@ -94,7 +76,7 @@ All parameters (you should perform a GET/{id} and submit the full body with the 
 
 ##### Returns ######
 
-````
+````JSON
 {
   "seriesId": 1,
   "episodeFileId": 0,
