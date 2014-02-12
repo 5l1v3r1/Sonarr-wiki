@@ -1,7 +1,7 @@
 ## GET ##
 
 ##### Summary #####
-Gets Profile qualities setup in nzbdrone
+Gets all quality profiles
 
 ##### Parameters ######
 

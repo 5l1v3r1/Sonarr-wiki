@@ -6,7 +6,7 @@
 - [[History]]
 - [[Missing]]
 - [[Queue]]
-- [[QualityProfiles]]
+- [[QualityProfile]]
 - [[Release]]
 - [[Rootfolder]]
 - [[Series]]
