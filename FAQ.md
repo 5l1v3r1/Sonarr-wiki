@@ -70,6 +70,13 @@ In v2 we sat back and thought about it and realized the benefit is not really th
 ### Invalid Newznab URL entered ###
 First make sure you're using the correct URL (with https if applicable), such as: `https://indexer.nzbdrone.com`, not `https://indexer.nzbdrone.com/api`. If you're still having issues please see [[Newznab]]
 
-
 ### database disk image is malformed ###
-This means your sqlite database that stores most of the information for NzbDrone is corrupt, there is an excellent guide here to copy the contents from the corrupt database into a new one: http://techblog.dorogin.com/2011/05/sqliteexception-database-disk-image-is.html 
+This means your sqlite database that stores most of the information for NzbDrone is corrupt, there is an excellent guide here to copy the contents from the corrupt database into a new one: http://techblog.dorogin.com/2011/05/sqliteexception-database-disk-image-is.html
+
+### Why does NzbDrone refresh series information so frequently? ###
+
+NzbDrone refreshes series and episode information in addition to rescanning the disk for files every 12 hours. This might seem aggressive, but is a very important process. The data refresh from trakt is important, because new episode information is synced down, air dates, number of episodes, status (continuing/ended). Even shows that aren't airing are being updated with new information.
+
+The disk scan is less important, but is used to check for new files that weren't sorted by NzbDrone and detect deleted files.
+
+The most time consuming portion is the information refresh (assuming reasonable disk access speed), larger shows take longer due to the number of episodes to process.
