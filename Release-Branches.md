@@ -7,8 +7,22 @@
 
 ## How to change your branch ##
 
-1. Go to General Settings and show advanced settings (use the toggle by the save button).
+1. Go to Settings and then the General tab and show advanced settings (use the toggle by the save button).
 
 2. Under the Development section change the branch name to `develop`
 
 3. Save
+
+
+## Checking the release notes/changes ##
+
+1. Go to System and then the Updates tab
+
+2. The last 5 updates for that branch are shown here
+
+
+## Installing a newer version ##
+
+1. Go to System and then the Updates tab
+
+2. Newer versions that are not yet installed will have an update button next to them, clicking that button will install the update.
