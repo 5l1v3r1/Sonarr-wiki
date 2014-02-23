@@ -36,9 +36,20 @@
 
 ### Other ###
 
-** Install dependencies **
-mono (2.10.8+ but 3.2+ is recommended)
-mediainfo (for processing files on import)
-sqlite3 (database)
+**Install dependencies**
 
-** Download mono from: http://update.nzbdrone.com/v2/master/mono/ **
+    mono (2.10.8+ but 3.2+ is recommended)
+    mediainfo (for processing files on import)
+    sqlite3 (database)
+
+**Download mono version**
+
+    http://update.nzbdrone.com/v2/master/mono/
+
+**Extract tar.gz**
+
+    tar xvfz NzbDrone.master.tar.gz
+
+**Run Nzbdrone with mono (debugging enabled)**
+
+    mono --debug NzbDrone.exe
