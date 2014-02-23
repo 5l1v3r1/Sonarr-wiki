@@ -8,9 +8,9 @@
 
 <sup>1</sup> The port will be opened on the firewall (if enabled) for the private profile only, if you're connected to a domain or a public network the port will not be opened automatically, but can be done so manually.
 
-# Linux
+# Linux #
 
-### Ubuntu/Debian
+### Ubuntu/Debian ###
 **Add NzbDrone's repository to your software source**
        
 
@@ -33,3 +33,12 @@
 **Automatically Start NzbDrone**
 
 [[Autostart on Linux]]
+
+### Other ###
+
+** Install dependencies **
+mono (2.10.8+ but 3.2+ is recommended)
+mediainfo (for processing files on import)
+sqlite3 (database)
+
+** Download mono from: http://update.nzbdrone.com/v2/master/mono/ **
