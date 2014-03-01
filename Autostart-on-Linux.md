@@ -81,3 +81,7 @@ on reboot i did notice it took a couple more seconds to login this is because th
 
 
 I cannot guarantee this will work but it seems to be working for me i am Linux newbie and this took me a while to figure out so hopefully by posting here it will help someone else avoid the trouble i went through 
+
+
+### FreeBSD/FreeNAS ###
+https://raw.github.com/tofagerl/freedrone/master/nzbdrone
