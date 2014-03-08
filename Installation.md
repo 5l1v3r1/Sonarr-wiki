@@ -11,6 +11,9 @@
 # Linux #
 
 ### Ubuntu/Debian ###
+**mono**
+It is recommended that you install  mono 3.2 instead of the default that is in the Ubuntu/Debian repo, this Stack Overflow answer has the steps to do it: http://stackoverflow.com/a/13384233/882971
+
 **Add NzbDrone's repository to your software source**
        
 
@@ -49,6 +52,36 @@
 **Extract tar.gz**
 
     tar xvfz NzbDrone.master.tar.gz
+
+**Run Nzbdrone with mono (debugging enabled)**
+
+    mono --debug NzbDrone.exe
+
+
+# OS X #
+
+**Install dependencies**
+
+***mono***
+	
+    mono - (x86 required)
+
+Download and run
+
+    http://download.mono-project.com/archive/3.2.4/macos-10-x86/MonoFramework-MRE-3.2.4.macos10.xamarin.x86.pkg
+
+***other***
+
+    mediainfo (for processing files on import)
+    sqlite3 (database)
+
+**Download**
+
+    http://update.nzbdrone.com/v2/master/osx/NzbDrone.master.osx.tar.gz
+
+**Extract tar.gz**
+
+    tar xvfz NzbDrone.master.osx.tar.gz
 
 **Run Nzbdrone with mono (debugging enabled)**
 
