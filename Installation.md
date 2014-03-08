@@ -45,9 +45,9 @@ It is recommended that you install  mono 3.2 instead of the default that is in t
     mediainfo (for processing files on import)
     sqlite3 (database)
 
-**Download mono version**
+**Download**
 
-    http://update.nzbdrone.com/v2/master/mono/
+http://update.nzbdrone.com/v2/master/mono/NzbDrone.master.tar.gz
 
 **Extract tar.gz**
 
@@ -77,7 +77,7 @@ Download and run
 
 **Download**
 
-    http://update.nzbdrone.com/v2/master/osx/NzbDrone.master.osx.tar.gz
+http://update.nzbdrone.com/v2/master/osx/NzbDrone.master.osx.tar.gz
 
 **Extract tar.gz**
 
