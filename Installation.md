@@ -81,8 +81,15 @@ http://update.nzbdrone.com/v2/master/osx/NzbDrone.master.osx.tar.gz
 
 **Extract tar.gz**
 
+You can do this via the command line
+
     tar xvfz NzbDrone.master.osx.tar.gz
+
+or through Finder, whatever works for you
 
 **Run Nzbdrone with mono (debugging enabled)**
 
-    mono --debug NzbDrone.exe
+1) Open Terminal
+2) Run mono with debugging enabled
+
+    mono --debug /full/path/to/extracted/NzbDrone/NzbDrone.exe
