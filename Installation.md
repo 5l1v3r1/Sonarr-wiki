@@ -72,8 +72,7 @@ Download and run
 
 ***other***
 
-    mediainfo (for processing files on import)
-    sqlite3 (database)
+mediainfo (for processing files on import) - http://mediaarea.net/en/MediaInfo/Download/Mac_OS
 
 **Download**
 
