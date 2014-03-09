@@ -312,3 +312,21 @@ All parameters (you should perform a GET/{id} and submit the full body with the 
   "id": 1
 }
 ````
+
+## DELETE/{id} ##
+
+##### Summary #####
+Delete the series with the given ID
+
+##### Parameters ######
+
+Required:
+`id (int)`
+
+Optional:
+`deleteFiles (bool)` - if true the series folder and all files will be deleted when the series is deleted
+
+##### Returns JsonObject ######
+````JSON
+{}
+````
