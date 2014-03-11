@@ -15,6 +15,7 @@
 - [[Backup and Restore]]
 - [[PushOver]]
 - [[Sorting and Renaming]]
+- [[Monitoring Series and Episodes]]
 
 ### Troubleshooting ###
 - [[Newznab]]
