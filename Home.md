@@ -22,7 +22,7 @@
 - [[Recovering from a Failed Update]]
 - [[Log Files]]
 
-### Contributing ###
+### Development ###
 - [[Contributing]]
 
 ### API ###
