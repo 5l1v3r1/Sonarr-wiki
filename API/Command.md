@@ -6,6 +6,7 @@ Publish a new command for NzbDrone to run
 ##### Parameters ######
 
 Required:
+
 `name (string)`
 
 ##### Returns ######
@@ -29,6 +30,7 @@ Refresh series information from trakt and rescan disk
 ##### Parameters ######
 
 Optional:
+
 `seriesId (int)` - if not set all series will be scanned
 
 ---
@@ -39,6 +41,7 @@ Refresh rescan disk for a single series
 ##### Parameters ######
 
 Required:
+
 `seriesId (int)`
 
 ---
@@ -49,6 +52,7 @@ Search for one or more episodes
 ##### Parameters ######
 
 Required:
+
 `episodeIds (int[])` - one or more episodeIds in an array
 
 ---
@@ -59,7 +63,9 @@ Search for all episodes of a particular season
 ##### Parameters ######
 
 Required:
+
 `seriesId (int)`
+
 `seasonNumber (int)`
 
 ---
@@ -70,4 +76,14 @@ Search for all episodes in a series
 ##### Parameters ######
 
 Required:
+
 `seriesId (int)`
+
+---
+
+### DownloadedEpisodesScanCommand ###
+Instruct NzbDrone to scan the DroneFactoryFolder
+
+##### Parameters ######
+
+`none`
