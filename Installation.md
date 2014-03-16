@@ -10,10 +10,10 @@
 
 # Linux #
 
-### Ubuntu/Debian ###
+### Ubuntu ###
 **mono**
 
-It is recommended that you install  mono 3.2 instead of the default that is in the Ubuntu/Debian repo, this Stack Overflow answer has the steps to do it: http://stackoverflow.com/a/13384233/882971
+It is recommended that you install  mono 3.2 instead of the default that is in the Ubuntu repo, this Stack Overflow answer has the steps to do it: http://stackoverflow.com/a/13384233/882971
 
 **Add NzbDrone's repository to your software source**
        
