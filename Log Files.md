@@ -6,3 +6,11 @@ The location of the log files depends on the OS, but is in NzbDrone's AppData di
 
 ##### Ubuntu #####
 `/home/<user>/.config/NzbDrone/logs`
+
+
+### Trace/Debug Logs ###
+You can enable Trace or Debug logging in Settings on the General tab, NzbDrone does not need to restarted for the change to take effect (this change only effects the log files, not the logging database).
+
+
+### Clearing Logs ###
+You can clear log files and the logs database directly from the UI, under System -> Logs -> Files and System -> Logs respectively.
