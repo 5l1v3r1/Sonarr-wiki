@@ -82,8 +82,10 @@ Required:
 ---
 
 ### DownloadedEpisodesScanCommand ###
-Instruct NzbDrone to scan the DroneFactoryFolder
+Instruct NzbDrone to scan the DroneFactoryFolder or a folder defined by the path variable
 
 ##### Parameters ######
 
-`none`
+Optional:
+
+`path (string)`
