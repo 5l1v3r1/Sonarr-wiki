@@ -5,20 +5,13 @@ All API endpoints are based off of `/api` if you access drone via `http://localh
 
 ## Authentication ##
 
-All requests made from a system other than localhost require authentication, either an API Key or Basic Authentication is supported, although it is recommended to use the API Key. Basic auth may be disabled on the API in a future version.
-
-API Key uses the X-Api-Key header for authentication.
+All requests made to the api endpoint require API Key authentication using the X-Api-Key header.
 
 ### API Key ###
 
-- Recommended
-- Found in Config.xml
+- Can be accessed and reset via Settings -> General
+- Stored in Config.xml
 - alpha-numeric (lower case)
-
-### Basic Auth ###
-
-- Not recommended
-- Username & Password
 
 ## Dates & Times ##
 
