@@ -41,7 +41,7 @@ NzbDrone use [trakt](http://trakt.tv/) for series/episode information and images
 
 ### I see that feature/bug X was fixed, why can't I see it?  ###
 NzbDrone consists of two main branches of code, master and develop, master is released periodically, when the develop branch is stable and develop is for pre-release testing and people willing to live on the edge, if you want to help out testing or want more information on the two branches, please see: [[Release-Branches]]
-When a feature is marked as Done (complete) it means its been fixed in develop, it won't be until the next release to the master branch after the feature is marked as Done that it will appear for most users.
+When a feature is marked as In Develop it will only be available to users running the develop branch, once its been move to Live (in master) it is officially released.
 
 ### Episode Progress - How is it calculated?  ###
 There are two parts to the episode count, one being the number of episodes (Episode Count) and the other being the number of episodes with files (Episode File Count), each one uses slightly different logic to give you the overall progress for a series or season.
