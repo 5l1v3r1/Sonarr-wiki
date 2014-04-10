@@ -31,7 +31,7 @@ Refresh series information from trakt and rescan disk
 
 Optional:
 
-`seriesId (int)` - if not set all series will be scanned
+`seriesId (int)` - if not set all series will be refreshed and scanned
 
 ---
 
@@ -40,9 +40,9 @@ Refresh rescan disk for a single series
 
 ##### Parameters ######
 
-Required:
+Optional:
 
-`seriesId (int)`
+`seriesId (int)` - if not set all series will be scanned
 
 ---
 
