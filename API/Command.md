@@ -89,3 +89,12 @@ Instruct NzbDrone to scan the DroneFactoryFolder or a folder defined by the path
 Optional:
 
 `path (string)`
+
+---
+
+### RssSyncCommand ###
+Instruct NzbDrone to perform an RSS sync with all enabled indexers
+
+##### Parameters ######
+
+None
