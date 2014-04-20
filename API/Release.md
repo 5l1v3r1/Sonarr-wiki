@@ -2,6 +2,9 @@
 
 ##### Params #####
 
+Required:
+`episodeId (int)`
+
 ##### Reponse #####
 ```JSON
 [
