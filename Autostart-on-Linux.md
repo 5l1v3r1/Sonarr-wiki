@@ -139,7 +139,7 @@ Press <kbd>Ctrl</kbd>+<kbd>X</kbd> then <kbd>y</kbd> to save.
 
 4) `sudo insserv -v nzbdrone`
 
-5) `/etc/init.d/nzbdrone start`
+5) `sudo /etc/init.d/nzbdrone start`
 
 Note: The script by default runs as root. I suggest adding an nzbdrone user (`useradd -m -d /var/lib/nzbdrone --gid nogroup nzbdrone`) and adjusting the script so that RUNASUSER=nzbdrone & RUNASGROUP=nogroup.
 
