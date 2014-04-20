@@ -63,13 +63,14 @@ Press <kbd>Ctrl</kbd>+<kbd>X</kbd> then <kbd>y</kbd> to save.
     DAEMON=/opt/NzbDrone/NzbDrone.exe
     DAEMONOPTS=""
      
-    DATADIR=~nzbdrone/
     PIDDIR=/var/run/${NAME}
     PIDFILE=${PIDDIR}/${NAME}.pid
      
-    RUNASUSER=nzbdrone
-    RUNASGROUP=nogroup
+    RUNASUSER=root
+    RUNASGROUP=root
     RUNAS=$RUNASUSER:$RUNASGROUP
+
+    DATADIR=~${RUNASUSER}/
      
     if ! [ -r ${DAEMON} ]; then echo "Can't read: ${DAEMON}" 2>&1; exit 1; fi
     if ! [ -x ${MONO} ]; then echo "Not executable: ${MONO}" 2>&1; exit 1; fi
@@ -140,6 +141,7 @@ Press <kbd>Ctrl</kbd>+<kbd>X</kbd> then <kbd>y</kbd> to save.
 
 5) `/etc/init.d/nzbdrone start`
 
+Note: The script by default runs as root. I suggest adding an nzbdrone user (`useradd -m -d /var/lib/nzbdrone --gid nogroup nzbdrone`) and adjusting the script so that RUNASUSER=nzbdrone & RUNASGROUP=nogroup.
 
 ### Method 3: RC.Local
 **Please Note: This is not the most elegant solution but it works**
