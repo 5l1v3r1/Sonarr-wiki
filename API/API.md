@@ -5,7 +5,7 @@ All API endpoints are based off of `/api` if you access drone via `http://localh
 
 ## Authentication ##
 
-All requests made to the api endpoint require API Key authentication using the X-Api-Key header.
+All requests made to the api endpoint require API Key authentication using the X-Api-Key header or using the apikey query string.
 
 ### API Key ###
 
