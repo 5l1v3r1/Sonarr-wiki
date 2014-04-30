@@ -19,4 +19,7 @@ All requests made to the api endpoint require API Key authentication using the X
 - Episodes (and episode based endpoints, missing & calendar) also include the airdate in the original timezone for display purposes
 - Date parameters should be ISO-8601 UTC dates to ensure proper handling by drone
 
+## Content Type ##
 
+- All POST/PUT requests require all parameters to be JSON encoded in the body, unless otherwise noted.
+- All GET requests will return a JSON encoded response
