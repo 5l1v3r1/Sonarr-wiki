@@ -4,6 +4,7 @@
 - [[FAQ]]
 
 ### Additional Configuration ###
+- [[Updating]]
 - [[SSL]]
 - [[Reverse Proxy]]
 - [[Release Branches]]
