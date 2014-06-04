@@ -64,6 +64,7 @@ With it, drone will only import a download once the download client reports it a
 If you don't wish to enable Completed Download Handling at all and wants to remove the warning. You can enable and then disable Completed Download Handling. This obviously isn't recommended.
 
 If you wish to enable Completed Download Handling you should verify the following:
+* **Warning**: Completed Download Handling only works properly if the download client and NzbDrone are on the same machine since it gets the path to be imported directly from the download client.
 * If you added a post-processing script to Sabnzbd/NzbGet to notify NzbDrone that it should scan the Drone Factory. You _SHOULD_ disable this script to prevent conflicts.
 * Completed Download Handling and the Drone Factory cannot be configured for the same directory. If Completed Download Handling detects a download resides in the Drone Factory it will be ignored. (again to prevent conflicts)  
    You should reconfigure NzbDrone to use a different Drone Factory Folder or disable it altogether.  
