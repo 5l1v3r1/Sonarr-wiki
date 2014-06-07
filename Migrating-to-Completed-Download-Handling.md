@@ -7,20 +7,25 @@
 Depending on your previous configuration you may have to deal with one of the following scenarios.
 The health check link will attempt to direct you to the scenario specific for your configuration.
 
-#### Conflicting Download Client Category ####
+#### Sabnzbd: Enable Completed Download Handling ####
 
-_Your Download Client is configured to use a category which put completed downloads in the Drone Factory._
-
-Simplest solution is to create a new category with different output path and configure NzbDrone to use that category instead.  
+Create a new category with different output path and configure NzbDrone to use that category instead.  
 Do not configure that category to use a Drone Factory post-processing script.
 
 Once that's done you're ready to enable Completed Download Handling.
 
-#### Enable Completed Download Handling ####
+#### Nzbget: Conflicting Download Client Category ####
+
+_Your Download Client is configured to use a category which put completed downloads in the Drone Factory._
+
+Create a new category with different output path and configure NzbDrone to use that category instead.  
+Do not configure that category to use a Drone Factory post-processing script.
+
+Once that's done you're ready to enable Completed Download Handling.
+
+#### Nzbget: Enable Completed Download Handling ####
 
 Enabling Completed Download Handling is as simple as toggling the switch on the NzbDrone Settings -> Download Client page.  
-However, you may run into a couple of issues depending on your previous configuration.  
-Primarily the one mentioned in _"Conflicting Download Client Category"_ above. Keep an eye out for Health Check warnings.
 
 #### Unsupported: Download Client on Different Computer ####
 
