@@ -1,4 +1,4 @@
-### Completed Download Handling vs Drone Factory ### 
+### Completed Download Handling vs Drone Factory ###
 
 **TODO: Pro con **
 
