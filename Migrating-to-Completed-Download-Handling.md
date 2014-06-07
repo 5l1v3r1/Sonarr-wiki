@@ -5,6 +5,7 @@
 ### Migration Scenarios ###
 
 Depending on your previous configuration you may have to deal with one of the following scenarios.
+The health check link will attempt to direct you to the scenario specific for your configuration.
 
 #### Conflicting Download Client Category ####
 
