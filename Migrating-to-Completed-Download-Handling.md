@@ -10,7 +10,6 @@ The health check link will attempt to direct you to the scenario specific for yo
 #### Sabnzbd: Enable Completed Download Handling ####
 
 Create a new category with different output path and configure NzbDrone to use that category instead.  
-Do not configure that category to use a Drone Factory post-processing script.
 
 Once that's done you're ready to enable Completed Download Handling.
 
@@ -19,7 +18,6 @@ Once that's done you're ready to enable Completed Download Handling.
 _Your Download Client is configured to use a category which put completed downloads in the Drone Factory._
 
 Create a new category with different output path and configure NzbDrone to use that category instead.  
-Do not configure that category to use a Drone Factory post-processing script.
 
 Once that's done you're ready to enable Completed Download Handling.
 
