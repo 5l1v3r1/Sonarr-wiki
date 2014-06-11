@@ -54,7 +54,7 @@ No existing file exists. if NzbDrone finds a WEBDL 720p release it would grab it
 Existing file exists at HDTV 720p. If a Bluray720p release is found it will be grabbed because the cutoff has not been met
 
 ##### Scenario 3 #####
-Existing file exists at WEBDL 720p. If a Bluray720p release is found it will be grabbed because the cutoff has been met.
+Existing file exists at WEBDL 720p. If a Bluray720p release is found it will not be grabbed because the cutoff has been met.
 
 ## Advanced Examples ##
 These examples show the power of a quality profile that has had the quality orders adjusted, they should only be used if you understand the pros and cons of this action.
