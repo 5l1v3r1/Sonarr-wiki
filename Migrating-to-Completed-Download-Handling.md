@@ -29,7 +29,7 @@ _Your Download Client is configured to use a category which put completed downlo
 
 Create a new category with different output path and configure NzbDrone to use that category instead.  
 
-Once that's done you're ready to enable Completed Download Handling.
+Once that's done you're ready to enable Completed Download Handling. No need to adjust the Drone Factory Folder.
 
 #### Nzbget: Enable Completed Download Handling ####
 
