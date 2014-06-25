@@ -7,6 +7,7 @@ Pros and cons for moving to Completed download handling:
 - Doesn't scan your hard drive every minute for new downloads to complete
 - Waits for files to be extracted by your download client and post-processing script run before attempting to move it (should eliminate issues with partially extract files being moved)
 - Tracks downloads through post processing state (instead of showing as missing until its imported)
+- Gets the path to the download directly via the api, so the user doesn't have to configure it in drone.
 
 ##### Cons: #####
 - Requires drone and your download client to be on the same machine (they can be on different machines as long as both drone and your download client see the exact same path (not just the same location)
@@ -20,7 +21,7 @@ The health check link will attempt to direct you to the scenario specific for yo
 
 Create a new category with different output path and configure NzbDrone to use that category instead.  
 
-Once that's done you're ready to enable Completed Download Handling.
+Once that's done you're ready to enable Completed Download Handling. No need to adjust the Drone Factory Folder.
 
 #### Nzbget: Conflicting Download Client Category ####
 
