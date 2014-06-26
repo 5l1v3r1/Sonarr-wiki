@@ -19,7 +19,7 @@ In all examples the preference for quality is top down (qualities higher in the 
 Default SDTV profile.
 
 ##### Allowed #####
-DVD
+DVD  
 SDTV
 
 ###### Cutoff ######
@@ -39,12 +39,12 @@ No existing files exists. A search is performed and both SDTV and DVD are availa
 Default HDTV 720p profile.
 
 ##### Allowed #####
-Bluray 720p
-WEBDL 720p
+Bluray 720p  
+WEBDL 720p  
 HDTV 720p
 
 ###### Cutoff ######
-WEBDL 720p
+WEBDL 720p  
 
 
 ##### Scenario 1 #####
@@ -63,7 +63,7 @@ These examples show the power of a quality profile that has had the quality orde
 Want to watch in HDTV 720p the first time, but want to save disk space when archiving the file for later watching.
 
 ##### Allowed #####
-DVD
+DVD  
 HDTV 720p
 
 ###### Cutoff ######
