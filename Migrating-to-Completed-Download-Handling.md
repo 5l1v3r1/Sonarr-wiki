@@ -19,21 +19,29 @@ The health check link will attempt to direct you to the scenario specific for yo
 
 #### Sabnzbd: Enable Completed Download Handling ####
 
-Create a new category with different output path and configure NzbDrone to use that category instead.  
+Steps:
 
-Once that's done you're ready to enable Completed Download Handling. No need to adjust the Drone Factory Folder.
+1. Create a new category with different output path and select that category in the NzbDrone Nzbget settings page.  
+   Do **not** adjust the Drone Factory Folder to use the same path.  
+
+2. Once that's done you're ready to enable Completed Download Handling.
 
 #### Nzbget: Conflicting Download Client Category ####
 
 _Your Download Client is configured to use a category which put completed downloads in the Drone Factory._
 
-Create a new category with different output path and configure NzbDrone to use that category instead.  
+Steps:
 
-Once that's done you're ready to enable Completed Download Handling. No need to adjust the Drone Factory Folder.
+1. Create a new category with different output path and select that category in the NzbDrone Sabnzbd settings page.  
+   Do **not** adjust the Drone Factory Folder to use the same path.
+
+2. Once that's done you're ready to enable Completed Download Handling. 
 
 #### Nzbget: Enable Completed Download Handling ####
 
-Enabling Completed Download Handling is as simple as toggling the switch on the NzbDrone Settings -> Download Client page.  
+Steps:
+
+1. Enable Completed Download Handling by toggling the switch on the NzbDrone Settings -> Download Client page.  
 
 #### Unsupported: Download Client on Different Computer ####
 
@@ -41,26 +49,33 @@ _As mentioned earlier, Completed Download Handling gets the file path to the dow
 
 The best solution to this problem is to run NzbDrone and your Download Client on the same computer.
 
+_There are some advanced options to work around this limitation, but those will not be discussed here_
+
 ### Keeping Completed Download Handling disabled ###
 
-If you absolutely want to keep using the Drone Factory, enable and subsequently disable Completed Download Handling to get rid of the warning.  
+If you absolutely want to keep using the Drone Factory:
+
+1. Enable Completed Download Handling and Save.  
+2. Disable Completed Download Handling and Save.  
+
+This will permanently remove the warning.
 
 ### Advanced Configuration/Migration Options ###
 
 The above scenarios were written to avoid complex choices. If you're a Power User you might want to have a couple of different options:
 
-1. Change the Drone Factory folder to a different path. (this is actually what I did)  
-   You still have to remove the Drone Factory Post-Processing script, if you previously used it.
+* Change the Drone Factory folder to a different path. (this is actually what I did)  
+  You still have to remove the Drone Factory Post-Processing script, if you previously used it.
 
-2. Can change the output path of your existing category.  
-   You still have to remove the Drone Factory Post-Processing script, if you previously used it.
+* Change the output path of your existing category.  
+  You still have to remove the Drone Factory Post-Processing script, if you previously used it.
 
-3. Can simply disable the Drone Factory entirely.  
-   You still have to remove the Drone Factory Post-Processing script, if you previously used it.
+* Simply disable the Drone Factory entirely.  
+  You still have to remove the Drone Factory Post-Processing script, if you previously used it.
 
 Not creating a new category may cause a couple of old imported downloads to show up as queued, removing them from the Download Client history resolves that.
 
-_As you can see, a couple of choices and potential issues we tried to avoid._
+_As you can see, these are quite a number of choices and potential issues we tried to avoid by providing a couple of basic steps._
 
 
 
