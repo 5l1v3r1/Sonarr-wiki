@@ -39,6 +39,8 @@ Steps:
 
 #### Nzbget: Enable Completed Download Handling ####
 
+_NzbDrone didn't detect any potential conflicts with your configuration. So you should be ready to enable Completed Download Handling._
+
 Steps:
 
 1. Enable Completed Download Handling by toggling the switch on the NzbDrone Settings -> Download Client page.  
