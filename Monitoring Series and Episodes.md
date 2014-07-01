@@ -24,12 +24,12 @@ A season's monitored state can be toggled from the following locations within Nz
 
 ## Episode ##
 
-If you came here looking for an answer why NzbDrone does not automatically search for missing episodes, please view the [FAQ](https://github.com/NzbDrone/NzbDrone/wiki/FAQ#why-doesnt-nzbdrone-automatically-search-for-missing-episodeshttps://github.com/NzbDrone/NzbDrone/wiki/FAQ#why-doesnt-nzbdrone-automatically-search-for-missing-episodes).
+If you came here looking for an answer why NzbDrone does not automatically search for missing episodes, please view the [FAQ](https://github.com/NzbDrone/NzbDrone/wiki/FAQ#why-doesnt-nzbdrone-automatically-search-for-missing-episodes).
 
 
 If an episode is not monitored then it will not be grabbed, regardless of the monitored state of the series. If an episode is monitored and the series is not, it will be considered unmonitored.
 
-An episodes' monitored state can be toggled from the following locations within NzbDrone:
+An episode's monitored state can be toggled from the following locations within NzbDrone:
 
 - Series Details
 	- Use the bookmark icon next to the episode number on the left side
