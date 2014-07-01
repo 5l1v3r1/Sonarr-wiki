@@ -1,21 +1,21 @@
 ## Series ##
 
-If a series is monitored episodes in that series can be grabbed, depending on their monitored state, if it is not monitored then no episodes in that series will be grabbed.
+If a series is monitored then the episodes in that series can be grabbed, depending on their monitored state. If a season is not monitored then no episodes in that series will be grabbed.
 
-Series' can be be set as monitored from the following locations:
+Series' can be be set as monitored from the following locations in NzbDrone:
 
 - Series Details
-	- Use the bookmark icon to the left of the the title
+	- Use the bookmark icon to the left of the the title.
 - Series Editor
-	- Select one or more series and use the drop down before pressing save
+	- Select one or more series and use the drop down before pressing save.
 - Season Pass
-	- Use the bookmark icon to the left of the title
+	- Use the bookmark icon to the left of the title.
 
 ## Season ##
 	
-Unmonitoring a season will unmonitor the episodes in that season, both current and future. If a season is unmonitored episodes with in that season can still be marked as monitored as they are not blocked in the same way as when a series is unmonitored.
+Unmonitoring a season will unmonitor the episodes in that season, both current and future. If a season is unmonitored then the episodes within that season can still be marked as monitored. These episode will not be blocked in the same way as when a series is unmonitored.
 
-A season's monitored state can be toggled from the following locations:
+A season's monitored state can be toggled from the following locations within NzbDrone:
 
 - Series Details
 	- Use the bookmark icon to the left of the season header
@@ -24,9 +24,12 @@ A season's monitored state can be toggled from the following locations:
 
 ## Episode ##
 
-If an episode is not monitored it will not be grabbed, regardless of the monitored state of the series, but if an episode is monitored and the series is not, it will be considered unmonitored.
+If you came here looking for an answer why NzbDrone does not automatically search for missing episodes, please view the [FAQ](https://github.com/NzbDrone/NzbDrone/wiki/FAQ#why-doesnt-nzbdrone-automatically-search-for-missing-episodeshttps://github.com/NzbDrone/NzbDrone/wiki/FAQ#why-doesnt-nzbdrone-automatically-search-for-missing-episodes).
 
-An episodes's monitored state can be toggled from the following locations:
+
+If an episode is not monitored then it will not be grabbed, regardless of the monitored state of the series. If an episode is monitored and the series is not, it will be considered unmonitored.
+
+An episodes' monitored state can be toggled from the following locations within NzbDrone:
 
 - Series Details
 	- Use the bookmark icon next to the episode number on the left side
