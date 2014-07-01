@@ -1,5 +1,5 @@
 ### Does NzbDrone require a SABnzbd post-processing script to import downloaded episodes?  ###
-No. as long as you set the Drone Factory path `Settings > Download Client > Drone Factory` to the folder where sab downloads your TV Shows everything will be imported automatically. [[Sorting and Renaming]]
+No. As long as you set the Drone Factory path `Settings > Download Client > Drone Factory` to the folder where sab downloads your TV Shows everything will be imported automatically. [[Sorting and Renaming]]
 
 ### How does NzbDrone find episodes?  ###
 NzbDrone doesn't actively search for any episodes on its own, it uses the indexer's latest releases to find recently posted episodes. Typically the indexer returns the last 100 releases, which isn't much, so be wary if you shut your system down for an extended period of time you might miss some newly release episodes. also, sometimes older episodes are re-posted and might get downloaded if you haven't ignored them. Missing episodes are not actively searched for (missing is anything that aired prior to the current time), unless that episode has not yet been posted (aired recently) or is re-posted you will need to manually search for them.
@@ -31,7 +31,7 @@ NzbDrone relies on being able to match titles, often the scene posts episodes us
 1. Make sure it hasn't already been requested. [Requested Mappings](https://docs.google.com/spreadsheet/ccc?key=0Atcf2VZ47O8tdGdQN1ZTbjFRanhFSTBlU0xhbzhuMGc#gid=0) 
 2. Make a new request here: [Scene Mapping Request Form]( https://docs.google.com/forms/d/15S6FKZf5dDXOThH4Gkp3QCNtS9Q-AmxIiOpEBJJxi-o/viewform)
 
-*Typically these are added the next day, if I'm available earlier and asked nicely in IRC I can expedite the*m
+*Typically these are added the next day, if I'm available earlier and asked nicely in IRC I can expedite them*
 
 ### Why can't I add a new show to NzbDrone, its on TheTVDB? ###
 NzbDrone use [trakt](http://trakt.tv/) for series/episode information and images (fanart, banners, images). Here are some reasons why you might not be able to find your show:
@@ -60,18 +60,18 @@ NzbDrone was unable to read your config file on start-up as it became corrupted 
 ### How do I access NzbDrone from another computer?  ###
 By default NzbDrone doesn't listen to requests from all systems (when not run as administrator), it will only listen on localhost, this is due to how the Web Server NzbDrone uses integrates with Windows (this also applies for current alternatives). If NzbDrone is run as an administrator it will correctly register itself with Windows as well as open the Firewall port so it can be accessed from other systems on your network. Running as admin only needs to happen once (if you change the port it will need to be re-run).
 
-### Why doesn't NzbDrone automatically search for missing episodes ###
+### Why doesn't NzbDrone automatically search for missing episodes? ###
 There are two times when we would want to have missing episodes searched for, when a new series with existing aired episodes is added and when NzbDrone has been offline and unable to find episodes as it normally would. Endlessly searching for episodes that have aired that are missing is a waste of resources, both in terms of local processing power and on the indexers and in our experience catches users off guard, wasting bandwidth.
 
 In v1 of NzbDrone we had an opt in backlog search option, often people would turn it on and then get a bunch of old episodes and ask us why, we also had indexers ask why they saw an increase in API calls, which was due to the backlog searching.
 
 In v2 we sat back and thought about it and realized the benefit is not really there, we could try to throttle the searching, but that just draws it out and still does the same thing; hammer the indexer with useless requests. If the episode wasn't there the last time the search was performed, why would it be there now? It would be if it was reposted, but if it was reposted, the automatic process that gets new episodes would see it was posted and act on it.
 
-### Invalid Newznab URL entered ###
+### I am getting an error: Invalid Newznab URL entered. ###
 First make sure you're using the correct URL (with https if applicable), such as: `https://indexer.nzbdrone.com`, not `https://indexer.nzbdrone.com/api`. If you're still having issues please see [[Newznab]]
 
-### database disk image is malformed ###
-This means your sqlite database that stores most of the information for NzbDrone is corrupt, there is an excellent guide here to copy the contents from the corrupt database into a new one: http://techblog.dorogin.com/2011/05/sqliteexception-database-disk-image-is.html
+### I am getting an error: Database disk image is malformed. ###
+This means your sqlite database that stores most of the information for NzbDrone is corrupt. There is an excellent guide here to copy the contents from the corrupt database into a new one: http://techblog.dorogin.com/2011/05/sqliteexception-database-disk-image-is.html
 
 ### Why does NzbDrone refresh series information so frequently? ###
 
