@@ -102,3 +102,9 @@ Obviously, the only way to remedy it is to add another indexer.
 #### Missing root folder ####
 
 _**TODO**_
+
+This message may appear if a previous root folder is no longer used. To remove old root folders:
+
+1. Begin adding a new Series by searching for a name, but do not submit
+2. In the 'Path' dropdown, select 'Add a different path'
+3. Click the cross at the end of a row to remove the unused path 
