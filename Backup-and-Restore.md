@@ -1,12 +1,19 @@
 ## Backing up NzbDrone ##
 
+#### Using built-in backup ####
+
+1. Go to System: Backup in the drone UI
+2. Click the Backup button
+3. Download the zip after the backup is created for safe keeping
+
+#### Using file system directly ####
 1. Find the location of the AppData directory for NzbDrone
-	- Via the WebUI go to System: Info
+	- Via the drone UI go to System: Info
 	- Defaults
 		- Windows - C:\ProgramData\NzbDrone
 		- Ubuntu - \home\user\\.config\NzbDrone
 
-2. Stop NzbDrone - Not mandatory, but will prevent write locks
+2. Stop NzbDrone - This will prevent the database from being corrupted
 3. Copy the contents to a safe location
 
 ## Restoring from Backup ##
