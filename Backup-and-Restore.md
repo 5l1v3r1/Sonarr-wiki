@@ -18,10 +18,22 @@
 
 ## Restoring from Backup ##
 
+#### Using zip backup ####
+
 1. Re-install NzbDrone
 2. Run NzbDrone once to get the AppData directory location
 3. Stop NzbDrone
-4. Delete the contents of the AppData directory (the one created in step 2)
+4. Extract the backup
+5. Delete the contents of the AppData directory
+6. Restore the files extracted from the zip
+7. Start NzbDrone
+8. As long as the paths are the same, everything will pickup where it left off
+
+#### Using file system backup ####
+1. Re-install NzbDrone
+2. Run NzbDrone once to get the AppData directory location
+3. Stop NzbDrone
+4. Delete the contents of the AppData directory
 5. Restore from your backup
 6. Start NzbDrone
 7. As long as the paths are the same, everything will pickup where it left off
