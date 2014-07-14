@@ -1,6 +1,6 @@
 # Autostart on Debian using init.d script
 
-The instructions for Ubuntu/Debian did not seem to work for Debian very well, and the pid got lost whenever NzbDrone was restarted via the web-ui, so I've included my working script here init.d script here.
+The instructions for Ubuntu/Debian did not seem to work for Debian very well, and the pid got lost whenever NzbDrone was restarted via the web-ui, so I've included a working script here init.d script here.
 
 **Create and edit the nzbdrone init.d script**
        
