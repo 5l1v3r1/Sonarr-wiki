@@ -93,7 +93,7 @@ The instructions for Ubuntu/Debian did not seem to work for Debian very well, an
 
 **Update rc.d**
 
-	sudo update-rc.d
+	sudo update-rc.d nzbdrone defaults
 
 **Start NzbDrone**
 
