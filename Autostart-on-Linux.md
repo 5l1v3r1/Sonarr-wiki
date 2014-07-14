@@ -1,4 +1,4 @@
-### Method 1 (Recommended): Upstart (Ubuntu/Debian based distros)
+### Method 1 (Recommended): Upstart (Ubuntu based distros)
 Using Upstart allows for more advanced features, such as start/stop and automatic restart if it would crash.
 
 **Create the NzbDrone Upstart config file**
@@ -143,7 +143,12 @@ Press <kbd>Ctrl</kbd>+<kbd>X</kbd> then <kbd>y</kbd> to save.
 
 Note: The script by default runs as root. I suggest adding an nzbdrone user (`useradd -m -d /var/lib/nzbdrone --gid nogroup nzbdrone`) and adjusting the script so that RUNASUSER=nzbdrone & RUNASGROUP=nogroup.
 
-### Method 3: RC.Local
+### Method 3: init.d script (Debian)###
+
+Please see [here](https://github.com/NzbDrone/NzbDrone/wiki/Autostart-on-Debian).
+
+
+### Method 4: RC.Local
 **Please Note: This is not the most elegant solution but it works**
 ***
 **This Method Provided by:** protocol77
@@ -191,6 +196,7 @@ on reboot i did notice it took a couple more seconds to login this is because th
 
 
 I cannot guarantee this will work but it seems to be working for me i am Linux newbie and this took me a while to figure out so hopefully by posting here it will help someone else avoid the trouble i went through 
+
 
 
 ### FreeBSD/FreeNAS ###
