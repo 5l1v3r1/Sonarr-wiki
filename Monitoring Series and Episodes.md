@@ -1,6 +1,6 @@
 ## Series ##
 
-If a series is monitored then the episodes in that series can be grabbed, depending on their monitored state. If a season is not monitored then no episodes in that series will be grabbed.
+If a series is monitored then the episodes in that series can be grabbed, depending on their monitored state. If a series is not monitored then no episodes in that series will be grabbed.
 
 Series' can be be set as monitored from the following locations in NzbDrone:
 
