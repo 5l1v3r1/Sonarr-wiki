@@ -83,6 +83,7 @@ To avoid conflicts NzbDrone will ignore those downloads during it's Completed Do
 This is a suboptimal situation since this effectively disabled Completed Download Handling.
 
 Resolution: Configure the Drone Factory to use a different folder.
+
 _**TODO: Reword**_
 
 ### Indexers ###
