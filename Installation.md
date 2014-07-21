@@ -38,6 +38,9 @@ It is recommended that you install  mono 3.2 instead of the default that is in t
 
 [[Autostart on Linux]]
 
+### CentOS / Fedora / RHEL ###
+[[CentOS 6 Installation Instructions|CentOS 6]]
+
 ### Other ###
 
 **Install dependencies**
