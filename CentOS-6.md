@@ -29,7 +29,7 @@ The installation assumes that you're not using the root user to install/run NZBD
     The OpenSuse mono-opt will be installed under /opt so it can probably coexist with the CentOS mono-core (i havent tested this myself!)
 
     ```bash
-    sudo yum install gcc-c++ gcc mediainfo gettext mono-opt mono-opt-devel
+    sudo yum install gcc-c++ gcc mediainfo libzen libmediainfo curl gettext mono-opt mono-opt-devel
     ```
 
 4. **Download sqlite3.8.5 source and extract it**
