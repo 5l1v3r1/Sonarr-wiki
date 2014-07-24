@@ -76,6 +76,8 @@ The installation assumes that you're not using the root user to install/run NZBD
 
 7. **[Optional] Create link for NZBDrone configuraiton directory**
 
+    !!WARNING!! Will cause the config folder to be deleted during updates !!WARNING!!
+
     I wanted to keep NZB Drone files in the program directory, so i created a link
 
     ```bash
