@@ -31,7 +31,7 @@ NzbDrone relies on being able to match titles, often the scene posts episodes us
 1. Make sure it hasn't already been requested. [Requested Mappings](https://docs.google.com/spreadsheet/ccc?key=0Atcf2VZ47O8tdGdQN1ZTbjFRanhFSTBlU0xhbzhuMGc#gid=0) 
 2. Make a new request here: [Scene Mapping Request Form]( https://docs.google.com/forms/d/15S6FKZf5dDXOThH4Gkp3QCNtS9Q-AmxIiOpEBJJxi-o/viewform)
 
-*Typically these are added the next day, if I'm available earlier and asked nicely in IRC I can expedite them*
+*Typically these are added within 1-2 days*
 
 ### Why can't I add a new show to NzbDrone, its on TheTVDB? ###
 NzbDrone use [trakt](http://trakt.tv/) for series/episode information and images (fanart, banners, images). Here are some reasons why you might not be able to find your show:
