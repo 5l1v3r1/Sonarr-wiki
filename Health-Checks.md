@@ -23,12 +23,12 @@ This means NzbDrone will be unable to update itself. You'll have to update drone
 
 #### Updating will not be possible to prevent deleting AppData on Update ####
 
-NzbDrone detected that AppData folder for your Operating System is located inside the directory that contains the NzbDrone binaries. Normally it would be C:\ProgramData for Windows and, ~/.config for linux.   
+NzbDrone detected that AppData folder for your Operating System is located inside the directory that contains the NzbDrone binaries. Normally it would be ```C:\ProgramData``` for Windows and, ```~/.config``` for linux.   
 Please look at System -> Info to see the current AppData & Startup directories.
 
 This means NzbDrone will be unable to update itself without risking data-loss.
 
-If you're on linux, you'll probably have to change the home directory for the user that is running NzbDrone and copy the current contents of the ~/.config/NzbDrone directory to preserve your database.
+If you're on linux, you'll probably have to change the home directory for the user that is running NzbDrone and copy the current contents of the ```~/.config/NzbDrone``` directory to preserve your database.
 
 ### Download Clients ###
 
