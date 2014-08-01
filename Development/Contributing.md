@@ -8,6 +8,7 @@ Setup guides, FAQ, the more information we have on the wiki the better.
 ## Development ##
 
 ### Tools required ###
+- Powershell 3.0
 - Visual Studio 2012
 - HTML/Javascript editor of choice (Sublime Text/Webstorm/etc)
 - npm (node package manager)
