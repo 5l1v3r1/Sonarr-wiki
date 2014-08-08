@@ -91,6 +91,10 @@ The instructions for Ubuntu/Debian did not seem to work for Debian very well, an
     
 ````    
 
+**Make it executable**
+
+	sudo chmod +x nzbdrone
+
 **Update rc.d**
 
 	sudo update-rc.d nzbdrone defaults
