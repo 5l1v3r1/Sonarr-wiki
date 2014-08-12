@@ -9,7 +9,7 @@ The location of the log files depends on the OS, but is in NzbDrone's AppData di
 
 
 ### Trace/Debug Logs ###
-You can enable Trace or Debug logging in Settings on the General tab, NzbDrone does not need to restarted for the change to take effect (this change only effects the log files, not the logging database).
+You can enable Trace or Debug logging in Settings on the General tab. NzbDrone does not need to restarted for the change to take effect. This change only effects the log files, not the logging database.
 
 
 ### Clearing Logs ###
