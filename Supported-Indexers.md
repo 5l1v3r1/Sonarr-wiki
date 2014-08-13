@@ -13,3 +13,17 @@ Website: https://omgwtfnzbs.org/
 ###Wombles###
 
 Wombles Index is a free RSS feed that reports recent public releases. Wombles does not support (backlog) searches and thus can only be used to grab new releases as they are posted.
+
+###Fanzub###
+
+Website: http://fanzub.com/
+
+Indexer for Japanese media (Anime) exclusively.
+
+###Animezb###
+
+Website: https://animezb.com/
+
+Indexer for Japanese media (Anime) exclusively.
+
+Animezb is meant to complement Fanzub since it indexes new releases more quickly.
