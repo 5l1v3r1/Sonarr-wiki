@@ -61,6 +61,11 @@ http://update.nzbdrone.com/v2/master/mono/NzbDrone.master.tar.gz
 
     mono --debug NzbDrone.exe
 
+# Docker
+
+You can use [razorgirl's Dockerfile](https://github.com/razorgirl/docker-nzbdrone) to quickly build your own isolated app container. It's based on the Linux instructions above.
+
+For more info about Docker check out the [official website](https://www.docker.com).
 
 # OS X #
 
