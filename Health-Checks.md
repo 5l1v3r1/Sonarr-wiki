@@ -19,7 +19,7 @@ _(This warning will not appear if your current version is less than 14 days old)
 
 #### Unable to update, running from write-protected folder ####
 
-This means NzbDrone will be unable to update itself. You'll have to update drone manually.
+This means NzbDrone will be unable to update itself. You'll have to update drone manually or set the permissions on drone's Startup directory (the installation directory) to allow drone to update itself.
 
 #### Updating will not be possible to prevent deleting AppData on Update ####
 
