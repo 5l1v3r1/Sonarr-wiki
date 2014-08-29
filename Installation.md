@@ -75,9 +75,9 @@ For more info about Docker check out the [official website](https://www.docker.c
 	
     mono - (x86 required)
 
-Download and run
+Download and run the mono installation
 
-    http://download.mono-project.com/archive/3.2.4/macos-10-x86/MonoFramework-MRE-3.2.4.macos10.xamarin.x86.pkg
+    http://www.mono-project.com/download/
 
 ***other***
 
