@@ -6,7 +6,7 @@ Create a plist with these contents, changing the path to NzbDrone.exe as require
 <plist version="1.0">
 <dict>
         <key>Label</key>
-        <string>NZBDrone.job</string>
+        <string>nzbdrone.job</string>
         <key>ProgramArguments</key>
         <array>
                 <string>mono</string>
@@ -21,4 +21,14 @@ Create a plist with these contents, changing the path to NzbDrone.exe as require
         <true/>
 </dict>
 </plist>
+```
+
+Save the plist to `~/Library/LauncherAgents/nzbdrone.plist`
+
+Execute these commands in the terminal
+
+```
+cd ~/Library/LaunchAgents
+launchctl load nzbdrone.plist
+launchctl start nzbdrone.job
 ```
