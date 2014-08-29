@@ -75,7 +75,7 @@ For more info about Docker check out the [official website](https://www.docker.c
 	
     mono - (x86 required)
 
-Download and run the mono installation
+Download and run the Mono MRE installation
 
     http://www.mono-project.com/download/
 
