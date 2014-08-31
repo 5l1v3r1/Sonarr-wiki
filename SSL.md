@@ -15,7 +15,7 @@ You will need to edit NzbDrone's config file directly as these settings are not 
 5. Verify SSL connectivity
 6. Restart NzbDrone in your preferred method (service, exe, console)
 
-## Linux ##
+## Linux / OS X ##
 
 ### Prerequisites ###
 - Windows PC (Conversion tool only works there currently, OpenSSL should be able to do it, but it needs to be done without a pass phrase)
