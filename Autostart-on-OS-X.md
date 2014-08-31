@@ -23,7 +23,7 @@ Create a plist with these contents, changing the path to NzbDrone.exe as require
 </plist>
 ```
 
-Save the plist to `~/Library/LauncherAgents/nzbdrone.plist`
+Save the plist to `~/Library/LaunchAgents/nzbdrone.plist`
 
 Execute these commands in the terminal
 
