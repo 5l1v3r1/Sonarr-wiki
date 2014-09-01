@@ -17,8 +17,6 @@ Create a plist with these contents, changing the path to NzbDrone.exe as require
         <true/>
         <key>AbandonProcessGroup</key>
         <true/>
-        <key>Disabled</key>
-        <true/>
 </dict>
 </plist>
 ```
