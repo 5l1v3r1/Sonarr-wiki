@@ -23,3 +23,19 @@ All requests made to the api endpoint require API Key authentication using the X
 
 - All POST/PUT requests require all parameters to be JSON encoded in the body, unless otherwise noted.
 - All GET requests will return a JSON encoded response
+
+## Endpoints ##
+
+- [[Calendar]]
+- [[Command]]
+- [[Diskspace]]
+- [[Episode]]
+- [[History]]
+- [[Missing]]
+- [[Queue]]
+- [[QualityProfile]]
+- [[Release]]
+- [[Rootfolder]]
+- [[Series]]
+- [[Series-Lookup]]
+- [[System-Status]]

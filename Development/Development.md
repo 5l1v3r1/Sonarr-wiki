@@ -1,3 +1,2 @@
-### [[Development]] ###
 - [[Contributing]]
 - [[Log Levels]]
