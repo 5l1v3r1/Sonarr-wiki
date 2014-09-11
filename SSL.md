@@ -20,10 +20,10 @@ You will need to edit NzbDrone's config file directly as these settings are not 
 ### Prerequisites ###
 - Windows PC (Conversion tool only works there currently, OpenSSL should be able to do it, but it needs to be done without a pass phrase)
 - SSL Cert with Private Key [(Create self-signed Certificate)](http://www.selfsignedcertificate.com/) then 	- Convert .key to .pvk
- 
- 		1. Download Win32 binary - http://www.drh-consultancy.demon.co.uk/pvk.html
- 		2. Extract Zip
- 		3. Run pvk.exe via Command Prompt with the following options: -in yourdomain.key -topvk -nocrypt -out yourdomain.pvk
+
+  1. Download Win32 binary - http://www.drh-consultancy.demon.co.uk/pvk.html
+  2. Extract Zip
+  3. Run pvk.exe via Command Prompt: `pvk.exe -in yourdomain.key -topvk -nocrypt -out yourdomain.pvk`
 - Load cert with httpcfg (comes with mono): httpcfg -add -port SSL_PORT -pvk yourdomain.pvk -cert yourdomain.crt
 
 *replace SSL_PORT with the SSL port you set in drone*
