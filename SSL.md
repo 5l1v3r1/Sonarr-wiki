@@ -23,7 +23,7 @@ You will need to edit NzbDrone's config file directly as these settings are not 
  
  		1. Download Win32 binary - http://www.drh-consultancy.demon.co.uk/pvk.html
  		2. Extract Zip
- 		3. Run pvk.exe with the following options: pvk -in yourdomain.key -topvk -nocrypt -out yourdomain.pvk
+ 		3. Run pvk.exe via Command Prompt with the following options: -in yourdomain.key -topvk -nocrypt -out yourdomain.pvk
 - Load cert with httpcfg (comes with mono): httpcfg -add -port SSL_PORT -pvk yourdomain.pvk -cert yourdomain.crt
 
 *replace SSL_PORT with the SSL port you set in drone*
