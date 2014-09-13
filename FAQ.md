@@ -33,6 +33,9 @@ NzbDrone relies on being able to match titles, often the scene posts episodes us
 
 *Typically these are added within 1-2 days*
 
+### NzbDrone grabbed a release, why can't it import it? ###
+The reason it was able to grab the release in the first place was because the indexer returned the tv rage ID for the series and NzbDrone was able to match it to that, but that ID is not available during import, so it fails.
+
 ### Why can't I add a new show to NzbDrone, its on TheTVDB? ###
 NzbDrone use [trakt](http://trakt.tv/) for series/episode information and images (fanart, banners, images). Here are some reasons why you might not be able to find your show:
 
