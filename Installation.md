@@ -79,6 +79,8 @@ Download and run the Mono MRE installation
 
     http://www.mono-project.com/download/
 
+**Do not `brew install mono`.**
+
 ***other***
 
 mediainfo (for processing files on import) - http://mediaarea.net/en/MediaInfo/Download/Mac_OS
