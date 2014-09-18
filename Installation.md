@@ -13,7 +13,7 @@
 ### Ubuntu ###
 **mono**
 
-It is recommended that you install  mono 3.2 instead of the default that is in the Ubuntu repo, this Stack Overflow answer has the steps to do it: http://stackoverflow.com/a/13384233/882971
+It is recommended that you install  mono 3.6+ instead of the default that is in the Ubuntu repo, 3.2 has some stability issues and 3.4 has a bug that causes sqlite issues, you may have to compile it yourself: http://www.lovesmesomecode.com/20130719-compiling-mono-3-in-ubuntu/
 
 **Add NzbDrone's repository to your software source**
        
