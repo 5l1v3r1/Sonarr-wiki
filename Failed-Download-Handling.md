@@ -1,5 +1,3 @@
-Failed downloading currently only works with SABnzbd
-
 There are a couple components that make up the failed download handling process:
 
 1) Check SABnzbd Queue and History for failed downloads
