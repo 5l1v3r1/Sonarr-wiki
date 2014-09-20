@@ -1,4 +1,4 @@
-failed Download Handling is compatible with SABnzbd and NZBGet.
+Failed Download Handling is compatible with SABnzbd and NZBGet.
 
 There are a couple components that make up the failed download handling process:
 
