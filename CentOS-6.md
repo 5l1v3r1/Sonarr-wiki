@@ -1,10 +1,10 @@
-The following instructions are for installing NZBDrone on CentOS 6.
+The following instructions are for installing NzbDrone on CentOS 6.
 
 The installation should also be applicable to RHEL 6 and Fedora (12, 13, or 14) with minimal changes.
 
 The installation assumes that you're not using the root user to install/run NZBDrone - the entries for **user:group** throughout the document will have to be modified to match your user configuration. 
 
-### Install NZBDrone
+### Install NzbDrone
 
 1. **[Optional] Configure sudo for your user**
     ```bash
@@ -18,7 +18,7 @@ The installation assumes that you're not using the root user to install/run NZBD
     Mono: is needed for mono-opt and mono-opt-devel installation
 
    ```bash
-   sudo rpm -ivh http://mirror.cs.pitt.edu/fedora/epel/6/i386/epel-release-6-8.noarch.rpm
+   sudo rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
    sudo curl -L http://download.opensuse.org/repositories/home:tpokorra:mono/CentOS_CentOS-6/home:tpokorra:mono.repo -o /etc/yum.repos.d/mono.repo
    ```
 
@@ -60,21 +60,21 @@ The installation assumes that you're not using the root user to install/run NZBD
     sudo make install
     ```
 
-6. **Download and extract mono and optionaly rename it**
+6. **Download and extract NzbDrone and optionally rename it**
     
     ```bash
     curl -L http://update.nzbdrone.com/v2/master/mono/NzbDrone.master.tar.gz -o /tmp/NzbDrone.master.tar.gz
     sudo tar zxvf /tmp/NzbDrone.master.tar.gz -C /opt/
     ```
 
-    I wanted to maintain lowercase naming so i renamed the NzbDrone program directory
+    I wanted to maintain lower-case naming so I renamed the NzbDrone program directory
     <br>
     ```bash
     sudo mv /opt/NzbDrone /opt/nzbdrone
     ```
 
 
-7. **[Optional] Create link for NZBDrone configuraiton directory**
+7. **[Optional] Create link for NzbDrone configuration directory**
 
     !!WARNING!! Will cause the config folder to be deleted during updates !!WARNING!!
 
@@ -87,7 +87,7 @@ The installation assumes that you're not using the root user to install/run NZBD
     ln -s /opt/nzbdrone/config/ ~/.config/NzbDrone
     ```
 
-8. **Run NZBDrone to test**
+8. **Run NzbDrone to test**
 
     Just run it to verify everything is working the stop it (CTRL-C) and move to the next steps.
     
@@ -97,7 +97,7 @@ The installation assumes that you're not using the root user to install/run NZBD
         <br>
             2. Run NZB Drone
         <br>
-            3. Set the enviroment back to normal.
+            3. Set the environment back to normal.
 
     ```bash
     export LPATH_BAK=$LD_LIBRARY_PATH ; export PATH_BAK=$PATH   && \
@@ -107,7 +107,7 @@ The installation assumes that you're not using the root user to install/run NZBD
     export PATH=$PATH_BAK ; export LD_LIBRARY_PATH=$LPATH_BAK
     ```
 
-### Create NZBDrone init Service
+### Create NzbDrone init Service
 
 1. **Download init script and configuration files**
 
@@ -122,26 +122,26 @@ The installation assumes that you're not using the root user to install/run NZBD
     sudo chmod 644 /etc/sysconfig/nzbdrone
     ```
 
-2. **Edit the configration file to suit your enviroment**
+2. **Edit the configuration file to suit your environment**
 
     If you followed the instructions above without changing any of the installation paths the only change you'll need to make is to the nzbdroneUser.
     ```bash
     sudo vi /etc/sysconfig/nzbdrone
     ```
 
-3. **Add the nzbdrone service to system services**
+3. **Add the NzbDrone service to system services**
     
     ```bash
     sudo chkconfig --add nzbdrone
     ```
 
-4. **Configure nzbdrone service to start on system startup**
+4. **Configure NzbDrone service to start on system start up**
     
     ```bash
     sudo chkconfig nzbdrone on
     ```
 
-5. **Start nzbdrone service**
+5. **Start NzbDrone service**
     
     ```bash
     sudo service nzbdrone start
