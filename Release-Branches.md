@@ -13,6 +13,11 @@
 
 3. Save
 
+### For Ubuntu/Debian ###
+
+You probably should update your sources.list file too if you installed using aptitude/apt-get:
+
+    deb http://update.nzbdrone.com/repos/apt/debian develop main
 
 ## Checking the release notes/changes ##
 
