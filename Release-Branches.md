@@ -13,7 +13,7 @@
 
 3. Save
 
-### For Ubuntu/Debian ###
+#### For Ubuntu/Debian ####
 
 You probably should update your sources.list file too if you installed using aptitude/apt-get:
 
