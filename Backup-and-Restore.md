@@ -11,7 +11,8 @@
 	- Via the drone UI go to System: Info
 	- Defaults
 		- Windows - C:\ProgramData\NzbDrone
-		- Ubuntu - \home\user\\.config\NzbDrone
+		- Ubuntu - /home/user/.config/NzbDrone
+		- Synology - /usr/local/nzbdrone/var/.config/NzbDrone
 
 2. Stop NzbDrone - This will prevent the database from being corrupted
 3. Copy the contents to a safe location
