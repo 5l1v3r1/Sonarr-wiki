@@ -47,5 +47,6 @@ CAUTION: Restoring on a Synology requires knowledge of Linux and Root SSH access
 4. Connect to the Synology NAS through SSH and login as root
 5. execute the following commands
 `rm -r /usr/local/nzbdrone/var/.config/NzbDrone/nzbdrone.db-* 
-cp -f /tmp/nzbdrone_backup/. /usr/local/nzbdrone/var/.config/NzbDrone/`
+cp -f /tmp/nzbdrone_backup/. /usr/local/nzbdrone/var/.config/NzbDrone/
+`
 6. Start NzbDrone
