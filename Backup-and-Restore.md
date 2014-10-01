@@ -38,3 +38,14 @@
 5. Restore from your backup
 6. Start NzbDrone
 7. As long as the paths are the same, everything will pickup where it left off
+
+### Restore for Synology NAS ###
+CAUTION: Restoring on a Synology requires knowledge of Linux and Root SSH access to the Synology Device.
+1. Re-install NzbDrone
+2. Run NzbDrone once to get the AppData directory location
+3. Stop NzbDrone
+4. Connect to the Synology NAS through SSH and login as root
+5. execute the following commands
+`rm -r /usr/local/nzbdrone/var/.config/NzbDrone/nzbdrone.db-* 
+cp -f /tmp/nzbdrone_backup/. /usr/local/nzbdrone/var/.config/NzbDrone/`
+6. Start NzbDrone
