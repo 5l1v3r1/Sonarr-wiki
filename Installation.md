@@ -102,4 +102,21 @@ or through Finder, whatever works for you
 1) Open Terminal
 2) Run mono with debugging enabled
 
-    mono --debug /full/path/to/extracted/NzbDrone/NzbDrone.exe
+    mono --debug /full/path/to/extracted/NzbDrone/NzbDrone.exe  
+
+# Synology #
+CAUTION: requires knowledge of Linux and Root SSH access to the Synology device.  
+Note: This is not a full Synology Update, although the NzbDrone is updated, it will still show the old version in the Synology Gui!  
+1. Setup the package for the synocommunity  
+2. install the synocommunity package and start when finished  
+3. Stop NzbDrone.  
+4. SSH to the Synology NAS.  
+5. perform the following commands  
+
+	cd /volume1/@appstore/nzbdrone/share  
+	wget http://update.nzbdrone.com/v2/master/mono/NzbDrone.master.tar.gz  
+	tar zxvf NabDrone.master.tar.gz  
+	cd NzbDrone/  
+	chown -R nzbdrone:root *  
+
+6. start NzbDrone through the GUI
