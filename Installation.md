@@ -106,7 +106,7 @@ or through Finder, whatever works for you
 
 # Synology #
 CAUTION: requires knowledge of Linux and Root SSH access to the Synology device.  
-Note: This is not a full Synology Update, although the NzbDrone is updated, it will still show the old version in the Synology Gui!  
+Note: This is not a normal Synology Package Update, although NzbDrone is updated, it will still show the old version in the Synology Gui, and when the package is updated, it will show update available!  
 1. Setup the package for the synocommunity  
 2. install the synocommunity package and start when finished  
 3. Stop NzbDrone.  
