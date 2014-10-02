@@ -122,4 +122,4 @@ or through Finder, whatever works for you
 * Click `Add`, type `SynoCommunity` as Name and `http://packages.synocommunity.com/` as Location and then press `OK` to validate.
 * Also, click `Beta` and then checkmark the option labeled: `Yes, I want beta versions!` and press `OK`
 
-**ADDITIONAL NOTES:** Completing Step 4 is highly recommended as it provides for future package updates via the SynoCommunity repo (as they become available.) Installing the packages by completing the above four steps will provide you with the latest packages available and is the recommended installation method. Installing the packages directly from the SynoCommunity repo is not recommended at this time because those packages are out-of-date.
+**ADDITIONAL NOTES:** Completing Step 4 is highly recommended as it provides for future package updates via the SynoCommunity repo (as they become available.) Installing the packages by completing the above four steps will provide you with the latest packages available and is the recommended installation method. Installing the packages directly from the SynoCommunity repo is not recommended at this time because the repo packages are out-of-date.
