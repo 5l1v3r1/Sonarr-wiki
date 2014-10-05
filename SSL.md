@@ -11,6 +11,7 @@ You will need to edit NzbDrone's config file directly as these settings are not 
 1. Go to Settings -> General
 2. Show advanced options
 3. Enable SSL, set the SSL port and Certificate Hash (drone will remove all spaces from the hash as they are not required).
+_Important: Do not copy / paste the Certificate Hash from MMC as this may cause phantom characters. Instead, manually type each character (without spaces) into the field._
 4. Restart NzbDrone.exe or NzbDrone.Console.exe as administrator (so the SSL URL and Certificate can be registered with Windows).
 5. Verify SSL connectivity
 6. Restart NzbDrone in your preferred method (service, exe, console)
