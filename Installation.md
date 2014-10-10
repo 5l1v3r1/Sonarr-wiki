@@ -68,6 +68,7 @@ You can use [aostanin's Dockerfile](https://registry.hub.docker.com/u/aostanin/n
 For more info about Docker check out the [official website](https://www.docker.com).
 
 # OS X #
+[Install Nzbdrone OSX Screenshot Guide](http://www.htpcguides.com/install-nzbdrone-osx/)
 
 **Install dependencies**
 
