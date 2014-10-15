@@ -40,9 +40,9 @@ It is recommended that you install  mono 3.6+ instead of the default that is in 
 
 ### CentOS / Fedora / RHEL ###
 [[CentOS 6 Installation Instructions|CentOS 6]]
-
+### Raspberry Pi ###
+[Install Nzbdrone Raspberry Pi on Raspbian](http://www.htpcguides.com/install-nzbdrone-raspberry-pi-raspbian/)
 ### Other ###
-
 **Install dependencies**
 
     mono (2.10.8+ but 3.2+ is recommended)
