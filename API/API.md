@@ -30,6 +30,7 @@ All requests made to the api endpoint require API Key authentication using the X
 - [[Command]]
 - [[Diskspace]]
 - [[Episode]]
+- [[EpisodeFile]]
 - [[History]]
 - [[Missing]]
 - [[Queue]]
