@@ -6,9 +6,13 @@ Gets missing episode (episodes without files).
 ##### Parameters ######
 
 Required:
+
 `page (int)` - 1-indexed
+
 `pageSize (int)`
+
 `sortKey (string)` - `series.title` or `date`
+
 `sortDir (direction)` - `asc` or `desc`
 
 ##### Returns ######
