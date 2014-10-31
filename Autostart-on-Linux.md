@@ -20,7 +20,8 @@ setgid nogroup
 start on runlevel [2345]
 stop on runlevel [016]
 
-respawn
+#respawn will break the built-in updating, if you wish to enable respawn you need to make sure updates are disabled within the UI
+#respawn
 
 exec mono $DIR/NzbDrone.exe
 
