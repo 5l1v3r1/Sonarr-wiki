@@ -1,9 +1,9 @@
-## What is a quality profile ##
-A quality profile controls what qualities you want for a series, it lets you decide whether or not you want SDTV or HDTV only and if you eventually want episodes in DVD or Bluray. NzbDrone ships with a few default profiles, but you're able to edit and create your own to match your preferences. NzbDrone uses your quality profile when considering a release for grabbing.
+## What is a profile ##
+A profile controls what qualities you want for a series, it lets you decide whether or not you want SDTV or HDTV only and if you eventually want episodes in DVD or Bluray. NzbDrone ships with a few default profiles, but you're able to edit and create your own to match your preferences. Sonarr uses your profile when considering a release for grabbing.
 
-## What makes a quality profile? ##
+## What makes a profile? ##
 
-A quality profile is made up of allowed qualities and a cutoff.
+A profile is made up of allowed qualities and a cutoff.
 
 ### Allowed ###
 An allowed quality is a quality that you would want an episode to be in, in order for the release to be wanted.
