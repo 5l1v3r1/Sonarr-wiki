@@ -8,7 +8,7 @@
 - [[SSL]]
 - [[Reverse Proxy]]
 - [[Release Branches]]
-- [[Quality Profiles]]
+- [[Profiles]]
 - [[Disable Drone Factory Folder Scanning]]
 
 ### More Information ###
