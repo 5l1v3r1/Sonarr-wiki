@@ -19,7 +19,7 @@ It is recommended that you install  mono 3.6+ instead of the default that is in 
        
 
     sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FDA5DFFC
-    echo "deb http://update.nzbdrone.com/repos/apt/debian master main" | sudo tee -a /etc/apt/sources.list
+    echo "deb https://apt.sonarr.tv/repos/apt/debian master main" | sudo tee -a /etc/apt/sources.list
 
 **Install/Update NzbDrone**
 	
