@@ -21,6 +21,8 @@ It is recommended that you install  mono 3.6+ instead of the default that is in 
     sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FDA5DFFC
     echo "deb https://apt.sonarr.tv/ master main" | sudo tee -a /etc/apt/sources.list
 
+*If you have issues with the repo being https you can install the `apt-transport-https` package or switch to http*
+
 **Install/Update NzbDrone**
 	
 	sudo apt-get update
