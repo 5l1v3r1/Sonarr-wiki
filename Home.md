@@ -28,4 +28,4 @@
 - [[Contributing]]
 
 ### API ###
-- [[API]]
+- [API](/Sonarr/Sonarr/wiki/API)
