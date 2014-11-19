@@ -14,7 +14,7 @@
 
 **Raspberry Pi**
 
-Since armhf mono packages are not available through our repo you will need to install via the [tar.gz package](https://download.sonarr.tv/v2/master/latest/NzbDrone.master.tar.gz) since mono 3.6+ is required you will need to compile it until the repos contain a suitable version.
+Since armhf mono packages are not available through our repo you will need to install via the [tar.gz package](https://download.sonarr.tv/v2/master/latest/NzbDrone.master.tar.gz). Since mono 3.6+ is required you will need to compile it until the repos contain a suitable version.
 
 **mono**
 
