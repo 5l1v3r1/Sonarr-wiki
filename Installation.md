@@ -10,10 +10,14 @@
 
 # Linux #
 
-### Ubuntu ###
+### Debian/Ubuntu ###
+
+**Raspberry Pi**
+Since armhf mono packages are not available through our repo you will need to install via the [tar.gz package](https://download.sonarr.tv/v2/master/latest/NzbDrone.master.tar.gz) since mono 3.6+ is required you will need to compile it until the repos contain a suitable version.
+
 **mono**
 
-It is recommended that you install  mono 3.6+ instead of the default that is in the Ubuntu repo, 3.2 has some stability issues and 3.4 has a bug that causes sqlite issues, you may have to compile it yourself: http://www.lovesmesomecode.com/20130719-compiling-mono-3-in-ubuntu/
+mono 3.6+ is required instead of the default that is in the Ubuntu repo, 3.2 has some stability issues and 3.4 has a bug that causes sqlite issues, you may have to compile it yourself: http://www.lovesmesomecode.com/20130719-compiling-mono-3-in-ubuntu/
 
 **Add NzbDrone's repository to your software source**
        
@@ -47,7 +51,7 @@ It is recommended that you install  mono 3.6+ instead of the default that is in 
 ### Other ###
 **Install dependencies**
 
-    mono (2.10.8+ but 3.2+ is recommended)
+    mono (3.6+ but 3.10+ is recommended)
     mediainfo (for processing files on import)
     sqlite3 (database)
 
