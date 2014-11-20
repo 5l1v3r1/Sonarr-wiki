@@ -75,6 +75,6 @@ Website: http://torrentleech.org/
 | BroadcastheNet  |     Yes     |    Yes   |   Yes  |   Yes   |   -   |     -    |
 | Eztv            |     Yes     |    Yes   |   Yes  |    -    |   -   |     -    |
 | IPTorrents      |     Yes     |     -    |    -   |    -    |   -   |     -    |
-| KickassTorrents |     Yes     |    Yes   |   Yes  | Not Yet |   -   |   Basic  |
+| KickassTorrents |     Yes     |    Yes   |   Yes  |   Yes   |   -   |   Basic  |
 | Nyaa            |     Yes     |     -    |    -   |    -    |  Yes  |   Basic  |
 | Torrentleech    |     Yes     |     -    |    -   |    -    |   -   |     -    |
