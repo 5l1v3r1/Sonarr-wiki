@@ -2,7 +2,7 @@ The following instructions are for installing Sonarr/NzbDrone on Fedora 20.  The
 
 For system v init based versions of Fedora (anything prior to 15), reference the [[CentOS 6]] guide.
 
-Works on Fedora 21, however I suspect they will update the mono package for that distribution (check http://download.opensuse.org/repositories/home:/tpokorra:/mono/ for the repository).  
+Works on Fedora 21, however I suspect they will update the mono package for that distribution (check http://download.opensuse.org/repositories/home:/tpokorra:/mono/ for the repository.  At time of writing Fedora 21 had not yet been released.).  
 
 Automatic/scary install script at the end.
 
