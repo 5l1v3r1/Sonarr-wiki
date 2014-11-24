@@ -33,7 +33,7 @@ setenforce Permissive
 
 **Install Mono repository**
 
-Since modern versions of mono won't be added until Fedora 22, we need to add a repository.
+Since modern versions of mono won't be added until Fedora 22, we need to add a repository.  check http://download.opensuse.org/repositories/home:/tpokorra:/mono/ for the correct repository URL for your version.  The example below is for Fedora 20.
 
 ```bash
 wget -4 -O /etc/yum.repos.d/mono.repo http://download.opensuse.org/repositories/home:/tpokorra:/mono/Fedora_20/home:tpokorra:mono.repo
