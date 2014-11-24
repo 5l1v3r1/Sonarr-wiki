@@ -83,3 +83,7 @@ NzbDrone refreshes series and episode information in addition to rescanning the 
 The disk scan is less important, but is used to check for new files that weren't sorted by NzbDrone and detect deleted files.
 
 The most time consuming portion is the information refresh (assuming reasonable disk access speed), larger shows take longer due to the number of episodes to process.
+
+### Why is there a number above Activity? ###
+
+This number shows the count of episodes in your download client's queue and the last 30 items in its history that have not yet been imported. If the number is blue it is operating normally and should import episodes when they complete. Yellow means there is a warning on one of the episodes. Red means there has been an error. In the case of yellow (warning) and red (error), you will need to look at the queue under Activity to see what the issue is (hover over the icon to get more details).
