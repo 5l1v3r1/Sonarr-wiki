@@ -42,7 +42,8 @@ mono 3.10 is included for x86/x64 in our repo (mirrored from Xamarin's), for oth
 [[Autostart on Linux]]
 
 ### CentOS / Fedora / RHEL ###
-[[CentOS 6 Installation Instructions|CentOS 6]]
+[[CentOS 6 Installation Instructions|CentOS 6]]<br />
+[[Fedora Installation|Fedora 20]]
 ### Raspberry Pi ###
 [Install Nzbdrone Raspberry Pi on Raspbian](http://www.htpcguides.com/install-nzbdrone-raspberry-pi-raspbian/)
 ### Other ###
