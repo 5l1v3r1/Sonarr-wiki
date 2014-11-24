@@ -198,6 +198,54 @@ on reboot i did notice it took a couple more seconds to login this is because th
 
 I cannot guarantee this will work but it seems to be working for me i am Linux newbie and this took me a while to figure out so hopefully by posting here it will help someone else avoid the trouble i went through 
 
+## Systemd
+
+Modern Linux systems have been updated to use the new systemd standard.  The method is very simple and involves creating a service file then enabling it.
+
+**Create the service file**
+
+Be sure to modify the user, group, mono path and install directory.
+```bash
+cat > sonarr.service << EOF
+[Unit]
+Description=Sonarr Daemon
+After=syslog.target network.target
+
+[Service]
+User=<service username>
+Group=<service group>
+
+Type=simple
+ExecStart=<path to mono> <path to NzbDrone.exe> -nobrowser
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+**Move the file to your systemd system directory**
+
+Typically located in /usr/lib/systemd/system/, verify before proceeding.  Will differ based on distribution.
+
+```bash
+mv sonarr.service /usr/lib/systemd/system/
+```
+
+**Add Sonarr/NzbDrone to startup**
+
+```bash
+systemctl enable sonarr.service
+```
+
+**Start Sonarr/NzbDrone service**
+
+Start sonarr via systemd and verify status.
+    
+```bash
+systemctl start sonarr.service
+systemctl status sonarr.service
+```
 
 
 ### FreeBSD/FreeNAS ###
