@@ -67,7 +67,7 @@ http://update.nzbdrone.com/v2/master/mono/NzbDrone.master.tar.gz
 
 # Docker
 
-You can use [aostanin's Dockerfile](https://registry.hub.docker.com/u/aostanin/nzbdrone/) to quickly build your own isolated app container. It's based on the Linux instructions above.
+There is a Docker image available that lets you update within the container as well as install from the develop branch.  [tuxeh/sonarr](https://registry.hub.docker.com/u/tuxeh/sonarr/)
 
 For more info about Docker check out the [official website](https://www.docker.com).
 
