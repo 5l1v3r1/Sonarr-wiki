@@ -1,38 +1,26 @@
-Installing Sonarr on FreeNAS isn't hard, but does require several commands.  If you aren't familiar with Unix or Linux, this guide should hopefully be enough to get you up and running.  This guide was made using FreeNAS 9.2.1.9  With 9.3 around the corner, I will try and remember to test when the update comes out, and adjust if needed. So let's get started!
+Installing Sonarr on FreeNAS isn't hard, but does require several commands.  If you aren't familiar with Unix or Linux, this guide should hopefully be enough to get you up and running.  This guide was made using FreeNAS 9.2.1.9.
 
 First thing you'll need to do is create a new jail in FreeNAS, just the default settings, give it a name and create.
 
 Next you'll need to get a command line shell into that jail.  There are 2 options for this. Either SSH into your FreeNAS box, run 'jls' to find your jail #, and then 'jexec # csh' OR you can shell into your jail via the jails tab in the FreeNAS GUI (find the little button at the bottom that looks like a command prompt). Either way you need to be sitting at a shell for your jail. The next steps are commands to run.
 
-* pkg install nano
-
-* pkg install mono
-
-* pkg install mediainfo
-
-* cd
-
-* wget http://www.sqlite.org/2014/sqlite-autoconf-3080702.tar.gz
-
-* tar -xzvf sqlite-autoconf-3080702.tar.gz
-
-* cd sqlite-autoconf-3080702
-
-* set CPPFLAGS="-DSQLITE_ENABLE_COLUMN_METADATA"
-
-* ./configure CFLAGS=-DSQLITE_ENABLE_COLUMN_METADATA
-
-* make
-
-* make install
-
-* cd
-
-* wget http://download.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz2
-
-* tar -xzvf NzbDrone.master.tar.gz
-
-* nano /etc/rc.d/run_drone
+```
+pkg install nano
+pkg install mono
+pkg install mediainfo
+cd
+wget http://www.sqlite.org/2014/sqlite-autoconf-3080702.tar.gz
+tar -xzvf sqlite-autoconf-3080702.tar.gz
+cd sqlite-autoconf-3080702
+set CPPFLAGS="-DSQLITE_ENABLE_COLUMN_METADATA"
+./configure CFLAGS=-DSQLITE_ENABLE_COLUMN_METADATA
+make
+make install
+cd
+wget http://download.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz2
+tar -xzvf NzbDrone.master.tar.gz
+nano /etc/rc.d/run_drone
+```
 
 Ok at this point you now have a text editor open, you'll want to copy and the paste the following line into the editor and then continue with the commands:
 
@@ -40,7 +28,7 @@ Ok at this point you now have a text editor open, you'll want to copy and the pa
 
 * Hit Ctrl+X and then hit the 'Y' key.
 
-* chmod 777 /etc/rc.d/run_drone
+`chmod 777 /etc/rc.d/run_drone`
 
 At this point Sonarr is installed, and we have it set to start with the Jail.  So go ahead and stop, and then start the jail in FreeNAS GUI. Hit up http://jail-ip:8989 Should be good to go.
 
