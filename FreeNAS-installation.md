@@ -17,7 +17,7 @@ set CPPFLAGS="-DSQLITE_ENABLE_COLUMN_METADATA"
 make
 make install
 cd
-wget http://download.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz2
+wget http://download.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz
 tar -xzvf NzbDrone.master.tar.gz
 nano /etc/rc.d/run_drone
 ```
