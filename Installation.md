@@ -118,7 +118,7 @@ or through Finder, whatever works for you
 
 * Download the appropriate Mono package for your device [here](https://dl.dropboxusercontent.com/u/300345/spk/mono/index.html)
 
-* Download the appropriate NzbDrone package for your device [here](https://dl.dropboxusercontent.com/u/300345/spk/nzbdrone/index.html)
+* Download the appropriate Sonarr package for your device [here](https://dl.dropboxusercontent.com/u/300345/spk/nzbdrone/index.html)
 
 **(3)** Install both packages via Synology Package Center **NOTE: You must install Mono first**
 
