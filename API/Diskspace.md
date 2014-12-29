@@ -1,7 +1,7 @@
 ## GET ##
 
 ##### Summary #####
-Get's Diskspace
+Gets Diskspace
 
 ##### Parameters ######
 
