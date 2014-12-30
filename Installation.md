@@ -1,5 +1,5 @@
 # Windows
-1. Download the latest version of NzbDrone from [http://www.nzbdrone.com](http://www.nzbdrone.com "http://www.nzbdrone.com")
+1. Download the latest version of NzbDrone from [http://www.sonarr.tv](http://www.sonarr.tv "http://www.sonarr.tv")
 2. Extract the zip file into your target directory. Use a folder that NzbDrone process would have write access to (**DO NOT** use `C:\Program Files` or `C:\Program Files (x86)`)
 3. Run `NzbDrone.exe` once as administrator to register the port and URL with Windows (Required for remote access)<sup>1</sup>
 4. Manually start NzbDrone by running `Nzbdrone.exe` or `ServiceInstall.exe` to install NzbDrone as a Windows service.
@@ -57,7 +57,7 @@ mono 3.10 is included for x86/x64 in our repo (mirrored from Xamarin's), for oth
 
 **Download**
 
-http://update.nzbdrone.com/v2/master/mono/NzbDrone.master.tar.gz
+http://update.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz
 
 **Extract tar.gz**
 
@@ -94,7 +94,7 @@ mediainfo (for processing files on import) - http://mediaarea.net/en/MediaInfo/D
 
 **Download**
 
-http://update.nzbdrone.com/v2/master/osx/NzbDrone.master.osx.tar.gz
+http://update.sonarr.tv/v2/master/osx/NzbDrone.master.osx.tar.gz
 
 **Extract tar.gz**
 
@@ -125,7 +125,7 @@ or through Finder, whatever works for you
 **(4)** Add the SynoCommunity repo to your Synology device:
 
 
-* Log into your NAS as administrator and go to `Main Menu` → `Package Center` → `Settings` → `Package Sources`
+* Log into your NAS as administrator and go to `Main Menu` ? `Package Center` ? `Settings` ? `Package Sources`
 * Click `Add`, type `SynoCommunity` as Name and `http://packages.synocommunity.com/` as Location and then press `OK` to validate.
 * Also, click `Beta` and then checkmark the option labeled: `Yes, I want beta versions!` and press `OK`
 
