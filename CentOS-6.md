@@ -74,20 +74,7 @@ The installation assumes that you're not using the root user to install/run NZBD
     ```
 
 
-7. **[Optional] Create link for NzbDrone configuration directory**
-
-    !!WARNING!! Will cause the config folder to be deleted during updates !!WARNING!!
-
-    I wanted to keep NZB Drone files in the program directory, so i created a link
-
-    ```bash
-    mkdir ~/.config
-    sudo mkdir /opt/nzbdrone/config
-    sudo chown user:group /opt/nzbdrone/config
-    ln -s /opt/nzbdrone/config/ ~/.config/NzbDrone
-    ```
-
-8. **Run NzbDrone to test**
+7. **Run NzbDrone to test**
 
     Just run it to verify everything is working the stop it (CTRL-C) and move to the next steps.
     
