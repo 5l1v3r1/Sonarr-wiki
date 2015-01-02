@@ -119,6 +119,6 @@ or through Finder, whatever works for you
 * Click `Add`, type `SynoCommunity` as Name and `http://packages.synocommunity.com/` as Location and then press `OK` to validate.
 * Also, click `Beta` and then checkmark the option labeled: `Yes, I want beta versions!` and press `OK`
 
-**(2)** Click on the `Community` tab in Package Center and you will find Sonarr.
+**(2)** Click on the `Community` tab in Package Center and you will find Sonarr listed there.
 
-**NOTE:** You must install Mono first
+**NOTE:** You must install Mono first (also found in the Synocommunity repo.)
