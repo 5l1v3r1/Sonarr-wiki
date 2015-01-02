@@ -112,21 +112,12 @@ or through Finder, whatever works for you
     mono --debug /full/path/to/extracted/NzbDrone/NzbDrone.exe  
 
 # Synology #
-**(1)** Take note of the architecture of your Synology device [here](https://github.com/SynoCommunity/spksrc/wiki/Architecture-per-Synology-model)
 
-**(2)** Using the above-noted architecture:
-
-* Download the appropriate Mono package for your device [here](https://dl.dropboxusercontent.com/u/300345/spk/mono/index.html)
-
-* Download the appropriate Sonarr package for your device [here](https://dl.dropboxusercontent.com/u/300345/spk/nzbdrone/index.html)
-
-**(3)** Install both packages via Synology Package Center **NOTE: You must install Mono first**
-
-**(4)** Add the SynoCommunity repo to your Synology device:
-
+**(1)** Add the SynoCommunity repo to your Synology device:
 
 * Log into your NAS as administrator and go to `Main Menu` ? `Package Center` ? `Settings` ? `Package Sources`
 * Click `Add`, type `SynoCommunity` as Name and `http://packages.synocommunity.com/` as Location and then press `OK` to validate.
 * Also, click `Beta` and then checkmark the option labeled: `Yes, I want beta versions!` and press `OK`
 
-**ADDITIONAL NOTES:** Completing Step 4 is highly recommended as it provides for future package updates via the SynoCommunity repo (as they become available.) Installing the packages by completing the above four steps will provide you with the latest packages available and is the recommended installation method. Installing the packages directly from the SynoCommunity repo is not recommended at this time because those packages are out-of-date.
+**(2)** Click on the `Community` tab in Package Center and you will find Sonarr.
+**NOTE:** You must install Mono first
