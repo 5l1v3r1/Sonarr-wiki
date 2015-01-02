@@ -115,7 +115,7 @@ or through Finder, whatever works for you
 
 **(1)** Add the SynoCommunity repo to your Synology device:
 
-* Log into your NAS as administrator and go to `Main Menu` ? `Package Center` ? `Settings` ? `Package Sources`
+* Log into your NAS as administrator and go to `Main Menu` -> `Package Center` -> `Settings` -> `Package Sources`
 * Click `Add`, type `SynoCommunity` as Name and `http://packages.synocommunity.com/` as Location and then press `OK` to validate.
 * Also, click `Beta` and then checkmark the option labeled: `Yes, I want beta versions!` and press `OK`
 
