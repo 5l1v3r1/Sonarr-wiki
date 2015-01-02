@@ -7,6 +7,7 @@ Next you'll need to get a command line shell into that jail.  There are 2 option
 ```
 mv /usr/local/etc/pkg.conf /usr/local/etc/pkg.conf.backup
 pkg install nano
+pkg install wget
 pkg install mono
 pkg install mediainfo
 cd
@@ -33,6 +34,6 @@ Ok at this point you now have a text editor open, you'll want to copy and the pa
 
 At this point Sonarr is installed, and we have it set to start with the Jail.  So go ahead and stop, and then start the jail in FreeNAS GUI. Hit up http://jail-ip:8989 Should be good to go.
 
-If you are wondering what is going on in the commands, here's a brief rundown. FreeNAS 9.2 may have an older version of pkg installed. By moving the configuration file, it will heal itself and just work™. Then we install nano, mono, and mediainfo.  Nano is optional, it's just an wasy to use text editor so it made instructions easier, but you could use vi.  Next we install SQLite, problem is that the repo that pkg install uses has an outdated SQLite, and we need a special flag during compilation.  So we grab the source, extract, set the flags, configure, compile, and install.  Next up is Sonarr itself.  Grab the files and extract, simple enough.  Lastly we need to get Sonarr launching at boot, so we make a small script in rc.d which gets run at boot.
+If you are wondering what is going on in the commands, here's a brief rundown. FreeNAS 9.2 may have an older version of pkg installed. By moving the configuration file, it will heal itself and just work™. Then we install nano, mono, wget and mediainfo.  Nano is optional, it's just an wasy to use text editor so it made instructions easier, but you could use vi.  Next we install SQLite, problem is that the repo that pkg install uses has an outdated SQLite, and we need a special flag during compilation.  So we grab the source, extract, set the flags, configure, compile, and install.  Next up is Sonarr itself.  Grab the files and extract, simple enough.  Lastly we need to get Sonarr launching at boot, so we make a small script in rc.d which gets run at boot.
 
 Unix experts will see that this is kinda hacky and insecure, especially as everything is running as root.  You are welcome to clean this up a bit, I was optimizing for ease of installation more than anything.
