@@ -120,4 +120,5 @@ or through Finder, whatever works for you
 * Also, click `Beta` and then checkmark the option labeled: `Yes, I want beta versions!` and press `OK`
 
 **(2)** Click on the `Community` tab in Package Center and you will find Sonarr.
+
 **NOTE:** You must install Mono first
