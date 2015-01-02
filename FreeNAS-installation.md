@@ -11,9 +11,9 @@ pkg install wget
 pkg install mono
 pkg install mediainfo
 cd
-wget http://www.sqlite.org/2014/sqlite-autoconf-3080702.tar.gz
-tar -xzvf sqlite-autoconf-3080702.tar.gz
-cd sqlite-autoconf-3080702
+wget http://www.sqlite.org/2014/sqlite-autoconf-3080704.tar.gz
+tar -xzvf sqlite-autoconf-3080704.tar.gz
+cd sqlite-autoconf-3080704
 set CPPFLAGS="-DSQLITE_ENABLE_COLUMN_METADATA"
 ./configure CFLAGS=-DSQLITE_ENABLE_COLUMN_METADATA
 make
