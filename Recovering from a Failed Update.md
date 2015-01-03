@@ -3,7 +3,7 @@
 We do everything we can to prevent issues when upgrading, but they occur, this will walk you through the steps of recovering your installation.
 
 ### Determine the issue ###
-The single best place to look when drone won't start after an update is to check your log files, before trying to start drone again, grab your log files [[Log Files]].
+The single best place to look when Sonarr won't start after an update is to check your log files, before trying to start Sonarr again, grab your log files [[Log Files]].
 
 ##### Migration Issue #####
 Migration errors won't be identical, but here is an example:
@@ -18,6 +18,6 @@ While Processing: "ALTER TABLE "QualityProfiles" ADD COLUMN "Items" TEXT"
 In the event of a migration issue there is much you can do immediately, if the issue is specific to you (or there are not yet any posts), please create a post of the forums, if there are others with the same issue, then rest assured we are working on it.
 
 ### Manually upgrading ###
-Grab the latest release from http://www.nzbdrone.com - if you're running the develop version you can get the latest release here: http://update.nzbdrone.com/v2/develop/latest
+Grab the latest release from https://sonarr.tv - if you're running the develop version you can get the latest release here: https://download.sonarr.tv/v2/develop/latest
 
-Install the update (.exe) or extract (.zip) the contents over your existing installation and re-run drone as you normally would.
+Install the update (.exe) or extract (.zip) the contents over your existing installation and re-run Sonarr as you normally would.

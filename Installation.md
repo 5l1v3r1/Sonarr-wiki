@@ -1,8 +1,8 @@
 # Windows
-1. Download the latest version of NzbDrone from [http://www.sonarr.tv](http://www.sonarr.tv "http://www.sonarr.tv")
-2. Extract the zip file into your target directory. Use a folder that NzbDrone process would have write access to (**DO NOT** use `C:\Program Files` or `C:\Program Files (x86)`)
+1. Download the latest version of Sonarr from [https://sonarr.tv](https://sonarr.tv "https://sonarr.tv")
+2. Extract the zip file into your target directory. Use a folder that Sonarr process would have write access to (**DO NOT** use `C:\Program Files` or `C:\Program Files (x86)`)
 3. Run `NzbDrone.exe` once as administrator to register the port and URL with Windows (Required for remote access)<sup>1</sup>
-4. Manually start NzbDrone by running `Nzbdrone.exe` or `ServiceInstall.exe` to install NzbDrone as a Windows service.
+4. Manually start Sonarr by running `Nzbdrone.exe` or `ServiceInstall.exe` to install Sonarr as a Windows service.
 5. Open [http://localhost:8989](http://localhost:8989) in your browser
 
 
@@ -16,7 +16,7 @@
 
 mono 3.10 is included for x86/x64 in our repo (mirrored from Xamarin's), for other platforms you may have to compile it yourself: http://www.lovesmesomecode.com/20130719-compiling-mono-3-in-ubuntu/
 
-**Add NzbDrone's repository to your software source**
+**Add Sonarr's repository to your software source**
        
 
     sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FDA5DFFC
@@ -24,12 +24,12 @@ mono 3.10 is included for x86/x64 in our repo (mirrored from Xamarin's), for oth
 
 *If you have issues with the repo being https you can install the `apt-transport-https` package or switch to http*
 
-**Install/Update NzbDrone**
+**Install/Update Sonarr**
 	
 	sudo apt-get update
 	sudo apt-get install nzbdrone 
 
-**Start NzbDrone**
+**Start Sonarr**
 
 	mono /opt/NzbDrone/NzbDrone.exe
 
@@ -37,7 +37,7 @@ mono 3.10 is included for x86/x64 in our repo (mirrored from Xamarin's), for oth
 
 	http://localhost:8989
 
-**Automatically Start NzbDrone**
+**Automatically Start Sonarr**
 
 [[Autostart on Linux]]
 

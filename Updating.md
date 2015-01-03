@@ -1,6 +1,6 @@
 ## General ##
 
-**Branch** - You can change the branch NzbDrone will use to update, see [[Release Branches]] for more information.
+**Branch** - You can change the branch Sonarr will use to update, see [[Release Branches]] for more information.
 
 ## Windows ##
 
@@ -14,17 +14,17 @@ Both Linux and OS X now have the ability to update directly from the UI or autom
 **Automatic** - Enable automatic updating, please test the update process manually to ensure it will work for your setup before enabling
 
 **Mechanism**
-    - **Built-in** - Use NzbDrone's own updater
-    - **Script** - Use a custom external script to update NzbDrone, it will need to take care of stopping and starting drone during the update process
+    - **Built-in** - Use Sonarr's own updater
+    - **Script** - Use a custom external script to update Sonarr, it will need to take care of stopping and starting Sonarr during the update process
 
 **Script** - Visible only when *Mechanism* is set to *Script* - Path to update script
 
 
 ### Update Process ###
-NzbDrone will download the update file, verify its integrity and extract it to a temporary location and call the chosen method. The update process will be be run under the same user that NzbDrone is run under, it will need permissions to update the NzbDrone files as well as stop/start NzbDrone.
+Sonarr will download the update file, verify its integrity and extract it to a temporary location and call the chosen method. The update process will be be run under the same user that Sonarr is run under, it will need permissions to update the Sonarr files as well as stop/start Sonarr.
 
 #### Built-in ####
-The built-in method will backup NzbDrone files and settings, stop NzbDrone, update the installation and Start NzbDrone, if your system will not handle the stopping of NzbDrone and will attempt to restart it automatically it may be best to use a script instead. In the event of failure the previous version of NzbDrone will be restarted.
+The built-in method will backup Sonarr files and settings, stop Sonarr, update the installation and Start Sonarr, if your system will not handle the stopping of Sonarr and will attempt to restart it automatically it may be best to use a script instead. In the event of failure the previous version of Sonarr will be restarted.
 
 
 #### Script ####

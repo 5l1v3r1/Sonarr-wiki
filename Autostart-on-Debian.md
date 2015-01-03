@@ -1,6 +1,6 @@
 # Autostart on Debian using init.d script
 
-The instructions for Ubuntu/Debian did not seem to work for Debian very well, and the pid got lost whenever NzbDrone was restarted via the web-ui, so I've included a working script here init.d script here.
+The instructions for Ubuntu/Debian did not seem to work for Debian very well, and the pid got lost whenever Sonarr was restarted via the web-ui, so I've included a working script here init.d script here.
 
 **Create and edit the nzbdrone init.d script**
        
@@ -18,8 +18,8 @@ The instructions for Ubuntu/Debian did not seem to work for Debian very well, an
 # Should-Stop:       $NetworkManager
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: starts instance of NzbDrone
-# Description:       starts instance of NzbDrone using start-stop-daemon
+# Short-Description: starts instance of Sonarr
+# Description:       starts instance of Sonarr using start-stop-daemon
 ### END INIT INFO
     
 ############### EDIT ME ##################
@@ -90,6 +90,6 @@ exit 0
 
 	sudo update-rc.d nzbdrone defaults
 
-**Start NzbDrone**
+**Start Sonarr**
 
 	sudo service nzbdrone start

@@ -1,10 +1,10 @@
-The following instructions are for installing NzbDrone on CentOS 6.
+The following instructions are for installing Sonarr on CentOS 6.
 
 The installation should also be applicable to RHEL 6 and Fedora (12, 13, or 14) with minimal changes.
 
-The installation assumes that you're not using the root user to install/run NZBDrone - the entries for **user:group** throughout the document will have to be modified to match your user configuration. 
+The installation assumes that you're not using the root user to install/run Sonarr - the entries for **user:group** throughout the document will have to be modified to match your user configuration. 
 
-### Install NzbDrone
+### Install Sonarr
 
 1. **[Optional] Configure sudo for your user**
     ```bash
@@ -41,11 +41,11 @@ The installation assumes that you're not using the root user to install/run NZBD
 
 5. **Compile sqlite3.8.5**
     
-    NZBDrone requires the COLUMN_METADATA option so we'll enable it.
+    Sonarr requires the COLUMN_METADATA option so we'll enable it.
     <br>
     I didn't want to replace the system sqlite installation (v3.6.20) since CentOS depends on it so I'm using the --prefix option to install it to another directory.
     <br>
-    The init script will be configured to call this new version when running NZBDrone. 
+    The init script will be configured to call this new version when running Sonarr. 
 
     ```bash
     cd /tmp/sqlite-autoconf*
@@ -60,21 +60,21 @@ The installation assumes that you're not using the root user to install/run NZBD
     sudo make install
     ```
 
-6. **Download and extract NzbDrone and optionally rename it**
+6. **Download and extract Sonarr and optionally rename it**
     
     ```bash
-    curl -L http://update.nzbdrone.com/v2/master/mono/NzbDrone.master.tar.gz -o /tmp/NzbDrone.master.tar.gz
+    curl -L http://download.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz -o /tmp/NzbDrone.master.tar.gz
     sudo tar zxvf /tmp/NzbDrone.master.tar.gz -C /opt/
     ```
 
-    I wanted to maintain lower-case naming so I renamed the NzbDrone program directory
+    I wanted to maintain lower-case naming so I renamed the Sonarr program directory
     <br>
     ```bash
     sudo mv /opt/NzbDrone /opt/nzbdrone
     ```
 
 
-7. **Run NzbDrone to test**
+7. **Run Sonarr to test**
 
     Just run it to verify everything is working the stop it (CTRL-C) and move to the next steps.
     
@@ -82,7 +82,7 @@ The installation assumes that you're not using the root user to install/run NZBD
         <br>
             1. Set the LD_LIBRARY_PATH and PATH to point to the new sqlite and mono directories
         <br>
-            2. Run NZB Drone
+            2. Run Sonarr
         <br>
             3. Set the environment back to normal.
 
@@ -94,7 +94,7 @@ The installation assumes that you're not using the root user to install/run NZBD
     export PATH=$PATH_BAK ; export LD_LIBRARY_PATH=$LPATH_BAK
     ```
 
-### Create NzbDrone init Service
+### Create Sonarr init Service
 
 1. **Download init script and configuration files**
 
@@ -116,19 +116,19 @@ The installation assumes that you're not using the root user to install/run NZBD
     sudo vi /etc/sysconfig/nzbdrone
     ```
 
-3. **Add the NzbDrone service to system services**
+3. **Add the Sonarr service to system services**
     
     ```bash
     sudo chkconfig --add nzbdrone
     ```
 
-4. **Configure NzbDrone service to start on system start up**
+4. **Configure Sonarr service to start on system start up**
     
     ```bash
     sudo chkconfig nzbdrone on
     ```
 
-5. **Start NzbDrone service**
+5. **Start Sonarr service**
     
     ```bash
     sudo service nzbdrone start

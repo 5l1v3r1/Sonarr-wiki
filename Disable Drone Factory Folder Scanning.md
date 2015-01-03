@@ -2,11 +2,11 @@
 
 ## Disable Drone Factory Folder Scanning ##
 
-You can disable drone factory folder scanning via the advanced setting "Drone Factory Interval" on the download client settings page, by setting it to zero.
+You can disable Drone Factory folder scanning via the advanced setting "Drone Factory Interval" on the download client settings page, by setting it to zero.
 
 ## Post Processing Script ##
 
-You can configure your download client to run a script to send a command to NzbDrone's API instructing it to run a scan on the drone factory folder.
+You can configure your download client to run a script to send a command to Sonarr's API instructing it to run a scan on the Drone Factory folder.
 
 The script will need to send a POST with a JSON body as described here: [Command](Command#downloadedepisodesscancommand)
 

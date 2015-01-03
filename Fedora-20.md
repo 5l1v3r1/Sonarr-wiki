@@ -1,4 +1,4 @@
-The following instructions are for installing Sonarr/NzbDrone on Fedora 20.  The same method should work on Fedora 15-19 and RHEL 7 however I have not tested those environments.
+The following instructions are for installing Sonarr on Fedora 20.  The same method should work on Fedora 15-19 and RHEL 7 however I have not tested those environments.
 
 For system v init based versions of Fedora (anything prior to 15), reference the [[CentOS 6]] guide.
 
@@ -6,7 +6,7 @@ Works on Fedora 21, however I suspect they will update the mono package for that
 
 Automatic/scary install script at the end.
 
-### Install Sonarr/NzbDrone
+### Install Sonarr
 
 All commands run as root sudo -s if necessary.
 
@@ -48,10 +48,10 @@ yum install mediainfo libzen libmediainfo curl gettext mono-opt mono-opt-devel s
 ln -s /opt/mono/bin/mono /usr/bin/mono
 ```
 
-**Download and extract Sonarr/NZBDrone**
+**Download and extract Sonarr**
     
 ```bash
-wget http://update.nzbdrone.com/v2/master/mono/NzbDrone.master.tar.gz
+wget http://download.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz
 tar -xvf ~/NzbDrone.master.tar.gz -C /opt/
 ```
 
@@ -61,7 +61,7 @@ chown -R sonarr:sonarr /opt/NzbDrone
 ```
 
 
-### Create NzbDrone systemd Service and firewall rules
+### Create Sonarr systemd Service and firewall rules
 
 **Create systemd service file**
 ```bash
@@ -84,13 +84,13 @@ EOF
 mv sonarr.service /usr/lib/systemd/system/
 ```
 
-**Add Sonarr/NzbDrone to startup**
+**Add Sonarr to startup**
 
 ```bash
 systemctl enable sonarr.service
 ```
 
-**Start Sonarr/NzbDrone service**
+**Start Sonarr service**
 
 Start sonarr via systemd and verify status.
     
@@ -128,7 +128,7 @@ adduser -g sonarr -m -c "Sonarr User" -s /sbin/nologin  sonarr
 wget -4 -O /etc/yum.repos.d/mono.repo http://download.opensuse.org/repositories/home:/tpokorra:/mono/Fedora_20/home:tpokorra:mono.repo
 yum install mediainfo libzen libmediainfo curl gettext mono-opt mono-opt-devel sqlite.x86_64
 ln -s /opt/mono/bin/mono /usr/bin/mono
-wget http://update.nzbdrone.com/v2/master/mono/NzbDrone.master.tar.gz
+wget http://download.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz
 tar -xvf ~/NzbDrone.master.tar.gz -C /opt/
 chown -R sonarr:sonarr /opt/NzbDrone
 cat > sonarr.service << EOF

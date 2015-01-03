@@ -8,13 +8,13 @@ Using Upstart allows for more advanced features, such as start/stop and automati
 **Paste in the following code, changing the username (right click if using terminal)**
 ```bash
 author "Simon Tallmyr - Nosscire"
-description "Upstart Script to run NzbDrone as a service on Ubuntu/Debian based systems, as well as others"
+description "Upstart Script to run Sonarr as a service on Ubuntu/Debian based systems, as well as others"
 
 #Set username for the process. Should probably be what you use for logging in
 setuid yourusername
 
-#This is the install directory. If you installed using a deb package or the NzbDrone Repository you do not need to change this
 env DIR=/opt/NzbDrone
+#This is the install directory. If you installed using a deb package or the Sonarr Repository you do not need to change this
 
 setgid nogroup
 start on runlevel [2345]
@@ -29,7 +29,7 @@ exec mono --debug $DIR/NzbDrone.exe
 
 Press <kbd>Ctrl</kbd>+<kbd>X</kbd> then <kbd>y</kbd> to save.
 
-**Start NzbDrone**
+**Start Sonarr**
 
 	sudo start nzbdrone
 
@@ -50,7 +50,7 @@ Press <kbd>Ctrl</kbd>+<kbd>X</kbd> then <kbd>y</kbd> to save.
     # Default-Start:     2 3 4 5
     # Default-Stop:      0 1 6
     # Short-Description: nzbdrone
-    # Description:       NZBDrone
+    # Description:       Sonarr
     ### END INIT INFO
      
     . /lib/lsb/init-functions
@@ -58,7 +58,7 @@ Press <kbd>Ctrl</kbd>+<kbd>X</kbd> then <kbd>y</kbd> to save.
     #set -e
      
     NAME=nzbdrone
-    DESC="NZBDrone"
+    DESC="Sonarr"
     MONO=$(which mono)
      
     DAEMON=/opt/NzbDrone/NzbDrone.exe
@@ -146,7 +146,7 @@ Note: The script by default runs as root. I suggest adding an nzbdrone user (`us
 
 ### Method 3: init.d script (Debian)###
 
-Please see [here](https://github.com/NzbDrone/NzbDrone/wiki/Autostart-on-Debian).
+Please see [here](https://github.com/Sonarr/Sonarr/wiki/Autostart-on-Debian).
 
 
 ### Method 4: RC.Local
@@ -154,10 +154,10 @@ Please see [here](https://github.com/NzbDrone/NzbDrone/wiki/Autostart-on-Debian)
 ***
 **This Method Provided by:** protocol77
 
-This Guide is to help those who would like to use linux to run NZBDrone at time of writing this there is not "Install As Service" option like with the Windows Build so this needs to be done until a better alternative is found i have personally tested it so you should have no issues if you do please post in the NZBDrone Forums (http://forums.nzbdrone.com/) and someone will try and help you.
+This Guide is to help those who would like to use linux to run Sonarr at time of writing this there is not "Install As Service" option like with the Windows Build so this needs to be done until a better alternative is found i have personally tested it so you should have no issues if you do please post in the Sonarr Forums (https://forums.sonarr.tv/) and someone will try and help you.
 
 **First **
-make sure NzbDrone is installed you can go here to find out how to do that https://github.com/NzbDrone/NzbDrone/wiki/Installation
+make sure Sonarr is installed you can go here to find out how to do that https://github.com/Sonarr/Sonarr/wiki/Installation
 
 Next I created a .sh or batch file to automate the process of type "sudo mono /opt/NzbDrone/NzbDrone.exe"
 Here is a link to the batch file so it saves you all from having to do this even though it was easy if you open in a text editor you will see
@@ -232,13 +232,13 @@ Typically located in /usr/lib/systemd/system/, verify before proceeding.  Will d
 mv sonarr.service /usr/lib/systemd/system/
 ```
 
-**Add Sonarr/NzbDrone to startup**
+**Add Sonarr to startup**
 
 ```bash
 systemctl enable sonarr.service
 ```
 
-**Start Sonarr/NzbDrone service**
+**Start Sonarr service**
 
 Start sonarr via systemd and verify status.
     

@@ -2,7 +2,7 @@
 
 If a series is monitored then the episodes in that series can be grabbed, depending on their monitored state. If a series is not monitored then no episodes in that series will be grabbed.
 
-Series' can be be set as monitored from the following locations in NzbDrone:
+Series' can be be set as monitored from the following locations in Sonarr:
 
 - Series Details
 	- Use the bookmark icon to the left of the the title.
@@ -15,7 +15,7 @@ Series' can be be set as monitored from the following locations in NzbDrone:
 	
 Unmonitoring a season will unmonitor the episodes in that season, both current and future. If a season is unmonitored then the episodes within that season can still be marked as monitored. These episode will not be blocked in the same way as when a series is unmonitored.
 
-A season's monitored state can be toggled from the following locations within NzbDrone:
+A season's monitored state can be toggled from the following locations within Sonarr:
 
 - Series Details
 	- Use the bookmark icon to the left of the season header
@@ -24,12 +24,12 @@ A season's monitored state can be toggled from the following locations within Nz
 
 ## Episode ##
 
-If you came here looking for an answer why NzbDrone does not automatically search for missing episodes, please view the [FAQ](https://github.com/NzbDrone/NzbDrone/wiki/FAQ#why-doesnt-nzbdrone-automatically-search-for-missing-episodes).
+If you came here looking for an answer why Sonarr does not automatically search for missing episodes, please view the [FAQ](https://github.com/Sonarr/Sonarr/wiki/FAQ#why-doesnt-nzbdrone-automatically-search-for-missing-episodes).
 
 
 If an episode is not monitored then it will not be grabbed, regardless of the monitored state of the series. If an episode is monitored and the series is not, it will be considered unmonitored.
 
-An episode's monitored state can be toggled from the following locations within NzbDrone:
+An episode's monitored state can be toggled from the following locations within Sonarr:
 
 - Series Details
 	- Use the bookmark icon next to the episode number on the left side

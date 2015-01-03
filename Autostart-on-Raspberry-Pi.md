@@ -5,7 +5,7 @@ Install Upstart
 
     sudo apt-get install upstart
 
-**Create the NzbDrone Upstart config file**
+**Create the Sonarr Upstart config file**
        
     sudo nano /etc/init/nzbdrone.conf
 
@@ -34,6 +34,6 @@ exec $MONO $DIR/NzbDrone.exe
 
 Press <kbd>Ctrl</kbd>+<kbd>X</kbd> then <kbd>y</kbd> to save.
 
-**Start NzbDrone**
+**Start Sonarr**
 
 	sudo start nzbdrone

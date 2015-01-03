@@ -1,7 +1,7 @@
 ## POST ##
 
 ##### Summary #####
-Publish a new command for NzbDrone to run
+Publish a new command for Sonarr to run
 
 ##### Parameters ######
 
@@ -82,7 +82,7 @@ Required:
 ---
 
 ### DownloadedEpisodesScan ###
-Instruct NzbDrone to scan the DroneFactoryFolder or a folder defined by the path variable
+Instruct Sonarr to scan the DroneFactoryFolder or a folder defined by the path variable
 
 ##### Parameters ######
 
@@ -93,7 +93,7 @@ Optional:
 ---
 
 ### RssSync ###
-Instruct NzbDrone to perform an RSS sync with all enabled indexers
+Instruct Sonarr to perform an RSS sync with all enabled indexers
 
 ##### Parameters ######
 

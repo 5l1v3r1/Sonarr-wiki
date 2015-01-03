@@ -17,7 +17,7 @@
 
 You probably should update your sources.list file too if you installed using aptitude/apt-get:
 
-    deb http://update.nzbdrone.com/repos/apt/debian develop main
+    deb http://apt.sonarr.tv/ develop main
 
 ## Checking the release notes/changes ##
 

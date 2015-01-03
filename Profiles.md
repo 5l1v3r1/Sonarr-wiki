@@ -1,5 +1,5 @@
 ## What is a profile ##
-A profile controls what qualities you want for a series, it lets you decide whether or not you want SDTV or HDTV only and if you eventually want episodes in DVD or Bluray. NzbDrone ships with a few default profiles, but you're able to edit and create your own to match your preferences. Sonarr uses your profile when considering a release for grabbing.
+A profile controls what qualities you want for a series, it lets you decide whether or not you want SDTV or HDTV only and if you eventually want episodes in DVD or Bluray. Sonarr ships with a few default profiles, but you're able to edit and create your own to match your preferences. Sonarr uses your profile when considering a release for grabbing.
 
 ## What makes a profile? ##
 
@@ -26,13 +26,13 @@ SDTV
 SDTV
 
 ##### Scenario 1 #####
-No existing file exists. When drone finds a release for this episode it will accept either SDTV or DVD, any other quality is rejected.
+No existing file exists. When Sonarr finds a release for this episode it will accept either SDTV or DVD, any other quality is rejected.
 
 ##### Scenario 2 #####
 Existing file is SDTV. If a DVD release is found it will be rejected because the cutoff has already been met.
 
 ##### Scenario 3 #####
-No existing files exists. A search is performed and both SDTV and DVD are available, NzbDrone will grab the DVD release because it is the best allowed quality.
+No existing files exists. A search is performed and both SDTV and DVD are available, Sonarr will grab the DVD release because it is the best allowed quality.
 
 
 ### HDTV 720p ###
@@ -48,7 +48,7 @@ WEBDL 720p
 
 
 ##### Scenario 1 #####
-No existing file exists. if NzbDrone finds a WEBDL 720p release it would grab it.
+No existing file exists. if Sonarr finds a WEBDL 720p release it would grab it.
 
 ##### Scenario 2 #####
 Existing file exists at HDTV 720p. If a Bluray720p release is found it will be grabbed because the cutoff has not been met

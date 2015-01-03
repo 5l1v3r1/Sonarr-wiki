@@ -3,15 +3,15 @@ These are guidelines that should help determine the appropriate log level and me
 ## Levels ##
 
 ### Fatal ###
-NzbDrone has failed completely, or will be operating in a diminished state.
+Sonarr has failed completely, or will be operating in a diminished state.
 
 
 ### Error ###
-NzbDrone was preventing from doing something and the user may need to take action to correct it (Unable to connect to an external service), NzbDrone will be unable to operate normally.
+Sonarr was preventing from doing something and the user may need to take action to correct it (Unable to connect to an external service), Sonarr will be unable to operate normally.
 
 
 ### Warning ###
-NzbDrone was unable to perform an action, but the result doesn't prevent NzbDrone from operating normally.
+Sonarr was unable to perform an action, but the result doesn't prevent Sonarr from operating normally.
 
 
 ### Info ###
