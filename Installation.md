@@ -20,7 +20,7 @@ mono 3.10 is included for x86/x64 in our repo (mirrored from Xamarin's), for oth
        
 
     sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FDA5DFFC
-    echo "deb https://apt.sonarr.tv/ master main" | sudo tee -a /etc/apt/sources.list
+    sudo echo "deb https://apt.sonarr.tv/ master main" > /etc/apt/sources.list.d/sonarr.list
 
 *If you have issues with the repo being https you can install the `apt-transport-https` package or switch to http*
 
