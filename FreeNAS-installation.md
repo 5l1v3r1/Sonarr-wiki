@@ -7,11 +7,10 @@ Next you'll need to get a command line shell into that jail.  There are 2 option
 ```
 mv /usr/local/etc/pkg.conf /usr/local/etc/pkg.conf.backup
 pkg install nano
-pkg install wget
 pkg install mono
 pkg install mediainfo
 cd
-wget http://www.sqlite.org/2014/sqlite-autoconf-3080704.tar.gz
+fetch http://www.sqlite.org/2014/sqlite-autoconf-3080704.tar.gz
 tar -xzvf sqlite-autoconf-3080704.tar.gz
 cd sqlite-autoconf-3080704
 set CPPFLAGS="-DSQLITE_ENABLE_COLUMN_METADATA"
@@ -19,7 +18,7 @@ set CPPFLAGS="-DSQLITE_ENABLE_COLUMN_METADATA"
 make
 make install
 cd
-wget http://download.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz
+fetch http://download.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz
 tar -xzvf NzbDrone.master.tar.gz
 nano /etc/rc.d/run_drone
 ```
