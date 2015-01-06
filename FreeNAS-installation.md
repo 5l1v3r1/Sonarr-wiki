@@ -29,7 +29,7 @@ Ok at this point you now have a text editor open, you'll want to copy and the pa
 
 * Hit Ctrl+X and then hit the 'Y' key.
 
-`chmod 777 /etc/rc.d/run_drone`
+`chmod 555 /etc/rc.d/run_drone`
 
 At this point Sonarr is installed, and we have it set to start with the Jail.  So go ahead and stop, and then start the jail in FreeNAS GUI. Hit up http://jail-ip:8989 Should be good to go.
 
