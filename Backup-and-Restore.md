@@ -10,9 +10,10 @@
 1. Find the location of the AppData directory for Sonarr
 	- Via the Sonarr UI go to System: Info
 	- Defaults
-		- Windows - `C:\ProgramData\NzbDrone`
-		- Ubuntu - `/home/user/.config/NzbDrone`
-		- Synology - `/usr/local/nzbdrone/var/.config/NzbDrone`
+		- Windows - 'C:\ProgramData\NzbDrone'
+		- OS X - '/Users/whumphrey/.config/NzbDrone'
+		- Ubuntu - '/home/user/.config/NzbDrone'
+		- Synology - '/usr/local/nzbdrone/var/.config/NzbDrone'
 
 2. Stop Sonarr - This will prevent the database from being corrupted
 3. Copy the contents to a safe location
