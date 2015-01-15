@@ -29,9 +29,15 @@ The installation assumes that you're not using the root user to install/run Sona
     The OpenSuse mono-opt will be installed under /opt so it can probably coexist with the CentOS mono-core (i havent tested this myself!)
 
     ```bash
-    sudo yum install gcc-c++ gcc mediainfo libzen libmediainfo curl gettext mono-opt mono-opt-devel
+    sudo yum install gcc-c++ gcc mediainfo libzen libmediainfo curl gettext 
     ```
-
+     As of this writing, the "mono" and "mono-opt" packages from the OpenSuse are version 3.12.0-2.1 and cause a coredump when you attempt to run Sonarr. Use the "mono-3.4" packages instead:
+ 
+    ```bash
+    sudo yum install mono-opt-3.4 mono-opt-devel-3.4
+    ```
+   
+   
 4. **Download sqlite3.8.5 source and extract it**
     
     ```bash
