@@ -13,21 +13,20 @@
 
 3. Save
 
+_This will not install the bits from that branch immediately, it will happen during the next update._
+
 #### For Ubuntu/Debian ####
 
 You probably should update your sources.list file too if you installed using aptitude/apt-get:
 
     deb http://apt.sonarr.tv/ develop main
 
-## Checking the release notes/changes ##
-
-1. Go to System and then the Updates tab
-
-2. The last 5 updates for that branch are shown here
-
-
 ## Installing a newer version ##
 
 1. Go to System and then the Updates tab
 
 2. Newer versions that are not yet installed will have an update button next to them, clicking that button will install the update.
+
+## Can I switch from master back to develop?##
+We don't recommend manually switching back to master, since other branches are commonly running newer code which might not be compatible with the older code in master.
+We have plans to mitigate this in the future.
