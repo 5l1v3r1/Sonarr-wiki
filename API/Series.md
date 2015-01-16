@@ -1,3 +1,5 @@
+**Endpoint: "/series"**
+
 ## GET ##
 
 ##### Summary #####
