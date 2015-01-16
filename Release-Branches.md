@@ -25,6 +25,6 @@ You probably should update your sources.list file too if you installed using apt
 
 2. Newer versions that are not yet installed will have an update button next to them, clicking that button will install the update.
 
-## Can I switch from master back to develop?##
+## Can I switch from develop back to master?##
 We don't recommend manually switching back to master, since other branches are commonly running newer code which might not be compatible with the older code in master.
 We have plans to mitigate this in the future.
