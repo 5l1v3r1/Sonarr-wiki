@@ -64,7 +64,7 @@ Required:
 }
 ````
 
-## DELETE ##
+## DELETE/{id} ##
 
 ##### Summary #####
 Delete the given episode file
