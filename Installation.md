@@ -1,12 +1,19 @@
 # Windows
 1. Download the latest version of Sonarr from [https://sonarr.tv](https://sonarr.tv "https://sonarr.tv")
-2. Extract the zip file into your target directory. Use a folder that Sonarr process would have write access to (**DO NOT** use `C:\Program Files` or `C:\Program Files (x86)`)
-3. Run `NzbDrone.exe` once as administrator to register the port and URL with Windows (Required for remote access)<sup>1</sup>
-4. Manually start Sonarr by running `Nzbdrone.exe` or `ServiceInstall.exe` to install Sonarr as a Windows service.
-5. Open [http://localhost:8989](http://localhost:8989) in your browser
+* Extract the zip file into your target directory. Use a folder that Sonarr process would have write access to (**DO NOT** use `C:\Program Files` or `C:\Program Files (x86)`)
+* Run `NzbDrone.exe` once as administrator to register the port and URL with Windows (Required for remote access)<sup>1</sup>
+* Manually start Sonarr by running `Nzbdrone.exe` or `ServiceInstall.exe` to install Sonarr as a Windows service.
+* Open [http://localhost:8989](http://localhost:8989) in your browser
 
 
 <sup>1</sup> The port will be opened on the firewall (if enabled) for the private profile only, if you're connected to a domain or a public network the port will not be opened automatically, but can be done so manually.
+
+# OS X #
+1. Download latest version of Sonarr's OSX package from [https://download.sonarr.tv/v2/master/2 latest/NzbDrone.master.osx.zip](http://download.sonarr.tv/v2/master/latest/NzbDrone.master.osx.zip)
+* Open the archive and drag the Sonarr icon to your Application folder.
+* Open Sonarr from your application folder
+* You should now be able to access Sonarr at [http://localhost:8989](http://localhost:8989) 
+
 
 # Linux #
 
@@ -72,44 +79,6 @@ http://update.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz
 There is a Docker image available that lets you update within the container as well as install from the develop branch.  [tuxeh/sonarr](https://registry.hub.docker.com/u/tuxeh/sonarr/)
 
 For more info about Docker check out the [official website](https://www.docker.com).
-
-# OS X #
-[Install Nzbdrone OSX Screenshot Guide](http://www.htpcguides.com/install-nzbdrone-osx/)
-
-**Install dependencies**
-
-***mono***
-	
-    mono - (x86 required)
-
-Download and run the Mono MRE installation
-
-    http://www.mono-project.com/download/
-
-**Do not `brew install mono`.**
-
-***other***
-
-mediainfo (for processing files on import) - http://mediaarea.net/en/MediaInfo/Download/Mac_OS
-
-**Download**
-
-http://update.sonarr.tv/v2/master/osx/NzbDrone.master.osx.tar.gz
-
-**Extract tar.gz**
-
-You can do this via the command line
-
-    tar xvfz NzbDrone.master.osx.tar.gz
-
-or through Finder, whatever works for you
-
-**Run Nzbdrone with mono (debugging enabled)**
-
-1) Open Terminal
-2) Run mono with debugging enabled
-
-    mono --debug /full/path/to/extracted/NzbDrone/NzbDrone.exe  
 
 # Synology #
 
