@@ -11,7 +11,7 @@ Create a plist with these contents, changing the path to NzbDrone.exe as require
         <array>
                 <string>mono</string>
                 <string>--debug</string>
-                <string>/Applications/NzbDrone/NzbDrone.exe</string>
+                <string>/Applications/Sonarr/Contents/MacOS/NzbDrone.exe</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
