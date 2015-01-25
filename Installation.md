@@ -91,3 +91,63 @@ For more info about Docker check out the [official website](https://www.docker.c
 **(2)** Click on the `Community` tab in Package Center and you will find Sonarr listed there.
 
 **NOTE:** You must install Mono first (also found in the Synocommunity repo.)
+
+# NETGEAR ReadyNAS #
+
+_Tested on a ReadyNAS 516 with ReadyNAS OS v6.2.2_
+
+**Add Sonarr's repository to your software source**
+
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FDA5DFFC
+    echo "deb http://apt.sonarr.tv/ master main" | tee /etc/apt/sources.list.d/sonarr.list
+
+**Install/Update Sonarr**
+
+	sudo apt-get update
+	sudo apt-get install nzbdrone 
+
+**Start Sonarr**
+
+	mono /opt/NzbDrone/NzbDrone.exe
+
+**Open Browser**
+
+	http://localhost:8989
+
+### Automatically Start Sonarr ###
+
+**Create the service file**
+
+```bash
+cat > /etc/systemd/system/sonarr.service << EOF
+[Unit]
+Description=Sonarr Daemon
+After=syslog.target network.target
+
+[Service]
+User=root
+Group=root
+
+Type=simple
+ExecStart=/usr/bin/mono /opt/NzbDrone/NzbDrone.exe -nobrowser
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+**Add Sonarr to startup**
+
+```bash
+systemctl enable sonarr.service
+```
+
+**Start Sonarr service**
+
+Start sonarr via systemd and verify status.
+    
+```bash
+systemctl start sonarr.service
+systemctl status sonarr.service
+```
