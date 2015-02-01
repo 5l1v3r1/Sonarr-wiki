@@ -33,7 +33,7 @@ RUN_AS=nzbdrone
 DAEMON=/usr/bin/mono
 
 # options for mono
-DAEMON_OPTS=" "
+DAEMON_OPTS=""
 
 # Path to store PID file
 PID_PATH=/var/run/nzbdrone
@@ -47,10 +47,6 @@ NZBDRONE_PID=`ps auxf | grep $EXENAME | grep -v grep | awk '{print $2}'`
 test -x $DAEMON || { echo "$DAEMON must be executable."; exit 1; }
     
 set -e
-
-if [ ! -e ${PID_PATH} ]; then
-    mkdir ${PID_PATH}
-fi
 
 echo $NZBDRONE_PID > $PID_FILE
     
