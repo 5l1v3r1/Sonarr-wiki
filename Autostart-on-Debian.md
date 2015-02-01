@@ -1,6 +1,6 @@
 # Autostart on Debian using init.d script
 
-The instructions for Ubuntu/Debian did not seem to work for Debian very well, and the pid got lost whenever Sonarr was restarted via the web-ui, so I've included a working script here init.d script here.
+The instructions for Ubuntu/Debian did not seem to work for Debian very well, and the pid got lost whenever Sonarr was restarted via the web-ui, so I've included a working script here init.d script here. You'll need to have already created an nzbdrone user.
 
 **Create and edit the nzbdrone init.d script**
        
@@ -47,14 +47,18 @@ NZBDRONE_PID=`ps auxf | grep $EXENAME | grep -v grep | awk '{print $2}'`
 test -x $DAEMON || { echo "$DAEMON must be executable."; exit 1; }
     
 set -e
-    
+
+if [ ! -e ${PID_PATH} ]; then
+    mkdir ${PID_PATH}
+fi
+
 echo $NZBDRONE_PID > $PID_FILE
     
 case "$1" in
 start)
     if [ -z "${NZBDRONE_PID}" ]; then
         echo "Starting $DESC"
-        rm -rf $PID_PATH || return 1
+        rm -rf ${PID_PATH:?} || return 1
         install -d --mode=0755 -o $RUN_AS $PID_PATH || return 1
         start-stop-daemon -d $APP_PATH -c $RUN_AS --start --background --pidfile $PID_FILE --exec $DAEMON -- $DAEMON_OPTS $EXENAME
     else
