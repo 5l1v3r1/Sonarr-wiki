@@ -24,7 +24,7 @@ The instructions for Ubuntu/Debian did not seem to work for Debian very well, an
     
 ############### EDIT ME ##################
 # path to app
-APP_PATH=/home/nzbdrone/NzbDrone
+APP_PATH=/opt/NzbDrone
    
 # user
 RUN_AS=nzbdrone
@@ -73,7 +73,7 @@ restart|force-reload)
     start-stop-daemon -d $APP_PATH -c $RUN_AS --start --background --pidfile $PID_FILE --exec $DAEMON -- $DAEMON_OPTS $EXENAME
     ;;
 *)
-     echo "Usage: `basname $0` {start|stop|restart|force-reload}" >&2    
+     echo "Usage: `basename $0` {start|stop|restart|force-reload}" >&2    
      exit 1
     ;;   
     
