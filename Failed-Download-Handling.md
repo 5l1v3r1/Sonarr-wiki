@@ -16,8 +16,8 @@ When Sonarr finds a failed download it starts processing them and does a few thi
 2) Blacklisting
 Allows automatic skipping of nzbs when they fail, this means that nzb will not be automatically downloaded by Sonarr ever again (You can still force the download via a manual search).
 
-There are 3 advanced options (on Download Client) that control the behavior of failed downloading in Sonarr, at this time, they are all on by default.
+There are 3 advanced options (on 'Download Client' settings page) that control the behavior of failed downloading in Sonarr, at this time, they are all on by default.
 
-Enable - Turns the checking of SAB and the blacklist functionality on or off
-Redownload - Controls whether or not Sonarr will search for the same episode after a failure
-Remove - Whether or not the download should automatically be removed from SAB when the failure is detected
+* Enable - Turns the checking of SAB and the blacklist functionality on or off
+* Redownload - Controls whether or not Sonarr will search for the same episode after a failure
+* Remove - Whether or not the download should automatically be removed from SAB when the failure is detected
