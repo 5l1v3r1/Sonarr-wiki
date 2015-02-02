@@ -2,10 +2,10 @@ Failed Download Handling is compatible with SABnzbd and NZBGet.
 
 There are a couple components that make up the failed download handling process:
 
-1) Check SABnzbd Queue and History for failed downloads
+1) **Check Downloader**:
 
-a. Queue - Encrypted (passworded) as detected by SAB
-b. History - Failed, whatever the reason, not enough to repair or extraction failed
+a. Queue - Check your downloader's queue for password-protected (encrypted) releases
+b. History - Check your downloader's history for failure (eg. not enough to repair, or extraction failed)
 
 When Sonarr finds a failed download it starts processing them and does a few things:
 
@@ -13,7 +13,7 @@ When Sonarr finds a failed download it starts processing them and does a few thi
 2. Removes the failed download from SAB to free space (opt out)
 3. Starts searching for a replacement file (opt out)
 
-2) Blacklisting
+2) **Blacklisting**
 Allows automatic skipping of nzbs when they fail, this means that nzb will not be automatically downloaded by Sonarr ever again (You can still force the download via a manual search).
 
 There are 3 advanced options (on 'Download Client' settings page) that control the behavior of failed downloading in Sonarr, at this time, they are all on by default.
