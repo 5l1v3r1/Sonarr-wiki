@@ -17,7 +17,7 @@ But while you're at it, read the change log to find out what the relevant change
 
 _(This warning will not appear if your current version is less than 14 days old)_
 
-#### Unable to update, running from write-protected folder ####
+#### Cannot install update because startup folder is not writable by the user ####
 
 This means Sonarr will be unable to update itself. You'll have to update Sonarr manually or set the permissions on Sonarr's Startup directory (the installation directory) to allow Sonarr to update itself.
 
