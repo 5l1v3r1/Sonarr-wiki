@@ -36,12 +36,6 @@ Sonarr relies on being able to match titles, often the scene posts episodes usin
 ### Sonarr grabbed a release, why can't it import it? ###
 The reason it was able to grab the release in the first place was because the indexer returned the tv rage ID for the series and Sonarr was able to match it to that, but that ID is not available during import, so it fails.
 
-### Why can't I add a new show to Sonarr, its on TheTVDB? ###
-Sonarr use [trakt](http://trakt.tv/) for series/episode information and images (fanart, banners, images). Here are some reasons why you might not be able to find your show:
-
-1. Trakt doesn't like special characters to be used when searching for series through the API. Try your search without special characters. [Also vote on this issue so they can get it fixed](http://support.trakt.tv/forums/188762-general/suggestions/4199849-searching-for-shows-with-special-characters).
-2. The series hasn't been added to trakt yet, follow their [guide](http://support.trakt.tv/knowledgebase/articles/151225-how-do-i-add-a-new-tv-show-to-trakt) to get it added. 
-
 ### I see that feature/bug X was fixed, why can't I see it?  ###
 Sonarr consists of two main branches of code, master and develop, master is released periodically, when the develop branch is stable and develop is for pre-release testing and people willing to live on the edge, if you want to help out testing or want more information on the two branches, please see: [[Release-Branches]]
 When a feature is marked as In Develop it will only be available to users running the develop branch, once its been move to Live (in master) it is officially released.
