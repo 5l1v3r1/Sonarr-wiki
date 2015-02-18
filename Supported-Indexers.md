@@ -59,7 +59,6 @@ Website: http://torrentleech.org/
 |-----------------|:-----------:|:--------:|:------:|:-------:|:-----:|:--------:|
 | **Usenet**      |             |          |        |         |       |          |
 | Newznab         |     Yes     |    Yes   |   Yes  |   Yes   |  Yes  |   Basic  |
-| Animezb         |     Yes     |     -    |    -   |    -    |  Yes  |     -    |
 | Fanzub          |     Yes     |     -    |    -   |    -    |  Yes  |     -    |
 | Omgwtfnzbs      |     Yes     |    Yes   |   Yes  |   Yes   |   -   |   Basic  |
 | Wombles         |     Yes     |     -    |    -   |    -    |   -   |     -    |
