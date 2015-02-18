@@ -18,7 +18,7 @@ You will need to edit Sonarr's config file directly as these settings are not ex
 ## Linux / OS X ##
 
 ### Prerequisites ###
-- Windows PC (Conversion tool only works there currently, OpenSSL should be able to do it, but it needs to be done without a pass phrase)
+- Windows PC. The conversion tool only works there, OpenSSL >= 1.0.0 should be able to do it, but it needs to be done without a pass phrase, currently (version 1.0.1l) this is not possible
 - SSL Cert with Private Key [(Create self-signed Certificate)](http://www.selfsignedcertificate.com/) then 	- Convert .key to .pvk
 
   1. Download Win32 binary - http://www.drh-consultancy.demon.co.uk/pvk.html
