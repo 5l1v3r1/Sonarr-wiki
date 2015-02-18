@@ -20,13 +20,6 @@ Website: http://fanzub.com/
 
 Indexer for Japanese media (Anime) exclusively.
 
-###Animezb###
-
-Website: https://animezb.com/
-
-Indexer for Japanese media (Anime) exclusively.
-
-Animezb is meant to complement Fanzub since it indexes new releases more quickly.
 
 ##Torrents##
 
