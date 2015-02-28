@@ -43,6 +43,8 @@ Website: http://www.iptorrents.com/t
 
 Website: https://kickass.to/
 
+**NOTE:** By default only verified releases will be shown, this can be changed in the KAT settings within Sonarr. If you're not seeing results for in some searches, it is likely because they are not verified results.
+
 ###Nyaa###
 
 Website: http://www.nyaa.se/
