@@ -17,6 +17,7 @@
 - [[Backup and Restore]]
 - [[PushOver]]
 - [[Sorting and Renaming]]
+- [[Anime naming scheme]]
 - [[Monitoring Series and Episodes]]
 
 ### Troubleshooting ###
