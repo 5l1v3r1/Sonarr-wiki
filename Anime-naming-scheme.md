@@ -27,3 +27,7 @@ The above renaming scheme is an example that will let your anime have almost the
 >{Series.CleanTitle}.S{season:00}E{episode:00}.{absolute:000}.{Quality.Full}-**{Release.Group}**
 >
 >The same goes for group. If you have a file, with the group in the end like this, Sonarr will be able to detect the group (not through the dronefactory. The dronefactory expects anime scene style) when this show is in your library.
+
+Feel free to modify this naming scheme to your personal preference or take comfort on knowing that the scheme, as described here, is well tested.
+
+One more note. If you ever want to rename your files to exactly their original state, you can use AniDB O'Matic for that. It's a tool that hooks directly into the info on anidb and parses your files by hash. It can then rename to the original name as stored at anidb. Be warned though. The hashing may take a very long time.
