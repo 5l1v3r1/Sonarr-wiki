@@ -18,7 +18,7 @@ This can be for various reasons, but the most common is, Sonarr is running as a 
 2. You're using a mapped network drive (not a UNC path)
 	
 	**Solutions:**
-	- Change your paths to UNC paths (\\server\share)
+	- Change your paths to UNC paths (\\\\server\share)
 	- Run NzbDrone.exe via the Startup Folder 
 
 
