@@ -34,7 +34,7 @@ The installation assumes that you're not using the root user to install/run Sona
      As of this writing, the "mono" and "mono-opt" packages from the OpenSuse are version 3.12.0-2.1 and cause a coredump when you attempt to run Sonarr. Use the "mono-3.4" packages instead:
  
     ```bash
-    sudo yum install mono-opt-3.4 mono-opt-devel-3.4
+    sudo yum install mono-opt-3.4 mono-opt-3.4-devel
     ```
    
    
