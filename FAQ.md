@@ -7,7 +7,7 @@ Sonarr doesn't actively search for any episodes on its own, it uses the indexer'
 **Active searching** (via the indexer's API) is only done in a few situations:
 * When the user clicks the Automatic or Manual Search buttons on a specific episode, season, or series.
 * If Sonarr has been shut down for a period of more than one hour, it will attempt to search for recently aired episodes that have not been grabbed or imported yet. This is a safe guard in case you miss too many RSS syncs in a row, which could cause Sonarr to never find an episode using that passive method.
-* When a user adds a show using the _"Add and Search"_ button. > (New behavior as of March 2015)
+* When a user adds a show using the _"Add and Search"_ button. _(New behavior as of March 2015)_
 
 ### Why can't Sonarr see my files on a remote server?  ###
 This can be for various reasons, but the most common is, Sonarr is running as a service, which causes one of two things:
