@@ -2,7 +2,7 @@
 No. As long as you set the Drone Factory path `Settings > Download Client > Drone Factory` to the folder where sab downloads your TV Shows everything will be imported automatically. [[Sorting and Renaming]]
 
 ### How does Sonarr find episodes?  ###
-Sonarr doesn't actively search for any episodes on its own, it uses the indexer's latest releases to find recently posted episodes. It does this using the indexer's **RSS feeds**, which typically include the last 100 uploads to the indexer. By default Sonarr will download the latest RSS feeds every 15 minutes. Because of this, Sonarr is designed to be installed on a system that is running most of the time.
+Sonarr doesn't actively search for any episodes on its own; it uses the indexer's latest releases to find recently posted episodes. It does this using the indexer's **RSS feeds**, which typically include the last 100 uploads to the indexer. By default Sonarr will download the latest RSS feeds every 15 minutes. Because of this, Sonarr is designed to be installed on a system that is running most of the time.
 
 **Active searching** (via the indexer's API) is only done in a few situations:
 * When the user clicks the _Automatic_ or _Manual Search_ buttons on a specific episode, season, or series.
