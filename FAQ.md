@@ -2,7 +2,12 @@
 No. As long as you set the Drone Factory path `Settings > Download Client > Drone Factory` to the folder where sab downloads your TV Shows everything will be imported automatically. [[Sorting and Renaming]]
 
 ### How does Sonarr find episodes?  ###
-Sonarr doesn't actively search for any episodes on its own, it uses the indexer's latest releases to find recently posted episodes. Typically the indexer returns the last 100 releases, which isn't much, so be wary if you shut your system down for an extended period of time you might miss some newly release episodes. also, sometimes older episodes are re-posted and might get downloaded if you haven't ignored them. Missing episodes are not actively searched for (missing is anything that aired prior to the current time), unless that episode has not yet been posted (aired recently) or is re-posted you will need to manually search for them. If Sonarr is shut down for a period of time (more than 1 hour), it will attempt to search for recently aired episodes that have not been grabbed or imported yet, this is the only case where Sonarr will search for a missing episode without user interaction.
+Sonarr doesn't actively search for any episodes on its own, it uses the indexer's latest releases to find recently posted episodes. It does this using the indexer's **RSS feeds**, which typically include the last 100 uploads to the indexer. By default Sonarr will download the latest RSS feeds every 15 minutes. Because of this, Sonarr is designed to be installed on a system that is running most of the time.
+
+**Active searching** (via the indexer's API) is only done in a few situations:
+* When the user clicks the Automatic or Manual Search buttons on a specific episode, season, or series.
+* If Sonarr has been shut down for a period of more than one hour, it will attempt to search for recently aired episodes that have not been grabbed or imported yet. This is a safe guard in case you miss too many RSS syncs in a row, which could cause Sonarr to never find an episode using that passive method.
+* When a user adds a show using the _"Add and Search"_ button. > (New behavior as of March 2015)
 
 ### Why can't Sonarr see my files on a remote server?  ###
 This can be for various reasons, but the most common is, Sonarr is running as a service, which causes one of two things:
