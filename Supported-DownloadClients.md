@@ -36,6 +36,7 @@ Website: https://www.transmissionbt.com/
 
 ###UTorrent###
 
+Version 3.0 or newer required. Requires Web UI (located in `Preferences -> Advanced`) enabled.
 Website: http://www.utorrent.com/
 
 ##RTorrent##
