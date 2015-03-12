@@ -79,43 +79,9 @@ http://update.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz
     mono --debug NzbDrone.exe
 
 
-### Automatically Start Sonarr (systemd) ###
+### General ###
 
-**Create the service file**
-
-```bash
-cat > /etc/systemd/system/sonarr.service << EOF
-[Unit]
-Description=Sonarr Daemon
-After=syslog.target network.target
-
-[Service]
-User=root
-Group=root
-
-Type=simple
-ExecStart=/usr/bin/mono /opt/NzbDrone/NzbDrone.exe -nobrowser
-TimeoutStopSec=20
-
-[Install]
-WantedBy=multi-user.target
-EOF
-```
-
-**Add Sonarr to startup**
-
-```bash
-systemctl enable sonarr.service
-```
-
-**Start Sonarr service**
-
-Start sonarr via systemd and verify status.
-    
-```bash
-systemctl start sonarr.service
-systemctl status sonarr.service
-```
+Also see [[https://github.com/Sonarr/Sonarr/wiki/Autostart-on-Linux]]
 
 # Docker
 
