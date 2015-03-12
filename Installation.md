@@ -44,7 +44,42 @@ mono 3.10 is included for x86/x64 in our repo (mirrored from Xamarin's), for oth
 
 	http://localhost:8989
 
-### Automatically Start Sonarr ###
+
+### Arch Linux ###
+Available in AUR:
+- Master: https://aur.archlinux.org/packages/sonarr/
+- Develop: https://aur.archlinux.org/packages/sonarr-develop/
+- Develop (compile-it-yourself): https://aur.archlinux.org/packages/sonarr-git/
+
+
+### CentOS / Fedora / RHEL ###
+[[CentOS 6 Installation Instructions|CentOS 6]]<br />
+[[Fedora Installation|Fedora 20]]
+### Raspberry Pi ###
+[Install Nzbdrone Raspberry Pi on Raspbian](http://www.htpcguides.com/install-sonarr-raspberry-pi-mono-310/)
+### FreeNAS / FreeBSD ###
+[[FreeNAS Installation Instructions|FreeNAS Installation]]
+### Other ###
+**Install dependencies**
+
+    mono (3.6+ but 3.10+ is recommended)
+    mediainfo (for processing files on import)
+    sqlite3 (database)
+
+**Download**
+
+http://update.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz
+
+**Extract tar.gz**
+
+    tar xvfz NzbDrone.master.tar.gz
+
+**Run Nzbdrone with mono (debugging enabled)**
+
+    mono --debug NzbDrone.exe
+
+
+### Automatically Start Sonarr (systemd) ###
 
 **Create the service file**
 
@@ -81,39 +116,6 @@ Start sonarr via systemd and verify status.
 systemctl start sonarr.service
 systemctl status sonarr.service
 ```
-
-### Arch Linux ###
-Available in AUR:
-- Master: https://aur.archlinux.org/packages/sonarr/
-- Develop: https://aur.archlinux.org/packages/sonarr-develop/
-- Develop (compile-it-yourself): https://aur.archlinux.org/packages/sonarr-git/
-
-
-### CentOS / Fedora / RHEL ###
-[[CentOS 6 Installation Instructions|CentOS 6]]<br />
-[[Fedora Installation|Fedora 20]]
-### Raspberry Pi ###
-[Install Nzbdrone Raspberry Pi on Raspbian](http://www.htpcguides.com/install-sonarr-raspberry-pi-mono-310/)
-### FreeNAS / FreeBSD ###
-[[FreeNAS Installation Instructions|FreeNAS Installation]]
-### Other ###
-**Install dependencies**
-
-    mono (3.6+ but 3.10+ is recommended)
-    mediainfo (for processing files on import)
-    sqlite3 (database)
-
-**Download**
-
-http://update.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz
-
-**Extract tar.gz**
-
-    tar xvfz NzbDrone.master.tar.gz
-
-**Run Nzbdrone with mono (debugging enabled)**
-
-    mono --debug NzbDrone.exe
 
 # Docker
 
