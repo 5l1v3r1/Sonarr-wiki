@@ -37,3 +37,8 @@ Website: https://www.transmissionbt.com/
 ###UTorrent###
 
 Website: http://www.utorrent.com/
+
+##RTorrent##
+
+(Not yet merged into develop)
+Requires rTorrent installed with XML-RPC support, and a HTTP to SCGI proxy (usually Lighttpd, Nginx, or Apache). Look for ruTorrent instructions for how to set it up.
