@@ -46,13 +46,14 @@ mono 3.10 is included for x86/x64 in our repo (mirrored from Xamarin's), for oth
 
 **Automatically Start Sonarr**
 
+[[Autostart on Linux]]
+
 ### Arch Linux ###
 Available in AUR:
-Master: https://aur.archlinux.org/packages/sonarr/
-Develop: https://aur.archlinux.org/packages/sonarr-develop/
-Develop (compile-it-yourself): https://aur.archlinux.org/packages/sonarr-git/
+- Master: https://aur.archlinux.org/packages/sonarr/
+- Develop: https://aur.archlinux.org/packages/sonarr-develop/
+- Develop (compile-it-yourself): https://aur.archlinux.org/packages/sonarr-git/
 
-[[Autostart on Linux]]
 
 ### CentOS / Fedora / RHEL ###
 [[CentOS 6 Installation Instructions|CentOS 6]]<br />
