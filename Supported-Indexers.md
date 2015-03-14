@@ -16,16 +16,31 @@ Wombles Index is a free RSS feed that reports recent public releases. Wombles do
 
 ###Fanzub###
 
-Website: http://fanzub.com/
+Website: <s>http://fanzub.com/</s>
 
 Indexer for Japanese media (Anime) exclusively.
 
+**NOTE:** The original Fanzub site was decommissioned March 1st, 2015. Several alternatives sites implementing the same api have may be available.
 
 ##Torrents##
+
+###Torznab###
+
+**Not available yet**
+
+Torznab is a wordplay on Torrent and Newznab. It uses the same structure and syntax as the Newznab API specification, but exposing torrent-specific attributes and .torrent files. Thus supports a recent rss feed AND backlog searching capabilities. The specification is not maintained and supported by the Newznab organization.
+(The same api specification is shared with nZEDb)
+
+At this point it's unlikely your favorite tracker supports this. In fact, atm there's only one. We'll update this post once we become aware of other trackers supporting it.
+
+**Disclaimer:** Many torrent trackers thrive on the community and may have rules in place that mandate site visits. Please review your tracker rules and etiquette. We're not responsible if your account is banned for disobeying rules or accruing HnRs/low-ratio.
 
 ###BitMeTv###
 
 Website: http://www.bitmetv.org/
+
+**NOTE:** BitMeTv requires a cookie to be able to access the rss feed. You'll have to retrieve the cookie using your browser.
+The cookie should look like "uid=123456789; pass=abcdef0123456789abcdef0123456789".
 
 ###BroadcastheNet###
 
@@ -33,11 +48,15 @@ Website: https://broadcasthe.net/
 
 ###Eztv###
 
-Website: https://eztv.it/
+Website: https://eztv.ch/
+
+**Warning:** do not use <s>eztv.it</s>.
+
+Atm the entire feed is unavailable.
 
 ###IPTorrents###
 
-Website: http://www.iptorrents.com/t
+Website: http://www.iptorrents.com/
 
 ###KickassTorrents###
 
@@ -65,9 +84,10 @@ Website: http://torrentleech.org/
 | Omgwtfnzbs      |     Yes     |    Yes   |   Yes  |   Yes   |   -   |   Basic  |
 | Wombles         |     Yes     |     -    |    -   |    -    |   -   |     -    |
 | **Torrent**     |             |          |        |         |       |          |
+| Torznab         |   Pending   | Pending  | Pending| Pending |Pending|  Pending |
 | BitMeTv         |     Yes     |     -    |    -   |    -    |   -   |     -    |
 | BroadcastheNet  |     Yes     |    Yes   |   Yes  |   Yes   |   -   |     -    |
-| Eztv            |     Yes     |    Yes   |   Yes  |    -    |   -   |     -    |
+| <s>Eztv</s>     |     Yes     |    Yes   |   Yes  |    -    |   -   |     -    |
 | IPTorrents      |     Yes     |     -    |    -   |    -    |   -   |     -    |
 | KickassTorrents |     Yes     |    Yes   |   Yes  |   Yes   |   -   |   Basic  |
 | Nyaa            |     Yes     |     -    |    -   |    -    |  Yes  |   Basic  |
