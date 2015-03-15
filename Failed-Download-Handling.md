@@ -10,14 +10,13 @@ b. History - Check your downloader's history for failure (eg. not enough to repa
 When Sonarr finds a failed download it starts processing them and does a few things:
 
 1. Adds a failed event to Sonarr's history
-2. Removes the failed download from SAB to free space (opt out)
-3. Starts searching for a replacement file (opt out)
+2. Removes the failed download from Download Client to free space and clear downloaded files (optional)
+3. Starts searching for a replacement file (optional)
 
 2) **Blacklisting**
 Allows automatic skipping of nzbs when they fail, this means that nzb will not be automatically downloaded by Sonarr ever again (You can still force the download via a manual search).
 
-There are 3 advanced options (on 'Download Client' settings page) that control the behavior of failed downloading in Sonarr, at this time, they are all on by default.
+There are 2 advanced options (on 'Download Client' settings page) that control the behavior of failed downloading in Sonarr, at this time, they are all on by default.
 
-* Enable - Turns the checking of SAB and the blacklist functionality on or off
 * Redownload - Controls whether or not Sonarr will search for the same episode after a failure
-* Remove - Whether or not the download should automatically be removed from SAB when the failure is detected
+* Remove - Whether or not the download should automatically be removed from Download Client when the failure is detected
