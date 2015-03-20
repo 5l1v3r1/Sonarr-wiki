@@ -33,7 +33,7 @@ All these attributes are optional, the bold ones are recommended.
 | **seeders**          | integer | Number of active seeders. Omit if unknown!     |
 | leechers             | integer | Number of active non-seeders. Omit if unknown! |
 | **peers**            | integer | Number of active peers (seeders+leechers).     |
-| seedtype             | string  | **TBD** Specifies which seed criteria must be met was going for 'ratio,seedtime,both' but afaik it's always 'either' |
+| seedtype             | string  | **TBD** Specifies which seed criteria must be met. Was going for 'ratio,seedtime,both' but afaik it's always 'either' |
 | **minimumratio**     | double  | Specifies the minimum ratio the torrent client must seed at for this torrent. |
 | **minimumseedtime**  | integer | Specifies the minimum number of seconds the torrent client must've actively seeded the torrent. |
 
