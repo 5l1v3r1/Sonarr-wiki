@@ -26,14 +26,13 @@ Indexer for Japanese media (Anime) exclusively.
 
 ###Torznab###
 
-**Not available yet**
-
 Torznab is a wordplay on Torrent and Newznab. It uses the same structure and syntax as the Newznab API specification, but exposing torrent-specific attributes and .torrent files. Thus supports a recent rss feed AND backlog searching capabilities. The specification is not maintained and supported by the Newznab organization.
 (The same api specification is shared with nZEDb)
 
 At this point it's unlikely your favorite tracker supports this. In fact, atm there's only one. We'll update this post once we become aware of other trackers supporting it.
 
-**Disclaimer:** Many torrent trackers thrive on the community and may have rules in place that mandate site visits. Please review your tracker rules and etiquette. We're not responsible if your account is banned for disobeying rules or accruing HnRs/low-ratio.
+**Important/Disclaimer:** Many torrent trackers thrive on the community and may have rules in place that mandate site visits, karma, votes, comments and all. Please review your tracker rules and etiquette, keep your community alive.  
+We're not responsible if your account is banned for disobeying rules or accruing HnRs/low-ratio.
 
 ###BitMeTv###
 
