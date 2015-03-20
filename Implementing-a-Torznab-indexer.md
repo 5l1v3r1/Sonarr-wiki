@@ -34,13 +34,13 @@ All these attributes are optional, the bold ones are recommended.
 | leechers             | integer | Number of active non-seeders. Omit if unknown! |
 | **peers**            | integer | Number of active peers (seeders+leechers).     |
 | seedtype             | string  | **TBD** Specifies which seed criteria must be met. Was going for 'ratio,seedtime,both' but afaik it's always 'either' |
-| **minimumratio**     | double  | Specifies the minimum ratio the torrent client must seed at for this torrent. |
-| **minimumseedtime**  | integer | Specifies the minimum number of seconds the torrent client must've actively seeded the torrent. |
+| **minimumratio**     | double  | Specifies the minimum ratio the torrent client must seed this torrent. |
+| **minimumseedtime**  | integer | Specifies the minimum number of seconds the torrent client must actively seed the torrent. |
 
 ###Minimum ratio/seedtime###
 
 These two attributes are included to allow a torrent tracker to specify the seeding requirements on a per torrent basis.     
-These values should be set to the long term requirements for the torrent. So if it's freeleech for a decade, you can set minimumratio to 0.0, but if it's only for a day, keep it at 1.0.  
+These values should be set to the long term requirements for the torrent. So if it's freeleech for a decade, you can set minimumratio to 0.0, but if it's only for a day, keep it at 1.0. (0.0 is a bit drastic, but you get the point)  
 The idea is that if one of the two criteria is satisfied, the torrent client can put the torrent at a lower priority or stop seeding entirely.
 
 Specifying one or both of these attributes is recommended, because it allows future clients to appropriately adjust the seeding configuration of the torrent client.
