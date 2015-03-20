@@ -6,6 +6,8 @@ This api offers a standardized recent/search api for both tv and movies (of whic
 Obviously, Torznab is only implemented on one torrent tracker, but that will change and when it does Sonarr will be ready for it.  
 The purpose of this wiki page is to describe the differences with Newznab and some recommendations to implement a custom proxy/indexer.
 
+**Note:** If your torrent tracker is based on a generic implementation, please coordinate to get the api implemented in the generic base code so everyone can benefit and to avoid double work.
+
 ##Differences with Newznab##
 
 First and foremost: Torznab indexers should return application/x-bittorrent as enclosure type:   
