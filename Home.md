@@ -9,7 +9,6 @@
 - [[Reverse Proxy]]
 - [[Release Branches]]
 - [[Profiles]]
-- [[Disable Drone Factory Folder Scanning]]
 
 ### More Information ###
 - [[Failed Download Handling]]
