@@ -39,7 +39,8 @@ We're not responsible if your account is banned for disobeying rules or accruing
 Website: http://www.bitmetv.org/
 
 **NOTE:** BitMeTv requires a cookie to be able to access the rss feed. You'll have to retrieve the cookie using your browser.
-The cookie should look like "uid=123456789; pass=abcdef0123456789abcdef0123456789".
+The cookie should look like:   
+```"uid=123456789; pass=abcdef0123456789abcdef0123456789".```
 
 ###BroadcastheNet###
 
