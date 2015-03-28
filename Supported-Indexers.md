@@ -84,7 +84,7 @@ Website: http://torrentleech.org/
 | Omgwtfnzbs      |     Yes     |    Yes   |   Yes  |   Yes   |   -   |   Basic  |
 | Wombles         |     Yes     |     -    |    -   |    -    |   -   |     -    |
 | **Torrent**     |             |          |        |         |       |          |
-| Torznab         |   Pending   | Pending  | Pending| Pending |Pending|  Pending |
+| Torznab         |     Yes     |    Yes   |   Yes  |   Yes   |Unknown|  Unknown |
 | BitMeTv         |     Yes     |     -    |    -   |    -    |   -   |     -    |
 | BroadcastheNet  |     Yes     |    Yes   |   Yes  |   Yes   |   -   |     -    |
 | <s>Eztv</s>     |     Yes     |    Yes   |   Yes  |    -    |   -   |     -    |
