@@ -1,5 +1,4 @@
-### Does Sonarr require a SABnzbd post-processing script to import downloaded episodes?  ###
-No. As long as you set the Drone Factory path `Settings > Download Client > Drone Factory` to the folder where sab downloads your TV Shows everything will be imported automatically. [[Sorting and Renaming]]
+
 
 ### How does Sonarr find episodes?  ###
 Sonarr doesn't actively search for any episodes on its own; it uses the indexer's latest releases to find recently posted episodes. It does this using the indexer's **RSS feeds**, which typically include the last 100 uploads to the indexer. By default Sonarr will download the latest RSS feeds every 15 minutes. Because of this, Sonarr is designed to be installed on a system that is running most of the time.
@@ -8,6 +7,16 @@ Sonarr doesn't actively search for any episodes on its own; it uses the indexer'
 * When the user clicks the _Automatic_ or _Manual Search_ buttons on a specific episode, season, or series.
 * If Sonarr has been shut down for a period of more than one hour, it will attempt to search for recently aired episodes that have not been grabbed or imported yet. This is a safe guard in case you miss too many RSS syncs in a row, which could cause Sonarr to never find an episode using that passive method.
 * When a user adds a show using the _"Add and Search"_ button. _(New behavior as of March 2015)_
+
+### Why didn't Sonarr grab an episode I was expecting?  ###
+First, make sure you read and understand the section above called _"How does Sonarr find episodes?"_ Second, make sure at least one of your indexers has the episode you were expecting to be grabbed.
+
+1. Click the 'Manual Search' icon next to the episode listing in Sonarr. Are there any results? If no, then either Sonarr is having trouble communicating with your indexers, or your indexers do not have the episode, or the episode is improperly named/categorized on the indexer.
+
+2. If there are results from step 1, check next to them for red exclamation point icon. Hover over the icon to see why that release is not a candidate for automatic downloads. If every result has the icon, then no automatic download will occur.
+
+3. If there is at least one valid manual search result from step 2, then an automatic download should have happened. If it didn't, the most likely reason is a temporary communication problem preventing an RSS Sync from your indexer. It is recommended to have several indexers set up for best results.
+
 
 ### Why can't Sonarr see my files on a remote server?  ###
 This can be for various reasons, but the most common is, Sonarr is running as a service, which causes one of two things:
@@ -26,6 +35,9 @@ This can be for various reasons, but the most common is, Sonarr is running as a 
 	- Change your paths to UNC paths (\\\\server\share)
 	- Run NzbDrone.exe via the Startup Folder 
 
+
+### Does Sonarr require a SABnzbd post-processing script to import downloaded episodes?  ###
+No. As long as you set the Drone Factory path `Settings > Download Client > Drone Factory` to the folder where sab downloads your TV Shows everything will be imported automatically. [[Sorting and Renaming]]
 
 ### How does Sonarr handle scene numbering issues (American Dad!, etc)? ###
 Sonarr relies on [TheXEM](TheXEM "http://thexem.de/"), a community driven site that lets users create mappings of shows that the scene (the people that post the files) and TheTVDB (which typically follows the network's numbering). There are a number of shows on there already, but its easy to add another and typically the changes are accepted within a couple days (if they're correct).
