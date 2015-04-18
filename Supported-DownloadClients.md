@@ -41,5 +41,8 @@ Website: http://www.utorrent.com/
 
 ##RTorrent##
 
-(Not yet merged into develop)
+_(Not yet merged into develop)_
+
 Requires rTorrent installed with XML-RPC support, and a HTTP to SCGI proxy (usually Lighttpd, Nginx, or Apache). Look for ruTorrent instructions for how to set it up.
+
+Website: http://rakshasa.github.io/rtorrent/
