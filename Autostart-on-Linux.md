@@ -1,4 +1,4 @@
-### Method 1 (Recommended): Upstart (Ubuntu based distros)
+### Method 1: Upstart (Ubuntu based distros)
 Using Upstart allows for more advanced features, such as start/stop and automatic restart if it would crash.
 
 **Create the NzbDrone Upstart config file**
