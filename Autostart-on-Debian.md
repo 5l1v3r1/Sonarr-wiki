@@ -54,7 +54,7 @@ case "$1" in
 start)
     if [ -z "${NZBDRONE_PID}" ]; then
         echo "Starting $DESC"
-        rm -rf ${PID_PATH} || return 1
+        rm ${PID_FILE} || return 1
         install -d --mode=0755 -o $RUN_AS $PID_PATH || return 1
         start-stop-daemon -d $APP_PATH -c $RUN_AS --start --background --pidfile $PID_FILE --exec $DAEMON -- $DAEMON_OPTS $EXENAME
     else
