@@ -3,10 +3,11 @@
 Since version 2.0.0.3000 Sonarr supports a Newznab-like api dubbed **Torznab**.  
 This api offers a standardized recent/search api for both tv and movies (of which Sonarr only uses tv).  
 
-Obviously, Torznab is only implemented on one torrent tracker, but that will change and when it does Sonarr will be ready for it.  
+Obviously, Torznab is only implemented on a limit number of torrent trackers, but that will change and when it does Sonarr will be ready for it.  
 The purpose of this wiki page is to describe the differences with Newznab and some recommendations to implement a custom proxy/indexer.
 
-**Note:** If your torrent tracker is based on a generic tracker software, please coordinate to get the api implemented in the generic base code so everyone can benefit and to avoid double work.
+**Note:** If your torrent tracker is based on a generic tracker software, please coordinate to get the api implemented in the generic base code so everyone can benefit and to avoid double work.   
+It's also imperative to think about how to integrate this in your existing karma/bonus system to keep your users engaged in your community.
 
 ##Differences with Newznab##
 
