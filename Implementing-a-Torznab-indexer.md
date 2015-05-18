@@ -28,6 +28,7 @@ All these attributes are optional, the bold ones are recommended.
 | type                 | string  | series,movie,music,book (if unknown just omit) |
 | tvdbid               | integer | id for thetvdb.com                             |
 | **rageid**           | integer | id for tvrage.com                              |
+| imdb                 | integer | id for imdb.com                                |
 | bannerurl            | url     | Url to a banner image                          |
 | **infohash**         | string  | Torrent infohash                               |
 |  magneturl           | url     | Magnet uri. Not relevant for private trackers. |
