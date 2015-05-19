@@ -48,11 +48,13 @@ Website: https://broadcasthe.net/
 
 ###Eztv###
 
-Website: https://eztv.ch/
+Website: RIP
 
-**Warning:** do not use <s>eztv.it</s>.
+**Warning:** do not use <s>eztv dot it</s> <s>eztv dot ch</s> or any other eztv site, those aren't owned by eztv (and eztv quit).
 
-Atm the entire feed is unavailable.
+The entire feed is unavailable long before that.
+
+Use the Generic Torrent RSS when we release that feature.
 
 ###IPTorrents###
 
@@ -87,7 +89,6 @@ Website: http://torrentleech.org/
 | Torznab         |     Yes     |    Yes   |   Yes  |   Yes   |Unknown|  Unknown |
 | BitMeTv         |     Yes     |     -    |    -   |    -    |   -   |     -    |
 | BroadcastheNet  |     Yes     |    Yes   |   Yes  |   Yes   |   -   |     -    |
-| <s>Eztv</s>     |     Yes     |    Yes   |   Yes  |    -    |   -   |     -    |
 | IPTorrents      |     Yes     |     -    |    -   |    -    |   -   |     -    |
 | KickassTorrents |     Yes     |    Yes   |   Yes  |   Yes   |   -   |   Basic  |
 | Nyaa            |     Yes     |     -    |    -   |    -    |  Yes  |   Basic  |
