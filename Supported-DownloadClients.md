@@ -42,8 +42,6 @@ Website: http://www.utorrent.com/
 
 ##RTorrent##
 
-_(Not yet merged into develop)_
-
-Requires rTorrent version 9.0 or newer, installed with XML-RPC support, and a SCGI to HTTP proxy (usually Lighttpd, Nginx, or Apache). Look for ruTorrent instructions for how to set up rTorrent.
+Requires rTorrent version 9.0 or newer compiled with XML-RPC support, and a SCGI to HTTP proxy (usually Lighttpd, Nginx, or Apache). Look for ruTorrent instructions for how to set up rTorrent.
 
 Website: http://rakshasa.github.io/rtorrent/
