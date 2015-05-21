@@ -34,13 +34,13 @@ Will watch another folder to check for completed downloads.
 
 Website: https://www.transmissionbt.com/
 
-###UTorrent###
+###uTorrent###
 
 Version 3.0 or newer required. Requires Web UI (located in `Preferences -> Advanced`) enabled.
 
 Website: http://www.utorrent.com/
 
-##RTorrent##
+##rTorrent##
 
 Requires rTorrent version 9.0 or newer compiled with XML-RPC support, and a SCGI to HTTP proxy (usually Lighttpd, Nginx, or Apache). Look for ruTorrent instructions for how to set up rTorrent.
 
