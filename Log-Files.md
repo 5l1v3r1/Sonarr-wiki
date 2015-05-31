@@ -19,3 +19,7 @@ You can enable Trace or Debug logging in Settings on the General tab. Sonarr doe
 
 ### Clearing Logs ###
 You can clear log files and the logs database directly from the UI, under System -> Logs -> Files and System -> Logs respectively.
+
+
+### Multiple Log Files ###
+Sonarr uses rolling log files, each one limited to 1MB in size. The current log file is always `nzbdrone.txt`, for the the other files `nzbdrone.0.txt` is the next newest (the higher the number the older it is). When Info logging is enabled (default) there will be 6 log files in total, when debug or trace logging is enabled there will be 51 files.
