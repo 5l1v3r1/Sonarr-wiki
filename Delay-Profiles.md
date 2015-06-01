@@ -4,7 +4,7 @@ Delay profiles allow you to reduce the number of releases that will be downloade
 
 For example, some shows will receive half a dozen different releases of varying quality in the hours after an episode airs, and without delay profiles Sonarr might try to download all of them. With delay profiles, Sonarr can be configured to ignore the first few hours of releases.
 
-Delay profiles are also helpful if you want to emphasize one protocol (Usenet or BitTorrent) over the other.
+Delay profiles are also helpful if you want to emphasize one protocol (Usenet or BitTorrent) over the other. ([See Example 3](#example-3))
 
 #### How Delay Profiles Work
 
