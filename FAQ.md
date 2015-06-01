@@ -100,3 +100,7 @@ The most time consuming portion is the information refresh (assuming reasonable 
 This number shows the count of episodes in your download client's queue and the last 30 items in its history that have not yet been imported. If the number is blue it is operating normally and should import episodes when they complete. Yellow means there is a warning on one of the episodes. Red means there has been an error. In the case of yellow (warning) and red (error), you will need to look at the queue under Activity to see what the issue is (hover over the icon to get more details).
 
 You need to remove the item from your download client's queue or history to remove them from Sonarr's queue.
+
+### I see log messages for shows I don't have/don't want ###
+
+These messages are completely normal and come from the RSS feeds that Sonarr checks to see if there are episodes you do want, usually these only appear in debug/trace logging, but in the event of an problem processing an item you may see a warning or error. Its safe to ignore the warnings/errors as well since they are for shows you don't want, in the event its for a show you want, open up a support thread on the forums.
