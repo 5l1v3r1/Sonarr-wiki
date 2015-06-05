@@ -38,7 +38,7 @@ DAEMON_OPTS=""
 # Path to store PID file
 PID_PATH=/var/run/nzbdrone
 ############### END EDIT ME ##################
-
+mkdir -p ${PID_PATH}
 PID_FILE=${PID_PATH}/nzbdrone.pid
 EXENAME=`basename ${APP_PATH}/NzbDrone.exe`
 DESC=`basename ${APP_PATH}/NzbDrone.exe .exe`
