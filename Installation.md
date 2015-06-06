@@ -14,9 +14,10 @@
 * Download latest version of Sonarr's OSX package from [https://download.sonarr.tv/v2/master/latest/NzbDrone.master.osx.zip](https://download.sonarr.tv/v2/master/latest/NzbDrone.master.osx.zip)
 * Open the archive and drag the Sonarr icon to your Application folder.
 
-### Using [Homebrew Cask](https://github.com/caskroom/homebrew-cask)###
+### Using [Homebrew Cask](https://github.com/caskroom/homebrew-cask)### 
 
 ```
+$ brew install caskroom/cask/brew-cask
 $ brew cask install sonarr
 ```
 
