@@ -20,7 +20,7 @@ Website: <s>http://fanzub.com/</s>
 
 Indexer for Japanese media (Anime) exclusively.
 
-**NOTE:** The original Fanzub site was decommissioned March 1st, 2015. Several alternatives sites implementing the same api have may be available.
+**NOTE:** The original Fanzub site was decommissioned March 1st, 2015. Several alternatives sites implementing the same api may be available.
 
 ##Torrents##
 
@@ -33,6 +33,12 @@ At this point it's unlikely your favorite tracker supports this. In fact, atm th
 
 **Important/Disclaimer:** Many torrent trackers thrive on the community and may have rules in place that mandate site visits, karma, votes, comments and all. Please review your tracker rules and etiquette, keep your community alive.  
 We're not responsible if your account is banned for disobeying rules or accruing HnRs/low-ratio.
+
+###TorrentRssIndexer###
+
+Generic torrent RSS feed parser.
+
+**NOTE:** The RSS feed must contain a pubdate. The release size is recommended as well.
 
 ###BitMeTv###
 
@@ -72,6 +78,10 @@ Website: http://www.nyaa.se/
 
 Torrent Indexer for Japanese media (Anime) exclusively.
 
+###Rarbg###
+
+Website: https://rarbg.to/
+
 ###Torrentleech###
 
 Website: http://torrentleech.org/
@@ -87,9 +97,11 @@ Website: http://torrentleech.org/
 | Wombles         |     Yes     |     -    |    -   |    -    |   -   |     -    |
 | **Torrent**     |             |          |        |         |       |          |
 | Torznab         |     Yes     |    Yes   |   Yes  |   Yes   |Unknown|  Unknown |
+| TorrentRss      |     Yes     |     -    |    -   |    -    |   -   |     -    |
 | BitMeTv         |     Yes     |     -    |    -   |    -    |   -   |     -    |
 | BroadcastheNet  |     Yes     |    Yes   |   Yes  |   Yes   |   -   |     -    |
 | IPTorrents      |     Yes     |     -    |    -   |    -    |   -   |     -    |
 | KickassTorrents |     Yes     |    Yes   |   Yes  |   Yes   |   -   |   Basic  |
 | Nyaa            |     Yes     |     -    |    -   |    -    |  Yes  |   Basic  |
+| Rarbg           |     Yes     |    Yes   |   Yes  |   Yes   |   -   |     -    |
 | Torrentleech    |     Yes     |     -    |    -   |    -    |   -   |     -    |
