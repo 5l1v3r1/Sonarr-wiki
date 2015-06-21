@@ -40,7 +40,7 @@ At `11:00pm` the first release for an episode is detected by Sonarr and both tim
 
 ##### Example 3:
 
-A common use for delay profiles is to emphasize one protocol of another. For example, you might only want to download a BitTorrent release if nothing has been uploaded to Usenet after a certain amount of time.
+A common use for delay profiles is to emphasize one protocol over another. For example, you might only want to download a BitTorrent release if nothing has been uploaded to Usenet after a certain amount of time.
 
 You could set a 60 minute timer for BitTorrent, and a 0 minute timer for Usenet.
 
