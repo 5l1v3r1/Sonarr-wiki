@@ -67,8 +67,14 @@ Available in AUR:
 [[Fedora Installation|Fedora 20]]
 ### Raspberry Pi ###
 [Install Nzbdrone Raspberry Pi on Raspbian](http://www.htpcguides.com/install-sonarr-raspberry-pi-mono-310/)
-### FreeNAS / FreeBSD ###
-[[FreeNAS Installation Instructions|FreeNAS Installation]]
+### FreeNAS ###
+
+FreeNAS 9.3 now has a one-click Sonarr [plugin] (http://doc.freenas.org/9.3/freenas_plugins.html)
+
+### FreeBSD ###
+
+[[FreeBSD Installation Instructions|FreeBSD Installation]]
+
 ### Other ###
 **Install dependencies**
 
