@@ -1,6 +1,6 @@
 Installing Sonarr on FreeBSD isn't hard, but does require several commands.  If you aren't familiar with Unix or Linux, this guide should hopefully be enough to get you up and running.  This guide was tested under FreeBSD 10.1-RELEASE.
 
-If you want to do this safely, run it inside a (FreeBSD jail)[https://www.freebsd.org/doc/handbook/jails.html]
+If you want to do this safely, run it inside a [FreeBSD jail](https://www.freebsd.org/doc/handbook/jails.html)
 
 ```
 mv /usr/local/etc/pkg.conf /usr/local/etc/pkg.conf.backup
