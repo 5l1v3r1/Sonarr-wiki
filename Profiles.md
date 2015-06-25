@@ -1,16 +1,23 @@
 ## What is a profile ##
-A profile controls what qualities you want for a series, it lets you decide whether or not you want SDTV or HDTV only and if you eventually want episodes in DVD or Bluray. Sonarr ships with a few default profiles, but you're able to edit and create your own to match your preferences. Sonarr uses your profile when considering a release for grabbing.
+A profile controls what file qualities you want for a series, it lets you decide whether or not you want SDTV or HDTV only and if you eventually want episodes in DVD or Bluray. Sonarr ships with a few default profiles, but you're able to edit and create your own to match your preferences. Sonarr uses your profile when considering a release for grabbing.
 
 ![Profile editor from Sonarr v2.0.0.3258](http://i.imgur.com/CxLB3lW.png)
 ## What makes a profile? ##
 
-A profile is made up of allowed qualities and a cutoff.
+A profile is a ranked list of qualities, along with a 'cutoff' quality.
 
-### Allowed ###
-An allowed quality is a quality that you would want an episode to be in, in order for the release to be wanted.
+#### Allowed ####
+An allowed quality is one that is acceptable for Sonarr to download. If the box next to a quality is checked, that quality is allowed.
 
-### Cutoff ###
-The quality that when met or exceeded will not accept any higher quality releases
+### Ranking ###
+
+Drag the qualities so that they are arranged with your most-desired quality at the top of the list, and your least-desired quality at the bottom of the list.
+
+Sonarr will download any allowed quality, and continue to upgrade the file on your disk if a new release is found that is higher ranked within your profile.
+
+#### Cutoff ####
+
+Set the cutoff from the dropdown menu. Once the quality on your disk meets or exceeds this cutoff level, Sonarr will stop looking for upgrades to your existing file quality.
 
 
 ## Examples ##
