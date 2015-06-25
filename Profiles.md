@@ -1,6 +1,7 @@
 ## What is a profile ##
 A profile controls what qualities you want for a series, it lets you decide whether or not you want SDTV or HDTV only and if you eventually want episodes in DVD or Bluray. Sonarr ships with a few default profiles, but you're able to edit and create your own to match your preferences. Sonarr uses your profile when considering a release for grabbing.
 
+![Profile editor from Sonarr v2.0.0.3258](http://i.imgur.com/CxLB3lW.png)
 ## What makes a profile? ##
 
 A profile is made up of allowed qualities and a cutoff.
