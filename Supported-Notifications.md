@@ -1,5 +1,9 @@
 ##Notifications##
 
+###Pushalot###
+
+Website: https://pushalot.com/
+
 ###PushBullet###
 
 Website: https://www.pushbullet.com/
