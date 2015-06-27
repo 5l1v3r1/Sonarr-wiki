@@ -9,7 +9,7 @@ A profile is a ranked list of qualities, along with a 'cutoff' quality.
 #### Allowed ####
 An allowed quality is one that is acceptable for Sonarr to download. If the box next to a quality is checked, that quality is allowed.
 
-### Ranking ###
+#### Ranking ####
 
 Drag the qualities so that they are arranged with your most-desired quality at the top of the list, and your least-desired quality at the bottom of the list.
 
