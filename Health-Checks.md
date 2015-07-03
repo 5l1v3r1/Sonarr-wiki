@@ -107,6 +107,13 @@ Please read the wiki on instructions how to add indexers.
 None of the indexers you have enabled support searching. This means Sonarr will only be able to find new releases via the RSS feeds. But searching for episodes (either Automatic Search or Manual Search) will never return any results.
 Obviously, the only way to remedy it is to add another indexer.
 
+#### Indexer unusable due to failures ####
+
+Errors occurs while Sonarr tried to use one of your indexers. To limit retries, Sonarr will not use the indexer for an increasing amount of time (up to 24h).   
+This mechanism is triggered if Sonarr was unable to get a response from the indexer (could be dns, connection, authentication or indexer issue), or unable to fetch the nzb/torrent file from the indexer. Please inspect the logs to determine what kind of error causes the problem.   
+
+You can prevent the warning by disabling the affected indexer.
+
 ### Series Folders ###
 
 #### Missing root folder ####
