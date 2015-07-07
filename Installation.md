@@ -111,7 +111,6 @@ For more info about Docker check out the [official website](https://www.docker.c
 
 * Log into your NAS as administrator and go to `Main Menu` -> `Package Center` -> `Settings` -> `Package Sources`
 * Click `Add`, type `SynoCommunity` as Name and `http://packages.synocommunity.com/` as Location and then press `OK` to validate.
-* Also, click `Beta` and then checkmark the option labeled: `Yes, I want beta versions!` and press `OK`
 
 **(2)** Click on the `Community` tab in Package Center and you will find Sonarr listed there.
 
