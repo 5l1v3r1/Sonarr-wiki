@@ -1,19 +1,19 @@
 ## Windows ##
 
 ### Prerequisites ###
-- SSL Cert with Private Key [Create self-signed Certificate](http://www.selfsignedcertificate.com/) then [Convert PEM to PKCS#12](https://www.sslshopper.com/ssl-converter.html)
-- Certificate loaded in Personal store of Local System (http://www.databasemart.com/howto/SQLoverssl/How_To_Import_Personal_Certificate_With_MMC.aspx)
-- Hash/thumbprint of the certificate (http://msdn.microsoft.com/en-us/library/ms734695.aspx)
+- Get an SSL certificate with Private Key [Create self-signed Certificate](http://www.selfsignedcertificate.com/)
+- [Convert PEM to PKCS#12](https://www.sslshopper.com/ssl-converter.html)
+- Load the certificate in Personal store of the Local System (http://www.databasemart.com/howto/SQLoverssl/How_To_Import_Personal_Certificate_With_MMC.aspx)
+- Copy the Hash/thumbprint of the certificate (http://msdn.microsoft.com/en-us/library/ms734695.aspx). Thumbprint will contain spaces. Copy thumbprint to clipboard as is. 
 
 ### Enabling SSL ###
-You will need to edit Sonarr's config file directly as these settings are not exposed in the UI
-
 1. Go to Settings -> General
 2. Show advanced options
 3. Enable SSL, set the SSL port and certificate hash (Sonarr will remove all spaces from the hash as they are not required).
-4. Restart NzbDrone.exe or NzbDrone.Console.exe as administrator so the SSL URL and certificate can be registered with Windows.
-5. Verify SSL connectivity
-6. Restart Sonarr in your preferred method (service, exe, console)
+4. Stop Sonarr servers or kill NzbDrone.exe or NzbDrone.Console.exe process. 
+5. Ensure that server is started in **Run as Administrator ** mode which allows it regiser SSL URL and certificate with Windows.
+6. Verify SSL connectivity
+7. If Sonarr server is still not listening on SSL port, then follow the workaround mentioned in this [thread](http://stackoverflow.com/questions/14953132/iis-7-error-a-specified-logon-session-does-not-exist-it-may-already-have-been).
 
 ## Linux / OS X ##
 
