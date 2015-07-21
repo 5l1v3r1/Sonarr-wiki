@@ -1,27 +1,38 @@
-**WARNING** Only follow these instructions if you understand the risks of doing so and know how to write and enable a post processing script in your download client
+If you're looking to trigger a custom script in your download client to tell Sonarr when to update, you can find more details here: 
 
-## Disable Drone Factory Folder Scanning ##
+### Overview ###
 
-You can disable Drone Factory folder scanning via the advanced setting "Drone Factory Interval" on the download client settings page, by setting it to zero.
+Sonarr can execute a custom script when new episodes are imported or a series is renamed, depending on the which action occurred the parameters will be different. Parameters are passed to the script through environment variables (allowing for more flexibility in what we send to the script and not having to worry about a particular order). In all cases the Environment Variables Sonarr sends will be prefixed with `Sonarr` so, the `EventType` Sonarr sends would be `Sonarr.EventType`.
 
-## Post Processing Script ##
+### Environment Variables ###
 
-You can configure your download client to run a script to send a command to Sonarr's API instructing it to run a scan on the Drone Factory folder.
+##### On Download/On Upgrade #####
 
-The script will need to send a POST with a JSON body as described here: [Command](Command#downloadedepisodesscancommand)
+| Environment Variable | Details |
+|---|---|
+| EventType | Download |
+| Series.Id | Internal ID of the series |
+| Series.Title | Title of the series |
+| Series.Path | Full path to the series |
+| Series.TvdbId | TVDB ID for the series |
+| EpisodeFile.Id | Internal ID of the episode file |
+| EpisodeFile.RelativePath | Path to the episode file relative to the series' path |
+| EpisodeFile.Path | Full path to the episode file |
+| EpisodeFile.SeasonNumber | Season number of episode |
+| EpisodeFile.EpisodeNumbers | Comma separated list of episode numbers |
+| EpisodeFile.EpisodeAirDates | Air date from original network |
+| EpisodeFile.EpisodeAirDatesUtc | Air Date with Time in UTC |
+| EpisodeFile.Quality | Quality name from Sonarr |
+| EpisodeFile.QualityVersion | 1 is the default, 2 for proper, 3+ could be used for anime versions |
+| EpisodeFile.ReleaseGroup | Release group, will not be set if it is unknown |
+| EpisodeFile.SceneName | Original release name |
 
-## Example Scripts ##
+##### On Rename #####
 
-#### curl ####
-````
-curl http://localhost:8989/api/command -X POST -d '{"name": "downloadedepisodesscan"}' --header "X-Api-Key:YOUR_API_KEY_GOES_HERE"
-````
-
-#### PowerShell ####
-````
-$url = "http://8989/api/command"
-$json = "{ ""name"": ""downloadedepisodesscan"" }"
-
-Write-Host "Publishing update $version ($branch) to: $url"
-Invoke-RestMethod -Uri $url -Method Post -Body $json -Headers @{"X-Api-Key"="YOUR_API_KEY_GOES_HERE"}
-````
+| Environment Variable | Details |
+|---|---|
+| EventType | Rename |
+| Series.Id | Internal ID of the series |
+| Series.Title | Title of the series |
+| Series.Path | Full path to the series |
+| Series.TvdbId | TVDB ID for the series |
