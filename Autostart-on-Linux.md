@@ -20,8 +20,7 @@ setgid nogroup
 start on runlevel [2345]
 stop on runlevel [016]
 
-#respawn will break the built-in updating, if you wish to enable respawn you need to make sure updates are disabled within the UI
-#respawn
+respawn
 
 exec mono --debug $DIR/NzbDrone.exe
 
@@ -220,6 +219,8 @@ Group=<service group>
 Type=simple
 ExecStart=<path to mono> <path to NzbDrone.exe> -nobrowser
 TimeoutStopSec=20
+KillMode=process
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
