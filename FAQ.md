@@ -106,3 +106,7 @@ You need to remove the item from your download client's queue or history to remo
 ### I see log messages for shows I don't have/don't want ###
 
 These messages are completely normal and come from the RSS feeds that Sonarr checks to see if there are episodes you do want, usually these only appear in debug/trace logging, but in the event of an problem processing an item you may see a warning or error. Its safe to ignore the warnings/errors as well since they are for shows you don't want, in the event its for a show you want, open up a support thread on the forums.
+
+### Seeding torrents aren't deleted automatically ###
+
+When a torrent is still seeding Sonarr will either Copy or Hardlink the files to your library (depending on your Sonarr settings and disk configuration), when the torrent finishes seeding in your client (hits a seed ratio set in your client) Sonarr can remove the torrent from your client and ask it to delete the previously seeding files on disk, this will happen automatically if the `Remove` option is enabled under Completed Download Handling options.
