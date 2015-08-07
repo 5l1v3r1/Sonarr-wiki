@@ -84,7 +84,7 @@ exit 0
 
 **Make it executable**
 
-	sudo chmod +x nzbdrone
+	sudo chmod +x /etc/init.d/nzbdrone
 
 **Update rc.d**
 
