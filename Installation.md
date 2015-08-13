@@ -48,7 +48,7 @@ mono 3.10 is included for x86/x64 in our repo (mirrored from Xamarin's), for oth
 
 **Start Sonarr**
 
-	mono /opt/NzbDrone/NzbDrone.exe
+	mono --debug /opt/NzbDrone/NzbDrone.exe
 
 **Open Browser**
 
