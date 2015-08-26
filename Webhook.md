@@ -2,11 +2,11 @@ If you're looking to notify a web service to indicate when Sonarr has done thing
 
 ### Overview ###
 
-Sonarr can notify a webservice using POST or PUT when new episodes are imported, a series is renamed, or new files are grabbed.
+Sonarr can notify a web service using `POST` or `PUT` when new episodes are imported, renamed, or grabbed.
 
-Parameters are passed to the webservice using a JSON body
+Parameters are passed to the web service as a JSON body
 
-### Example Outputs ###
+### Example Payload ###
 
 ##### On Download/On Upgrade #####
 
