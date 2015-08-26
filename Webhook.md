@@ -10,7 +10,7 @@ Parameters are passed to the webservice using a JSON body
 
 ##### On Download/On Upgrade #####
 
-`
+```json
 {
     "EventType": "Download",
     "Series": {
@@ -38,10 +38,11 @@ Parameters are passed to the webservice using a JSON body
     },
     "Episode": null
 }
-`
+```
 
 ##### On Grab #####
-`
+
+```json
 {
     "EventType": "Grab",
     "Series": {
@@ -57,10 +58,11 @@ Parameters are passed to the webservice using a JSON body
         "EpisodeNumber": 14
     }
 }
-`
+```
 
 ##### On Rename #####
-`
+
+```json
 {
     "EventType": "Rename",
     "Series": {
@@ -72,4 +74,4 @@ Parameters are passed to the webservice using a JSON body
     "EpisodeFile": null,
     "Episode": null
 }
-`
+```
