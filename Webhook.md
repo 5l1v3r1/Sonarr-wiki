@@ -26,9 +26,9 @@ Parameters are passed to the webservice using a JSON body
         "SeasonNumber": 2,
         "Episodes": [
             {
-                "AirDate": null,
-                "AirDateUtc": null,
-                "EpisodeNumber": 0
+                "AirDate": "2015-08-24",
+                "AirDateUtc": "2015-08-25T01:30:00Z",
+                "EpisodeNumber": 14
             }
         ],
         "Quality": "HDTV-720p",
