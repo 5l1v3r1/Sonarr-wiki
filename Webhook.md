@@ -20,9 +20,9 @@ Parameters are passed to the webservice using a JSON body
         "TvdbId": 259972
     },
     "EpisodeFile": {
-        "Id": 1,
-        "FullPath": "C:\\Temp\\sonarr\\Gravity Falls\\Season 2\\Gravity Falls - S02E14 - The Stanchurian Candidate.mkv",
-        "RelativePath": "Season 2\\Gravity Falls - S02E14 - The Stanchurian Candidate.mkv",
+        "Id": 2,
+        "FullPath": "C:\\Temp\\sonarr\\Gravity Falls\\Season 2\\Gravity Falls - S02E14 - The Stanchurian Candidate HDTV-720p.mkv",
+        "RelativePath": "Season 2\\Gravity Falls - S02E14 - The Stanchurian Candidate HDTV-720p.mkv",
         "SeasonNumber": 2,
         "Episodes": [
             {
@@ -36,7 +36,11 @@ Parameters are passed to the webservice using a JSON body
         "ReleaseGroup": "",
         "SceneName": ""
     },
-    "Episode": null
+    "Episode": {
+        "AirDate": "2015-08-24",
+        "AirDateUtc": "2015-08-25T01:30:00Z",
+        "EpisodeNumber": 14
+    }
 }
 ```
 
