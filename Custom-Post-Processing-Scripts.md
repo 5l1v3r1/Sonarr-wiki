@@ -36,3 +36,7 @@ Sonarr can execute a custom script when new episodes are imported or a series is
 | Series.Title | Title of the series |
 | Series.Path | Full path to the series |
 | Series.TvdbId | TVDB ID for the series |
+
+### Specific usage tips ###
+#### PHP ####
+The information from Sonarr will not be added to $_ENV as one might expect but should be included in the [$_SERVER variable](https://secure.php.net/manual/en/reserved.variables.server.php). A sample script to use this information to convert a file can be found [here](https://gist.github.com/karbowiak/7fb38d346e368edc9d1a).
