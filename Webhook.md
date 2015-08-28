@@ -19,28 +19,20 @@ Parameters are passed to the web service as a JSON body
         "Path": "C:\\Temp\\sonarr\\Gravity Falls",
         "TvdbId": 259972
     },
-    "EpisodeFile": {
-        "Id": 2,
-        "FullPath": "C:\\Temp\\sonarr\\Gravity Falls\\Season 2\\Gravity Falls - S02E14 - The Stanchurian Candidate HDTV-720p.mkv",
-        "RelativePath": "Season 2\\Gravity Falls - S02E14 - The Stanchurian Candidate HDTV-720p.mkv",
-        "SeasonNumber": 2,
-        "Episodes": [
-            {
-                "AirDate": "2015-08-24",
-                "AirDateUtc": "2015-08-25T01:30:00Z",
-                "EpisodeNumber": 14
-            }
-        ],
-        "Quality": "HDTV-720p",
-        "QualityVersion": "1",
-        "ReleaseGroup": "",
-        "SceneName": ""
-    },
-    "Episode": {
-        "AirDate": "2015-08-24",
-        "AirDateUtc": "2015-08-25T01:30:00Z",
-        "EpisodeNumber": 14
-    }
+    "Episodes": [
+        {
+            "Id": 67,
+            "EpisodeNumber": 14,
+            "SeasonNumber": 2,
+            "Title": "The Stanchurian Candidate",
+            "AirDate": "2015-08-24",
+            "AirDateUtc": "2015-08-25T01:30:00Z",
+            "Quality": "HDTV-720p",
+            "QualityVersion": 1,
+            "ReleaseGroup": null,
+            "SceneName": null
+        }
+    ]
 }
 ```
 
@@ -55,12 +47,20 @@ Parameters are passed to the web service as a JSON body
         "Path": "C:\\Temp\\sonarr\\Gravity Falls",
         "TvdbId": 259972
     },
-    "EpisodeFile": null,
-    "Episode": {
-        "AirDate": "2015-08-24",
-        "AirDateUtc": "2015-08-25T01:30:00Z",
-        "EpisodeNumber": 14
-    }
+    "Episodes": [
+        {
+            "Id": 67,
+            "EpisodeNumber": 14,
+            "SeasonNumber": 2,
+            "Title": "The Stanchurian Candidate",
+            "AirDate": "2015-08-24",
+            "AirDateUtc": "2015-08-25T01:30:00Z",
+            "Quality": "WEBDL-1080p",
+            "QualityVersion": 1,
+            "ReleaseGroup": "iT00NZ",
+            "SceneName": null
+        }
+    ]
 }
 ```
 
@@ -75,7 +75,6 @@ Parameters are passed to the web service as a JSON body
         "Path": "C:\\Temp\\sonarr\\Gravity Falls",
         "TvdbId": 259972
     },
-    "EpisodeFile": null,
     "Episode": null
 }
 ```
