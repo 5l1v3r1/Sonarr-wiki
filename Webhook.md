@@ -78,3 +78,8 @@ Parameters are passed to the web service as a JSON body
     "Episode": null
 }
 ```
+
+
+##### Sample/Example Apps/Usage ####
+
+[Hubot Integration](https://github.com/halkeye/hubot-sonarr/)
