@@ -9,15 +9,17 @@ A profile is a ranked list of qualities, along with a 'cutoff' quality.
 #### Allowed ####
 An allowed quality is one that is acceptable for Sonarr to download. If the box next to a quality is checked, that quality is allowed.
 
-#### Ranking ####
+#### Cutoff ####
+
+Select the cutoff ranking from the dropdown menu. This ranking is corresponding to an entry in 'Qualities' ranking selected below.
+
+Once a file on your disk meets or exceeds this cutoff ranking, Sonarr will stop looking for upgrades to your existing file.
+
+#### Qualities (Ranking) ####
 
 Drag the qualities so that they are arranged with your most-desired quality at the top of the list, and your least-desired quality at the bottom of the list.
 
 Sonarr will download any allowed quality, and continue to upgrade the file on your disk if a new release is found that is higher ranked within your profile.
-
-#### Cutoff ####
-
-Set the cutoff from the dropdown menu. Once the quality on your disk meets or exceeds this cutoff level, Sonarr will stop looking for upgrades to your existing file quality.
 
 
 ## Examples ##
