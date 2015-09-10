@@ -116,7 +116,7 @@ For more info about Docker check out the [official website](https://www.docker.c
 
 **(2)** Click on the `Community` tab in Package Center and you will find Sonarr listed there.
 
-**NOTE:** You must install Mono first (also found in the Synocommunity repo.)
+**NOTE:** You must install Mono first (also found in the Synocommunity repo.) AND make sure to give the `sc-media` group read/write access to both your download folders and your media folders.
 
 # NETGEAR ReadyNAS #
 
