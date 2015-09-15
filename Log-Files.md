@@ -13,6 +13,9 @@ The location of the log files depends on the OS, but is in Sonarr's AppData dire
 ##### Synology #####
 `/usr/local/nzbdrone/var/.config/NzbDrone`
 
+##### QNAP #####
+`/share/MD0_DATA/homes/admin/.config/NzbDrone/logs`
+
 ### Trace/Debug Logs ###
 You can enable Trace or Debug logging in Settings on the General tab. Sonarr does not need to restarted for the change to take effect. This change only effects the log files, not the logging database.
 
