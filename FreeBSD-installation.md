@@ -21,6 +21,6 @@ At this point you have a text editor open. Copy and the paste the following line
 
 At this point Sonarr is installed, and we have it set to start on boot. You can execute run_drone, reboot the system or restart the jail if installed into one.
 
-If you are wondering what is going on in the commands, here's a brief rundown. FreeNAS 9.2 may have an older version of pkg installed. By moving the configuration file, it will heal itself and just work™, although this should not be necessary on newer versions of FreeBSD. Then we install mono, mediainfo, sqlite3 and all their required dependencies, including perl.  Next up is Sonarr itself.  Grab the files and extract, simple enough.  Lastly we need to get Sonarr launching at boot, so we make a small script in rc.d which gets run at boot.
+If you are wondering what is going on in the commands, here's a brief rundown. FreeBSD may have an older version of pkg installed and by moving the configuration file, it will heal itself and just work. Although this should not be necessary on newer versions of FreeBSD. Then we install mono, mediainfo, sqlite3 and all their required dependencies, including perl.  Next up is Sonarr itself.  Grab the files and extract, simple enough.  Lastly we need to get Sonarr launching at boot, so we make a small script in rc.d which gets run at boot.
 
 Unix experts will see that this is very hacky and insecure, especially as everything is running as root and listening on all IPs by default, so it's a really good idea to put this inside a jail.
