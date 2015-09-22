@@ -11,31 +11,31 @@ Sonarr can execute a custom script when new episodes are imported or a series is
 | Environment Variable | Details |
 |---|---|
 | EventType | Download |
-| Series.Id | Internal ID of the series |
-| Series.Title | Title of the series |
-| Series.Path | Full path to the series |
-| Series.TvdbId | TVDB ID for the series |
-| EpisodeFile.Id | Internal ID of the episode file |
-| EpisodeFile.RelativePath | Path to the episode file relative to the series' path |
-| EpisodeFile.Path | Full path to the episode file |
-| EpisodeFile.SeasonNumber | Season number of episode |
-| EpisodeFile.EpisodeNumbers | Comma separated list of episode numbers |
-| EpisodeFile.EpisodeAirDates | Air date from original network |
-| EpisodeFile.EpisodeAirDatesUtc | Air Date with Time in UTC |
-| EpisodeFile.Quality | Quality name from Sonarr |
-| EpisodeFile.QualityVersion | 1 is the default, 2 for proper, 3+ could be used for anime versions |
-| EpisodeFile.ReleaseGroup | Release group, will not be set if it is unknown |
-| EpisodeFile.SceneName | Original release name |
+| Series_Id | Internal ID of the series |
+| Series_Title | Title of the series |
+| Series_Path | Full path to the series |
+| Series_TvdbId | TVDB ID for the series |
+| EpisodeFile_Id | Internal ID of the episode file |
+| EpisodeFile_RelativePath | Path to the episode file relative to the series' path |
+| EpisodeFile_Path | Full path to the episode file |
+| EpisodeFile_SeasonNumber | Season number of episode |
+| EpisodeFile_EpisodeNumbers | Comma separated list of episode numbers |
+| EpisodeFile_EpisodeAirDates | Air date from original network |
+| EpisodeFile_EpisodeAirDatesUtc | Air Date with Time in UTC |
+| EpisodeFile_Quality | Quality name from Sonarr |
+| EpisodeFile_QualityVersion | 1 is the default, 2 for proper, 3+ could be used for anime versions |
+| EpisodeFile_ReleaseGroup | Release group, will not be set if it is unknown |
+| EpisodeFile_SceneName | Original release name |
 
 ##### On Rename #####
 
 | Environment Variable | Details |
 |---|---|
 | EventType | Rename |
-| Series.Id | Internal ID of the series |
-| Series.Title | Title of the series |
-| Series.Path | Full path to the series |
-| Series.TvdbId | TVDB ID for the series |
+| Series_Id | Internal ID of the series |
+| Series_Title | Title of the series |
+| Series_Path | Full path to the series |
+| Series_TvdbId | TVDB ID for the series |
 
 ### Specific usage tips ###
 #### PHP ####
