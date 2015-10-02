@@ -9,7 +9,7 @@
 - Better scene name handling. We can attach the actual scene name to database instead of the file name which can be pretty cryptic at times
 
 ##### Cons:
-- Requires Sonarr and your download client to be on the same machine (they can be on different machines as long as both Sonarr and your download client see the exact same path (not just the same location)
+- Requires Sonarr and your download client to be on the same machine or the remote file system mounted locally and remapped in Sonarr with Remote Path Mapping.
 
 ## Migration Scenarios
 
