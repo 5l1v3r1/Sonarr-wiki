@@ -1,5 +1,8 @@
 ## GET ##
 
+##### Endpoint #####
+"/wanted/missing/"
+
 ##### Summary #####
 Gets missing episode (episodes without files).
 
