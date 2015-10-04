@@ -14,7 +14,7 @@ Required:
 
 `pageSize (int)`
 
-`sortKey (string)` - `series.title` or `date`
+`sortKey (string)` - `series.title` or `airDateUtc`
 
 `sortDir (direction)` - `asc` or `desc`
 
