@@ -1,7 +1,38 @@
+## GET ##
+
+`api/command`
+`api/command/{id}`
+
+##### Summary #####
+Queries the status of an previously started command. Or all currently started commands.
+
+##### Parameters ######
+
+Optional route {id}:
+
+`id (int)` Unique ID of the command
+
+##### Returns ######
+
+For `api/command`   
+Array of json objects   
+
+For `api/command/{id}`
+````JSON
+{
+  "name": "RescanSeries",
+  "startedOn": "0001-01-01T00:00:00Z",
+  "stateChangeTime": "2014-02-05T05:09:09.2366139Z",
+  "sendUpdatesToClient": true,
+  "state": "pending",
+  "id": 24
+}
+````
+
 ## POST ##
 
 ##### Summary #####
-Publish a new command for Sonarr to run
+Publish a new command for Sonarr to run. These commands are execute asynchroneously, use GET to retrieve the current status.
 
 ##### Parameters ######
 
@@ -82,13 +113,19 @@ Required:
 ---
 
 ### DownloadedEpisodesScan ###
-Instruct Sonarr to scan the DroneFactoryFolder or a folder defined by the path variable
+Instruct Sonarr to scan the DroneFactoryFolder or a folder defined by the path variable.    
+Each file and folder in the DroneFactoryFolder is interpreted as separate download.   
+
+But a folder specified by the path variable is assumed to be a single download (job) and the folder name should be the release name.
+
+The downloadClientId can be used to support this API endpoint in conjunction with Completed Download Handling, so Sonarr knows that a particular download has already been imported.
 
 ##### Parameters ######
 
 Optional:
 
-`path (string)`
+`path (string)`,   
+`downloadClientId (string)` (nzoid for sabnzbd, special 'drone' attribute value for nzbget, uppercase infohash for torrents)
 
 ---
 
