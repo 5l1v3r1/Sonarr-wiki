@@ -20,7 +20,8 @@ Torznab implementations should return the supported query params in their `t=cap
 Implementations should also take care in returning appropriate responses when a query includes an unsupported newznab parameter, for example, if rid is not supported, return an empty result set.
 This is to remain backward compatibility with clients that do not query the caps.
 
-Newznab does not define `tvdbid=` and `imdbid=`, but implementors are recommended to support these if possible.
+~~Newznab does not define `tvdbid=` and `imdbid=`, but implementors are recommended to support these if possible.~~
+The latest Newznab version support `tvdbid=` and `tvmazeid=` as well. That newznab version also uses the `supportedParams` mentioned later, and supports specifying multiple id parameters simultaneously (of which only one needs to match).
 
 ```
 t=tvsearch:
