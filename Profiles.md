@@ -17,7 +17,7 @@ Once a file on your disk meets or exceeds this cutoff ranking, Sonarr will stop 
 
 #### Qualities (Ranking) ####
 
-Drag the qualities so that they are arranged with your most-desired quality at the top of the list, and your least-desired quality at the bottom of the list.
+Drag the qualities so that they are arranged with your most-desired quality at the top of the list, and your least-desired quality at the bottom of the list. _Advanced settings must be shown to reorder the qualities._
 
 Sonarr will download any allowed quality, and continue to upgrade the file on your disk if a new release is found that is higher ranked within your profile.
 
