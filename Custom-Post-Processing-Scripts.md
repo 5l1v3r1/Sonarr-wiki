@@ -2,7 +2,7 @@ If you're looking to trigger a custom script in your download client to tell Son
 
 ### Overview ###
 
-Sonarr can execute a custom script when new episodes are imported or a series is renamed, depending on the which action occurred the parameters will be different. Parameters are passed to the script through environment variables (allowing for more flexibility in what we send to the script and not having to worry about a particular order). In all cases the Environment Variables Sonarr sends will be prefixed with `Sonarr` so, the `EventType` Sonarr sends would be `Sonarr.EventType`.
+Sonarr can execute a custom script when new episodes are imported or a series is renamed, depending on the which action occurred the parameters will be different. Parameters are passed to the script through environment variables (allowing for more flexibility in what we send to the script and not having to worry about a particular order). In all cases the Environment Variables Sonarr sends will be prefixed with `Sonarr` so, the `EventType` Sonarr sends would be `Sonarr_EventType`.
 
 ### Environment Variables ###
 
