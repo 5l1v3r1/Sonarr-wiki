@@ -2,7 +2,7 @@ If you're looking to trigger a custom script in your download client to tell Son
 
 ### Overview ###
 
-Sonarr can execute a custom script when new episodes are imported or a series is renamed, depending on the which action occurred the parameters will be different. Parameters are passed to the script through environment variables (allowing for more flexibility in what we send to the script and not having to worry about a particular order). In all cases the Environment Variables Sonarr sends will be prefixed with `Sonarr` so, the `EventType` Sonarr sends would be `Sonarr_EventType`.
+Sonarr can execute a custom script when new episodes are imported or a series is renamed, depending on the which action occurred the parameters will be different. Parameters are passed to the script through environment variables (allowing for more flexibility in what we send to the script and not having to worry about a particular order). In all cases the Environment Variables Sonarr sends will be prefixed with `Sonarr` and converted to lowercase, the `Series_Id` will become `sonarr_series_id`.
 
 ### Environment Variables ###
 
@@ -26,6 +26,8 @@ Sonarr can execute a custom script when new episodes are imported or a series is
 | EpisodeFile_QualityVersion | 1 is the default, 2 for proper, 3+ could be used for anime versions |
 | EpisodeFile_ReleaseGroup | Release group, will not be set if it is unknown |
 | EpisodeFile_SceneName | Original release name |
+| EpisodeFile_SourcePath | Full path to the episode file that was imported |
+| EpisodeFile_SourceFolder | Full path to the folder the episode file was imported from |
 
 ##### On Rename #####
 
