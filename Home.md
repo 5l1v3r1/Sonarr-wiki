@@ -11,6 +11,7 @@
 - [[Profiles]]
 
 ### More Information ###
+- [[Completed Download Handling]]
 - [[Failed Download Handling]]
 - [[Indexer Integration]]
 - [[Backup and Restore]]
