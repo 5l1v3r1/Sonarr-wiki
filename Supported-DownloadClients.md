@@ -40,7 +40,7 @@ Version 3.0 or newer required. Requires Web UI (located in `Preferences -> Advan
 
 Website: http://www.utorrent.com/
 
-##rTorrent##
+###rTorrent###
 
 Requires rTorrent version 0.9.0 or newer compiled with XML-RPC support, and a SCGI to HTTP proxy (usually Lighttpd, Nginx, or Apache; ruTorrent can also provide this on on the URL `plugins/rpc/rpc.php`). Look for ruTorrent instructions for how to set up rTorrent.
 
