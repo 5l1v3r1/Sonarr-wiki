@@ -1,3 +1,5 @@
+The easiest way (when using Sonarr.app) is using `Login Items`, available in System Preferences, alternatively you can use the steps below.
+
 Create a plist with these contents, changing the path to NzbDrone.exe as required:
 
 ```
