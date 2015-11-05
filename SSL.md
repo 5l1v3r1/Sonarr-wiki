@@ -31,7 +31,7 @@
 
   4. Load the certificate with `httpcfg` (comes with mono): 
 
-     `httpcfg -add -port <SSL_PORT> -pvk yourdomain.pvk -cert yourdomain.crt`
+     `httpcfg -add -port <SSL_PORT> -pvk yourdomain.pvk -cert yourdomain.cert`
 
      *Replace `<SSL_PORT>` with the SSL port you set in Sonarr.*
 
