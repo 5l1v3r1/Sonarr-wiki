@@ -1,11 +1,10 @@
 
 
 ### How does Sonarr find episodes?  ###
-Sonarr doesn't actively search for any episodes on its own; it uses the indexer's latest releases to find recently posted episodes. It does this using the indexer's **RSS feeds**, which typically include the last 100 uploads to the indexer. By default Sonarr will download the latest RSS feeds every 15 minutes. Because of this, Sonarr is designed to be installed on a system that is running most of the time.
+Sonarr doesn't actively search for any episodes on its own; it uses the indexer's latest releases to find recently posted episodes. It does this using the indexer's **RSS feeds**, which typically include the last 100 uploads to the indexer. By default Sonarr will download the latest RSS feeds every 15 minutes. Because of this, Sonarr is designed to be installed on a system that is running most of the time. However, for indexers supporting 'pages', Sonarr will fetch older pages in the rss feed in an attempt to cover the gap when it has been offline for a few hours.
 
 **Active searching** (via the indexer's API) is only done in a few situations:
 * When the user clicks the _Automatic_ or _Manual Search_ buttons on a specific episode, season, or series.
-* If Sonarr has been shut down for a period of more than one hour, it will attempt to search for recently aired episodes that have not been grabbed or imported yet. This is a safe guard in case you miss too many RSS syncs in a row, which could cause Sonarr to never find an episode using that passive method.
 * When a user adds a show using the _"Add and Search"_ button. _(New behavior as of March 2015)_
 
 ### Why didn't Sonarr grab an episode I was expecting?  ###
