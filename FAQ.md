@@ -1,4 +1,5 @@
-
+### How does Sonarr "add series"?  ###
+It queries thetvdb.com. Unfortunately, if thetvdb.com is offline, a good error is not provided by sonarr to indicate this in the GUI or logs.
 
 ### How does Sonarr find episodes?  ###
 Sonarr doesn't actively search for any episodes on its own; it uses the indexer's latest releases to find recently posted episodes. It does this using the indexer's **RSS feeds**, which typically include the last 100 uploads to the indexer. By default Sonarr will download the latest RSS feeds every 15 minutes. Because of this, Sonarr is designed to be installed on a system that is running most of the time. However, for indexers supporting 'pages', Sonarr will fetch older pages in the rss feed in an attempt to cover the gap when it has been offline for a few hours.
