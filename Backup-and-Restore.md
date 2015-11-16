@@ -20,6 +20,8 @@
 
 ## Restoring from Backup ##
 
+_Restoring to an OS that uses different paths won't work (Windows to Linux, Linux to Windows, Windows to OS X or OS X to Windows), moving between OS X and Linux may work, since both use paths contianing `/` instead of `\` that Windows uses, but is not supported._
+
 #### Using zip backup ####
 
 1. Re-install Sonarr
