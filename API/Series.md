@@ -188,6 +188,19 @@ Optional:
 `tvRageId (int)`
 `seasonFolder (bool)`
 `monitored (bool)`
+`addOptions (object)`
+
+`addOptions` is an object that contains two properties `ignoreEpisodesWithFiles` and `ignoreEpisodesWithoutFiles`:
+
+```
+"addOptions":
+{
+  "ignoreEpisodesWithFiles": true,
+  "ignoreEpisodesWithoutFiles": true
+}
+```
+
+It can be used to control which episodes Sonarr monitors after adding the series, ignoring episodes with and without files will only monitor future episodes.
 
 ##### Returns JsonObject ######
 
