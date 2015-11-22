@@ -109,3 +109,7 @@ These messages are completely normal and come from the RSS feeds that Sonarr che
 ### Seeding torrents aren't deleted automatically ###
 
 When a torrent is still seeding Sonarr will either Copy or Hardlink the files to your library (depending on your Sonarr settings and disk configuration), when the torrent finishes seeding in your client (hits a seed ratio set in your client) Sonarr can remove the torrent from your client and ask it to delete the previously seeding files on disk, this will happen automatically if the `Remove` option is enabled under Completed Download Handling options.
+
+### Why can't I add a new series? ###
+
+In the event that TheTVDB is unavailable Sonarr is unable to get search results and you will be unable to add any new series by searching. You may be able to add a new series by TheTVDB ID if you know what it is, the UI explains how to add it by an ID.
