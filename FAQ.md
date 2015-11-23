@@ -38,7 +38,7 @@ This can be for various reasons, but the most common is, Sonarr is running as a 
 
 
 ### Does Sonarr require a SABnzbd post-processing script to import downloaded episodes?  ###
-No. As long as you set the Drone Factory path `Settings > Download Client > Drone Factory` to the folder where sab downloads your TV Shows everything will be imported automatically. [[Sorting and Renaming]]
+No. Sonarr will talk to your download client to determine where the files have been downloaded and will be import them automatically automatically. [[Sorting and Renaming]]. If Sonarr and your download client are on different machines you will need to use Remote Path Mapping to link the remote path to a local one so Sonarr knows where to find the files.
 
 ### How does Sonarr handle scene numbering issues (American Dad!, etc)? ###
 Sonarr relies on [TheXEM](TheXEM "http://thexem.de/"), a community driven site that lets users create mappings of shows that the scene (the people that post the files) and TheTVDB (which typically follows the network's numbering). There are a number of shows on there already, but its easy to add another and typically the changes are accepted within a couple days (if they're correct).
