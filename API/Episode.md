@@ -26,7 +26,6 @@ Returns all episodes for the given series
     "sceneSeasonNumber": 0,
     "tvDbEpisodeId": 0,
     "absoluteEpisodeNumber": 1,
-    "downloading": false,
     "id": 1
   }
 ]
