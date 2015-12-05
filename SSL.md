@@ -29,7 +29,7 @@
 
      `pvk.exe -in yourdomain.key -topvk -nocrypt -out yourdomain.pvk`
 
-  4. Load the certificate with `httpcfg` (comes with mono): 
+  4. Load the certificate with `httpcfg` (comes with mono) with the user that runs Sonarr: 
 
      `httpcfg -add -port <SSL_PORT> -pvk yourdomain.pvk -cert yourdomain.cert`
 
