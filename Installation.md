@@ -40,8 +40,6 @@ mono 3.10 is included for x86/x64 in our repo (mirrored from Xamarin's). Some pl
 
 	sudo apt-get install mono-devel
 
-[Ubuntu 12.04 LTS] (https://forums.sonarr.tv/t/ubuntu-12-04-lts-install-fix-for-libmono-cil-dev-error/6812?u=markus101)
-
 **Add Sonarr's repository to your software source**
        
 
