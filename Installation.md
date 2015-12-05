@@ -31,10 +31,14 @@ $ brew cask install sonarr
 
 **mono**
 
-mono 3.10 is included for x86/x64 in our repo (mirrored from Xamarin's), for other platforms you may have to download or install it yourself: http://www.mono-project.com/docs/getting-started/install/linux/
+mono 3.10 is included for x86/x64 in our repo (mirrored from Xamarin's). Some platforms, however, have trouble with dependencies whilst installing Sonarr.
 
-**Install mono manually if on Debian 8.x**
-http://www.mono-project.com/docs/getting-started/install/linux/
+**If you experience mono dependency issues whilst installing Sonarr**
+
+	Install all the repo's from mono's official site: 
+	http://www.mono-project.com/docs/getting-started/install/linux/
+
+	sudo apt-get install mono-devel
 
 [Ubuntu 12.04 LTS] (https://forums.sonarr.tv/t/ubuntu-12-04-lts-install-fix-for-libmono-cil-dev-error/6812?u=markus101)
 
