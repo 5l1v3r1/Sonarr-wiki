@@ -36,7 +36,8 @@ setenforce Permissive
 CentOS 7, Fedora 19, and derivatives
 Add the Mono Project GPG signing key and the package repository in a root shell with:
 
-```bash rpm --import "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF"
+```bash 
+rpm --import "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF"
 yum-config-manager --add-repo http://download.mono-project.com/repo/centos/
 ```
 
