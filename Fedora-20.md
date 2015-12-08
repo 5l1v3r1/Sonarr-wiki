@@ -33,11 +33,16 @@ setenforce Permissive
 
 **Install Mono repository**
 
-Since modern versions of mono won't be added until Fedora 22, we need to add a repository.  check http://download.opensuse.org/repositories/home:/tpokorra:/mono/ for the correct repository URL for your version.  The example below is for Fedora 20.
+CentOS 7, Fedora 19, and derivatives
+Add the Mono Project GPG signing key and the package repository in a root shell with:
 
-```bash
-wget -4 -O /etc/yum.repos.d/mono.repo http://download.opensuse.org/repositories/home:/tpokorra:/mono/Fedora_20/home:tpokorra:mono.repo
+```bash rpm --import "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF"
+yum-config-manager --add-repo http://download.mono-project.com/repo/centos/
 ```
+
+Run a package upgrade to upgrade existing packages to the latest available. Then install Mono as described in the Usage section.
+
+Users of CentOS or RHEL (or similar distributions) may need to add the EPEL repository to their system to satisfy all dependencies.
 
 **Install prerequisites**
     
