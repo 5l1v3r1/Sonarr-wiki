@@ -126,3 +126,12 @@ For more info about Docker check out the [official website](https://www.docker.c
 # NETGEAR ReadyNAS #
 
 _Tested on a ReadyNAS 516 with ReadyNAS OS v6.2.2_
+
+# QNAP #
+
+Add the following Packages:
+
+[QSonarr] [1.150922] Smart PVR for newsgroup and bittorrent
+http://forum.qnap.com/viewtopic.php?f=320&t=109449
+
+Follow instructs from the forum thread
