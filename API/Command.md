@@ -135,3 +135,21 @@ Instruct Sonarr to perform an RSS sync with all enabled indexers
 ##### Parameters ######
 
 None
+
+---
+
+### RenameFiles ###
+Instruct Sonarr to rename the list of files provided.
+
+##### Parameters ######
+
+`files (int[])` (List of File IDs to rename)
+
+---
+
+### RenameSeries ###
+Instruct Sonarr to rename all files in the provided series.
+
+##### Parameters ######
+
+`seriesIds (int[])` (List of Series IDs to rename)
