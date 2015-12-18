@@ -37,3 +37,6 @@ Website: https://plex.tv/
 
 ###CustomScript###
 More information: https://github.com/Sonarr/Sonarr/wiki/Custom-Post-Processing-Scripts
+
+###Slack via CustomScript###
+Sonarr notifications in Slack using curl: https://github.com/Sonarr/Sonarr/wiki/Sonarr-notifications-in-Slack-using-curl
