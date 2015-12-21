@@ -125,3 +125,5 @@ This message may appear if a previous root folder is no longer used. To remove o
 1. Begin adding a new Series by searching for a name, but do not submit
 2. In the 'Path' dropdown, select 'Add a different path'
 3. Click the cross at the end of a row to remove the unused path 
+
+The message will continue to appear until all series have their root folder updated to the new root folder. To change the root folder for other series, visit the series editor.
