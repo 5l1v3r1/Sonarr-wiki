@@ -15,26 +15,24 @@ The installation assumes that you're not using the root user to install/run Sona
     
     EPEL: is needed for mediainfo installation
     <br>
-    Mono: is needed for mono-opt and mono-opt-devel installation
+    Mono: is needed for mono-opt installation
 
    ```bash
    sudo rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
-   sudo curl -L http://download.opensuse.org/repositories/home:tpokorra:mono/CentOS_CentOS-6/home:tpokorra:mono.repo -o /etc/yum.repos.d/mono.repo
+   sudo curl -L https://copr.fedoraproject.org/coprs/tpokorra/mono-opt/repo/epel-6/tpokorra-mono-opt-epel-6.repo -o /etc/yum.repos.d/mono.repo
    ```
 
 3. **Install prerequisites**
     
-    I chose to install the latest mono (3.4.0) from the OpenSuse repo instead of using the older CentOS version (2.10.8)
-    <br>
+    Install the latest mono (4.2.1) from the OpenSuse repo instead of using the older CentOS version (2.10.8)   
     The OpenSuse mono-opt will be installed under /opt so it can probably coexist with the CentOS mono-core (i havent tested this myself!)
 
     ```bash
     sudo yum install gcc-c++ gcc mediainfo libzen libmediainfo curl gettext 
     ```
-     As of this writing, the "mono" and "mono-opt" packages from the OpenSuse are version 3.12.0-2.1 and cause a coredump when you attempt to run Sonarr. Use the "mono-3.4" packages instead:
  
     ```bash
-    sudo yum install mono-opt-3.4 mono-opt-3.4-devel
+    sudo yum install mono-opt
     ```
    
    
