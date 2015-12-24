@@ -4,7 +4,7 @@ So it is simple to setup on any Linux or OS X machine.
 
 If you are running Sonarr on Windows there may be a  way with Cygwin / bash / curl but I'd look for a cleaner solution.
 
-## Setup a Slack Webhook intergration
+## Setup a Slack Webhook integration
 
 Setup a webhook integration for your slack team here:
 
