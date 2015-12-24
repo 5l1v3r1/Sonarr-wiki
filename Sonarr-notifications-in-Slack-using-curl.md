@@ -19,7 +19,7 @@ After you make the webhook it will give you a "Webhook URL" that looks something
 Next create a new bash script with this code:
 
     #!/bin/bash
-    curl -X POST --data-urlencode "payload={\"username\": \"Sonarr\", \"icon_emoji\": \":ghost:\", \"text\": \"$sonarr_eventtype: $sonarr_series_title S$sonarr_episodefile_seasonnumber E$sonarr_episodefile_episodenumbers ($sonarr_episodefile_quality)}" $1
+    curl -X POST --data-urlencode "payload={\"username\": \"Sonarr\", \"icon_emoji\": \":ghost:\", \"text\": \"$sonarr_eventtype: $sonarr_series_title S$sonarr_episodefile_seasonnumber E$sonarr_episodefile_episodenumbers ($sonarr_episodefile_quality)\"}" $1
 
 I put mine in `~/scripts/sonarr/` and named it `slack.sh`
 
