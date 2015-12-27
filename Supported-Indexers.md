@@ -52,19 +52,19 @@ The cookie should look like:
 
 Website: https://broadcasthe.net/
 
-###Eztv###
+Private tracker.
 
-Website: RIP
+###HDBits###
 
-**Warning:** do not use <s>eztv dot it</s> <s>eztv dot ch</s> or any other eztv site, those aren't owned by eztv (and eztv quit).
+Website: https://hdbits.org/
 
-The entire feed is unavailable long before that.
-
-Use the Generic Torrent RSS when we release that feature.
+Private tracker.
 
 ###IPTorrents###
 
 Website: http://www.iptorrents.com/
+
+Private tracker, no search api.
 
 ###KickassTorrents###
 
@@ -100,6 +100,7 @@ Website: http://torrentleech.org/
 | TorrentRss      |     Yes     |     -    |    -   |    -    |   -   |     -    |
 | BitMeTv         |     Yes     |     -    |    -   |    -    |   -   |     -    |
 | BroadcastheNet  |     Yes     |    Yes   |   Yes  |   Yes   |   -   |     -    |
+| HDBits          |     Yes     |    Yes   |   Yes  |   Yes   |Unknown|     -    |
 | IPTorrents      |     Yes     |     -    |    -   |    -    |   -   |     -    |
 | KickassTorrents |     Yes     |    Yes   |   Yes  |   Yes   |   -   |   Basic  |
 | Nyaa            |     Yes     |     -    |    -   |    -    |  Yes  |   Basic  |
