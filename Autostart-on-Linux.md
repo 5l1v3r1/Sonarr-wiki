@@ -70,7 +70,7 @@ Press <kbd>Ctrl</kbd>+<kbd>X</kbd> then <kbd>y</kbd> to save.
     RUNASGROUP=root
     RUNAS=$RUNASUSER:$RUNASGROUP
 
-    DATADIR=~${RUNASUSER}/
+    DATADIR=~/
      
     if ! [ -r ${DAEMON} ]; then echo "Can't read: ${DAEMON}" 2>&1; exit 1; fi
     if ! [ -x ${MONO} ]; then echo "Not executable: ${MONO}" 2>&1; exit 1; fi
