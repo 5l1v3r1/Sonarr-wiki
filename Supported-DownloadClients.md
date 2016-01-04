@@ -47,3 +47,9 @@ Requires rTorrent version 0.9.0 or newer compiled with XML-RPC support, and a SC
 For troubleshooting, see thread https://forums.sonarr.tv/t/rtorrent-support/3644/15
 
 Website: http://rakshasa.github.io/rtorrent/
+
+###qBittorrent###
+
+Requires qBittorrent 3.2.4 or higher.
+
+Website: http://www.qbittorrent.org/
