@@ -4,8 +4,11 @@
 
 Required:
 `title (string)`
+
 `downloadUrl (string)`
+
 `downloadProtocol (Usenet or Torrent)`
+
 `publishDate (ISO8601 Date)`
 
 ##### Response #####
