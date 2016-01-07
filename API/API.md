@@ -36,6 +36,7 @@ All requests made to the api endpoint require API Key authentication using the X
 - [[Queue]]
 - [[Profile]]
 - [[Release]]
+- [[Release/Push|Release-Push]]
 - [[Rootfolder]]
 - [[Series]]
 - [[Series-Lookup]]
