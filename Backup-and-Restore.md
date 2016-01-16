@@ -14,6 +14,7 @@
 		- OS X - '/Users/\<user\>/.config/NzbDrone'
 		- Ubuntu - '/home/\<user\>/.config/NzbDrone'
 		- Synology - '/usr/local/nzbdrone/var/.config/NzbDrone'
+		- QNAP - '/share/CACHEDEV1_DATA/homes/admin/.config/NzbDrone'
 
 2. Stop Sonarr - This will prevent the database from being corrupted
 3. Copy the contents to a safe location
