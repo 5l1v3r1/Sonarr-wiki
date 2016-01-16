@@ -114,6 +114,8 @@ This mechanism is triggered if Sonarr was unable to get a response from the inde
 
 You can prevent the warning by disabling the affected indexer.
 
+Run the Test on the indexer to force Sonarr to recheck the indexer, please note that the Health Check warning will not always disappear immediately.
+
 ### Series Folders ###
 
 #### Missing root folder ####
