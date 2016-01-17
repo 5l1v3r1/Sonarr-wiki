@@ -4,7 +4,7 @@
 `api/command/{id}`
 
 ##### Summary #####
-Queries the status of an previously started command. Or all currently started commands.
+Queries the status of a previously started command. Or all currently started commands.
 
 ##### Parameters ######
 
