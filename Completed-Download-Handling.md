@@ -9,7 +9,7 @@
 5. Leftover files from the download will be sent to your trash or recycling.
 
 If you download using a BitTorrent client, the process is slightly different:
-- Completed files are left in their original location to allow you to seed. When files are imported to your Series folder Sonarr will attempt to hardlink the file so that it is not using additional space on your disk. If the hardlink cannot be accomplished, Sonarr will copy the file and there will be two versions.
+- Completed files are left in their original location to allow you to seed. When files are imported to your Series folder Sonarr by default will copy the video file, which uses twice the disk space. An advanced option to hardlink can be enabled (*Settings > Media Management > Importing*) which will attempt to hardlink the media to your Series folder. A hardlink will allow not use any additional disk space. If the hardlink creation fails, Sonarr will fall back to the default behavior and copy the file.
 - If the "Completed Download Handling - Remove" option is enabled in Sonarr's settings, Sonarr will delete the original file and torrent from your client, but **only** if the client reports that seeding is complete and torrent is stopped. 
 
 
