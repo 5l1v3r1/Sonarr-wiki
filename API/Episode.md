@@ -5,6 +5,8 @@ Returns all episodes for the given series
 
 ##### Parameters ######
 
+Required:
+
 `seriesId (int)`
 
 ##### Returns JsonArray ######
