@@ -4,7 +4,7 @@
 `api/command/{id}`
 
 ##### Summary #####
-Queries the status of a previously started command. Or all currently started commands.
+Queries the status of a previously started command, or all currently started commands.
 
 ##### Parameters ######
 
@@ -32,7 +32,7 @@ For `api/command/{id}`
 ## POST ##
 
 ##### Summary #####
-Publish a new command for Sonarr to run. These commands are execute asynchroneously, use GET to retrieve the current status.
+Publish a new command for Sonarr to run. These commands are executed asynchronously; use GET to retrieve the current status.
 
 ##### Parameters ######
 
