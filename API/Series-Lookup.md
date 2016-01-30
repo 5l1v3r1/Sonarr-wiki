@@ -8,7 +8,7 @@ Searches for new shows on trakt
 ##### Parameters ######
 
 Required:
-`term` - query string for the search
+`term` - query string for the search (Use `tvdb:12345` to lookup TVDB ID 12345)
 
 eg: localhost/api/Series/lookup?term=The%20Blacklist
 
