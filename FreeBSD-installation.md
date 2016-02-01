@@ -1,9 +1,7 @@
 If you are using a modern FreeBSD, just try these commands first (as root), which will install Sonarr through the package manager:
 ```
 pkg install sonarr
-mkdir /usr/local/sonarr
-chown sonarr /usr/local/sonarr
-echo 'sonarr_enable="YES"' | tee -a /etc/rc.conf
+sysrc 'sonarr_enable=YES'
 service sonarr start
 ```
 
