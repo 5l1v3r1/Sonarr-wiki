@@ -2,7 +2,8 @@ Displays currently downloading info
 
 Example:
 
-`[
+````JSON
+[
   {
     "series": {
       "title": "Game of Thrones",
@@ -124,4 +125,5 @@ Example:
     "protocol": "usenet",
     "id": 1503378561
   }
-]`
+]
+````
