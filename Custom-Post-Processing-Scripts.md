@@ -1,4 +1,4 @@
-If you're looking to trigger a custom script in your download client to tell Sonarr when to update, you can find more details here: 
+If you're looking to trigger a custom script in your download client to tell Sonarr when to update, you can find more details here. Scripts are added to Sonarr via the *Connect* Settings page.
 
 ### Overview ###
 
