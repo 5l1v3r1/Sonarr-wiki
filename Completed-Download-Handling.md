@@ -1,4 +1,4 @@
-**Completed Download Handling** is how Sonarr imports media from your download client to your series folders. It replaced an older system called the **Drone Factory** in early 2015. Most setups should exclusively use Completed Download Handling.
+**Completed Download Handling** is how Sonarr imports media from your download client to your series folders. It replaced an older system called the **Drone Factory** in mid-2014. Most setups should exclusively use Completed Download Handling.
 
 #### How Completed Download Handling Works
 
