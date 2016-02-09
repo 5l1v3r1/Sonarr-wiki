@@ -5,6 +5,8 @@
 
 ## How to change your branch ##
 
+#### For Built-In Updater ####
+
 1. Go to Settings and then the General tab and show advanced settings (use the toggle by the save button).
 
 2. Under the Development section change the branch name to `develop`
@@ -13,7 +15,7 @@
 
 _This will not install the bits from that branch immediately, it will happen during the next update._
 
-#### For Ubuntu/Debian ####
+#### For Ubuntu/Debian aptitude/apt-get ####
 
 You probably should update your sources.list file too if you installed using aptitude/apt-get:
 
