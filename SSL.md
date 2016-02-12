@@ -37,7 +37,7 @@
 
 ## Synology devices
 
-  1. Place the your SSL certificate and converted key in `pvk` format in `/volume1/@appstore/nzbdrone/var/`
+  1. Place the SSL certificate **and** converted key in `pvk` format in `/volume1/@appstore/nzbdrone/var/`
   2. Load the certificate with `httpcfg` (comes with mono) as `nzbdrone`, the user that runs Sonarr: 
 
      `su nzbdrone -c "/volume1/@appstore/mono/bin/httpcfg -add -port <SSL_PORT> -pvk yourdomain.pvk -cert yourdomain.crt"`
