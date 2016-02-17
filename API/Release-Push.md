@@ -8,7 +8,7 @@ Required:
 
 `downloadUrl (string)`
 
-`downloadProtocol (Usenet or Torrent)`
+`protocol (Usenet or Torrent)`
 
 `publishDate (ISO8601 Date)`
 
