@@ -61,7 +61,6 @@ mono 3.10 is included for x86/x64 in our repo (mirrored from Xamarin's). Some pl
 
 	http://localhost:8989
 
-
 ### Arch Linux ###
 Available in AUR:
 - Master: https://aur.archlinux.org/packages/sonarr/
@@ -70,13 +69,12 @@ Available in AUR:
 
 
 ### CentOS / Fedora / RHEL ###
-[[CentOS 6 Installation Instructions|CentOS 6]]<br />
+[[CentOS 6 Installation Instructions (wiki)|Installation - CentOS 6]]   
+[[CentOS 7 Installation Instructions (wiki)|Installation - CentOS 7]]   
 [[Fedora Installation|Fedora 20]]
+
 ### Raspberry Pi ###
 [Install Nzbdrone Raspberry Pi on Raspbian](http://www.htpcguides.com/install-sonarr-raspberry-pi-mono-310/)
-### FreeNAS ###
-
-FreeNAS 9.3 now has a one-click Sonarr [plugin] (http://doc.freenas.org/9.3/freenas_plugins.html)
 
 ### FreeBSD ###
 
@@ -101,18 +99,21 @@ http://update.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz
 
     mono --debug NzbDrone.exe
 
-
-### General ###
-
-Also see [[https://github.com/Sonarr/Sonarr/wiki/Autostart-on-Linux]]
-
-# Docker
+# Docker #
 
 There is a Docker image available that lets you update within the container as well as install from the develop branch.  [tuxeh/sonarr](https://registry.hub.docker.com/u/tuxeh/sonarr/)
 
 For more info about Docker check out the [official website](https://www.docker.com).
 
-# Synology #
+# NAS #
+
+Also see [[https://github.com/Sonarr/Sonarr/wiki/Autostart-on-Linux]] for autostart hints.
+
+### FreeNAS ###
+
+FreeNAS 9.3 now has a one-click Sonarr [plugin] (http://doc.freenas.org/9.3/freenas_plugins.html)
+
+### Synology ###
 
 **(1)** Add the SynoCommunity repo to your Synology device:
 
@@ -123,11 +124,11 @@ For more info about Docker check out the [official website](https://www.docker.c
 
 **NOTE:** You must install Mono first (also found in the Synocommunity repo.) AND make sure to give the `sc-media` group read/write access to both your download folders and your media folders.
 
-# NETGEAR ReadyNAS #
+### NETGEAR ReadyNAS ###
 
 _Tested on a ReadyNAS 516 with ReadyNAS OS v6.2.2_
 
-# QNAP #
+### QNAP ###
 
 Add the following Packages:
 
