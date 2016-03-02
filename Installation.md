@@ -69,16 +69,16 @@ Available in AUR:
 
 
 ### CentOS / Fedora / RHEL ###
-[[CentOS 6 Installation Instructions (wiki)|Installation - CentOS 6]]   
-[[CentOS 7 Installation Instructions (wiki)|Installation - CentOS 7]]   
-[[Fedora Installation|Fedora 20]]
+[[CentOS 6 Installation Instructions (wiki)|Installation CentOS 6]]   
+[[CentOS 7 Installation Instructions (wiki)|Installation CentOS 7]]   
+[[Fedora Installation (wiki)|Installation Fedora 20]]
 
 ### Raspberry Pi ###
 [Install Nzbdrone Raspberry Pi on Raspbian](http://www.htpcguides.com/install-sonarr-raspberry-pi-mono-310/)
 
 ### FreeBSD ###
 
-[[FreeBSD Installation Instructions|FreeBSD Installation]]
+[[FreeBSD Installation Instructions (wiki)|Installation FreeBSD]]
 
 ### Other ###
 **Install dependencies**
