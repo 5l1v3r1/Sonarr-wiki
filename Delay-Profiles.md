@@ -1,4 +1,4 @@
-_(Settings -> Profiles -> Delay Profiles)_
+## _(Settings -> Profiles -> Delay Profiles)_
 
 Delay profiles allow you to reduce the number of releases that will be downloaded for an episode, by adding a delay  while Sonarr will continue to watch for releases that better match your preferences. 
 
