@@ -127,6 +127,12 @@ FreeNAS 9.3 now has a one-click Sonarr [plugin] (http://doc.freenas.org/9.3/free
 ### NETGEAR ReadyNAS ###
 
 _Tested on a ReadyNAS 516 with ReadyNAS OS v6.2.2_
+_Tested on a ReadyNAS 314 with ReadyNAS OS v6.4.1_
+
+SSH into your NAS at root
+Follow the instructions above for Debian/Ubuntu, starting from the section "Add Sonarr's repository to your software source". Mono will be installed automatically as a dependency.
+
+Startup script can be found here http://nzbdrone.readthedocs.org/Autostart-on-Debian/
 
 ### QNAP ###
 
