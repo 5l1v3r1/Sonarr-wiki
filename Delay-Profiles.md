@@ -27,7 +27,7 @@ In this simple example, the profile is set with a 120 minute (two hour) delay fo
 
 At `11:00pm` the first release for an episode is detected by Sonarr and the 120 minute clock begins. At `1:00am`, Sonarr will evaluate any releases it has found in the past two hours, and download the best one, which is **HDTV 720p**.
 
-At `3:00am` another release is found, which is **WebDL 720p**. Another 120 minute clock begins. At `5:00am` the best-available release is downloaded. Since the cutoff is now reached, the episode no longer monitored and Sonarr will stop looking for new releases.
+At `3:00am` another release is found, which is **WebDL 720p**. Another 120 minute clock begins. At `5:00am` the best-available release is downloaded. Since the cutoff is now reached, the episode is now set to unmonitored and Sonarr will stop looking for new releases.
 
 At any point, if a **WebDL 1080p** release is found, it will be downloaded immediately because it is the highest-ranking quality. If there is a delay timer currently active it will be cancelled.
 
