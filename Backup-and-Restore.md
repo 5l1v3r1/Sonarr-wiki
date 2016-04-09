@@ -29,7 +29,7 @@ _Restoring to an OS that uses different paths won't work (Windows to Linux, Linu
 2. Run Sonarr once to get the AppData directory location
 3. Stop Sonarr
 4. Extract the backup
-5. Delete the contents of the AppData directory
+5. Delete the config.xml & nzbdrone.db files
 6. Restore the files extracted from the zip
 7. Start Sonarr
 8. As long as the paths are the same, everything will pickup where it left off
