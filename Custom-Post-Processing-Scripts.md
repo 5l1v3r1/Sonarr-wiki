@@ -42,3 +42,5 @@ Sonarr can execute a custom script when new episodes are imported or a series is
 ### Specific usage tips ###
 #### PHP ####
 The information from Sonarr will not be added to $_ENV as one might expect but should be included in the [$_SERVER variable](https://secure.php.net/manual/en/reserved.variables.server.php). A sample script to use this information to convert a file can be found [here](https://gist.github.com/karbowiak/7fb38d346e368edc9d1a).
+#### PowerShell ####
+Sample script using the Sonarr environment variables to create EDL files for all episodes is [here](https://gist.github.com/RedsGT/e1b5f28e7b5b81e1e45378151e73ba5c).  
