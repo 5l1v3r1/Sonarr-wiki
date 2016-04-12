@@ -113,3 +113,15 @@ When a torrent is still seeding Sonarr will either Copy or Hardlink the files to
 ### Why can't I add a new series? ###
 
 In the event that TheTVDB is unavailable Sonarr is unable to get search results and you will be unable to add any new series by searching. You may be able to add a new series by TheTVDB ID if you know what it is, the UI explains how to add it by an ID.
+
+### I use Sonarr on a Mac and it suddenly stopped working. What happened? ###
+
+Most likely this is due to a MacOS bug which caused one of the Sonarr databases to be corrupted. Follow these steps to resolve:
+
+1. In the Finder, select the Go menu, and the option **Go to Folder...**
+2. Enter _~/.config/NzbDrone_ and click the **Go** button to open Sonarr's data folder
+3. Move the following files to Trash: **logs.db, logs.db-journal**
+4. Attempt to launch Sonarr and see if it works. If so, congrats!
+5. If not, then the log DB didn't get corrupted, and it might have been the primary database. You will need to restore from backup.
+6. Open the Backups folder you see and find the .zip archive with the most recent date. Decompress it. Move everything from the resulting folder into the main Sonarr data folder, over-writing any files.
+7. Attempt to launch Sonarr and see if it works. If it does not work, you'll need further support in the forums or IRC channel.
