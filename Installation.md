@@ -13,6 +13,8 @@
 ### Manually ###
 * Download latest version of Sonarr's OSX package from [https://download.sonarr.tv/v2/master/latest/NzbDrone.master.osx.zip](https://download.sonarr.tv/v2/master/latest/NzbDrone.master.osx.zip)
 * Open the archive and drag the Sonarr icon to your Application folder.
+* Open Sonarr.app
+* You should now be able to access Sonarr at [http://localhost:8989](http://localhost:8989)
 
 ### Using [Homebrew Cask](https://github.com/caskroom/homebrew-cask) ###
 
