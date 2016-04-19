@@ -90,6 +90,10 @@ exit 0
 
 	sudo update-rc.d nzbdrone defaults
 
+**Create nzbdrone user**
+
+    useradd nzbdrone
+
 **Start Sonarr**
 
 	sudo service nzbdrone start
