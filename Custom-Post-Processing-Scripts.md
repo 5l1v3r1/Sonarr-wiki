@@ -6,6 +6,22 @@ Sonarr can execute a custom script when new episodes are imported or a series is
 
 ### Environment Variables ###
 
+##### On Grab #####
+
+| Environment Variable | Details |
+|---|---|
+| EventType | Grab|
+| Series_Id | Internal ID of the series |
+| Series_Title | Title of the series |
+| Series_TvdbId | TVDB ID for the series |
+| Series_Type | Type of the series, Anime, Daily or Standard |
+| Release_SeasonNumber | Season number from release |
+| Release_EpisodeNumbers | Comma separated list of episode numbers |
+| Release_Title | NZB/Torrent title |
+| Release_Indexer | Indexer where the release was grabbed |
+| Release_Size | Size of the release reported by the indexer |
+| Release_ReleaseGroup | Release Group, will not be set if it is unknown |
+
 ##### On Download/On Upgrade #####
 
 | Environment Variable | Details |
@@ -15,10 +31,11 @@ Sonarr can execute a custom script when new episodes are imported or a series is
 | Series_Title | Title of the series |
 | Series_Path | Full path to the series |
 | Series_TvdbId | TVDB ID for the series |
+| Series_Type | Type of the series, Anime, Daily or Standard |
 | EpisodeFile_Id | Internal ID of the episode file |
 | EpisodeFile_RelativePath | Path to the episode file relative to the series' path |
 | EpisodeFile_Path | Full path to the episode file |
-| EpisodeFile_SeasonNumber | Season number of episode |
+| EpisodeFile_SeasonNumber | Season number of episode file |
 | EpisodeFile_EpisodeNumbers | Comma separated list of episode numbers |
 | EpisodeFile_EpisodeAirDates | Air date from original network |
 | EpisodeFile_EpisodeAirDatesUtc | Air Date with Time in UTC |
