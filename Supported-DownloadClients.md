@@ -53,3 +53,9 @@ Website: http://rakshasa.github.io/rtorrent/
 Requires qBittorrent 3.2.4 or higher.
 
 Website: http://www.qbittorrent.org/
+
+### Vuze
+
+Requires Vuze 5.0.0.0 or higher
+
+Website: https://www.vuze.com/
