@@ -229,7 +229,8 @@ EOF
 
 **Move the file to your systemd system directory**
 
-Typically located in /usr/lib/systemd/system/, verify before proceeding.  Will differ based on distribution.
+Typically located in `/usr/lib/systemd/system/`, **verify before proceeding**.  Will differ based on distribution.   
+For Ubuntu 16.04 it's `/lib/systemd/system/`.
 
 ```bash
 mv sonarr.service /usr/lib/systemd/system/
