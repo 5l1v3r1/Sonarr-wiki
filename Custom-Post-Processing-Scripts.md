@@ -15,6 +15,7 @@ Sonarr can execute a custom script when new episodes are imported or a series is
 | Series_Title | Title of the series |
 | Series_TvdbId | TVDB ID for the series |
 | Series_Type | Type of the series, Anime, Daily or Standard |
+| Release_EpisodeCount | Number of episodes in the release |
 | Release_SeasonNumber | Season number from release |
 | Release_EpisodeNumbers | Comma separated list of episode numbers |
 | Release_Title | NZB/Torrent title |
@@ -35,10 +36,12 @@ Sonarr can execute a custom script when new episodes are imported or a series is
 | EpisodeFile_Id | Internal ID of the episode file |
 | EpisodeFile_RelativePath | Path to the episode file relative to the series' path |
 | EpisodeFile_Path | Full path to the episode file |
+| EpisodeFile_EpisodeCount | Number of episodes in the episode file |
 | EpisodeFile_SeasonNumber | Season number of episode file |
 | EpisodeFile_EpisodeNumbers | Comma separated list of episode numbers |
 | EpisodeFile_EpisodeAirDates | Air date from original network |
 | EpisodeFile_EpisodeAirDatesUtc | Air Date with Time in UTC |
+| EpisodeFile_EpisodeTitles | Pipe (`|`) separated list of episode titles |
 | EpisodeFile_Quality | Quality name from Sonarr |
 | EpisodeFile_QualityVersion | 1 is the default, 2 for proper, 3+ could be used for anime versions |
 | EpisodeFile_ReleaseGroup | Release group, will not be set if it is unknown |
